@@ -21,6 +21,7 @@
 		83A1F50518FB0C1E00144443 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A1F4E718FB0C1E00144443 /* UIKit.framework */; };
 		83A1F50D18FB0C1E00144443 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83A1F50B18FB0C1E00144443 /* InfoPlist.strings */; };
 		83A1F50F18FB0C1E00144443 /* NSPressableButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A1F50E18FB0C1E00144443 /* NSPressableButtonTests.m */; };
+		83A1F51A18FB0C6B00144443 /* NSPressableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A1F51918FB0C6B00144443 /* NSPressableButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		83A1F50A18FB0C1E00144443 /* NSPressableButtonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NSPressableButtonTests-Info.plist"; sourceTree = "<group>"; };
 		83A1F50C18FB0C1E00144443 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		83A1F50E18FB0C1E00144443 /* NSPressableButtonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSPressableButtonTests.m; sourceTree = "<group>"; };
+		83A1F51818FB0C6B00144443 /* NSPressableButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSPressableButton.h; sourceTree = "<group>"; };
+		83A1F51918FB0C6B00144443 /* NSPressableButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSPressableButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				83A1F4F518FB0C1E00144443 /* Main.storyboard */,
 				83A1F4F818FB0C1E00144443 /* ViewController.h */,
 				83A1F4F918FB0C1E00144443 /* ViewController.m */,
+				83A1F51818FB0C6B00144443 /* NSPressableButton.h */,
+				83A1F51918FB0C6B00144443 /* NSPressableButton.m */,
 				83A1F4FB18FB0C1E00144443 /* Images.xcassets */,
 				83A1F4EA18FB0C1E00144443 /* Supporting Files */,
 			);
@@ -249,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83A1F51A18FB0C6B00144443 /* NSPressableButton.m in Sources */,
 				83A1F4FA18FB0C1E00144443 /* ViewController.m in Sources */,
 				83A1F4F418FB0C1E00144443 /* AppDelegate.m in Sources */,
 				83A1F4F018FB0C1E00144443 /* main.m in Sources */,
