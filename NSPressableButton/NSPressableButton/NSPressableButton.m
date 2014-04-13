@@ -28,4 +28,14 @@
 }
 */
 
+-(void) setButtonColor:(UIColor *)buttonColor
+{
+    _buttonColor = buttonColor;
+    [self createButton];
+}
+
+-(void) createButton
+{
+
+}
 @end

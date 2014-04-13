@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NSPressableButton.h"
 
 @interface ViewController ()
 
@@ -18,8 +19,17 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
     [self setTitle:@"NSPressableButtons"];
     self.title=@"NSPressableButtons";
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [button setTitle:@"Show View" forState:UIControlStateNormal];
+    button.frame = CGRectMake(80.0, 210.0, 160.0, 40.0);
+    button.layer.borderWidth = 1;
+    [self.view addSubview:button];
+    
+    NSPressableButton *rectButton;
 }
 
 - (void)didReceiveMemoryWarning
