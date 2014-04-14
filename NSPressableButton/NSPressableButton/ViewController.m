@@ -30,6 +30,10 @@
     [self.view addSubview:button];
     
     NSPressableButton *rectButton;
+    rectButton.buttonColor = [UIColor redColor];
+    [rectButton setTitle:@"BUTTON" forState:UIControlStateNormal];
+    [self.view addSubview:rectButton];
+
 }
 
 - (void)didReceiveMemoryWarning

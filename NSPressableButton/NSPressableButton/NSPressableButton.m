@@ -7,6 +7,7 @@
 //
 
 #import "NSPressableButton.h"
+#import "UIImageCustom.h"
 
 @implementation NSPressableButton
 
@@ -36,6 +37,8 @@
 
 -(void) createButton
 {
-
+    UIImage *buttonTop = [UIImage imageWithColor: _buttonColor];
+    UIImage *buttonDown = [UIImage imageWithColor: _buttonColor];
+    [self setBackgroundImage:buttonTop forState:UIControlStateNormal];
 }
 @end

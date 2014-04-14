@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		837DE60818FC2BB9009574A8 /* UIImageCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 837DE60718FC2BB9009574A8 /* UIImageCustom.m */; };
 		83A1F4E418FB0C1E00144443 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A1F4E318FB0C1E00144443 /* Foundation.framework */; };
 		83A1F4E618FB0C1E00144443 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A1F4E518FB0C1E00144443 /* CoreGraphics.framework */; };
 		83A1F4E818FB0C1E00144443 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A1F4E718FB0C1E00144443 /* UIKit.framework */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		837DE60618FC2BB9009574A8 /* UIImageCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageCustom.h; sourceTree = "<group>"; };
+		837DE60718FC2BB9009574A8 /* UIImageCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageCustom.m; sourceTree = "<group>"; };
 		83A1F4E018FB0C1E00144443 /* NSPressableButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSPressableButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A1F4E318FB0C1E00144443 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		83A1F4E518FB0C1E00144443 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -122,6 +125,8 @@
 				83A1F4F918FB0C1E00144443 /* ViewController.m */,
 				83A1F51818FB0C6B00144443 /* NSPressableButton.h */,
 				83A1F51918FB0C6B00144443 /* NSPressableButton.m */,
+				837DE60618FC2BB9009574A8 /* UIImageCustom.h */,
+				837DE60718FC2BB9009574A8 /* UIImageCustom.m */,
 				83A1F4FB18FB0C1E00144443 /* Images.xcassets */,
 				83A1F4EA18FB0C1E00144443 /* Supporting Files */,
 			);
@@ -256,6 +261,7 @@
 			files = (
 				83A1F51A18FB0C6B00144443 /* NSPressableButton.m in Sources */,
 				83A1F4FA18FB0C1E00144443 /* ViewController.m in Sources */,
+				837DE60818FC2BB9009574A8 /* UIImageCustom.m in Sources */,
 				83A1F4F418FB0C1E00144443 /* AppDelegate.m in Sources */,
 				83A1F4F018FB0C1E00144443 /* main.m in Sources */,
 			);
@@ -462,6 +468,7 @@
 				83A1F51418FB0C1E00144443 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83A1F51518FB0C1E00144443 /* Build configuration list for PBXNativeTarget "NSPressableButtonTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +477,7 @@
 				83A1F51718FB0C1E00144443 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
