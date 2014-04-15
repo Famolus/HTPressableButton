@@ -11,5 +11,6 @@
 @interface NSPressableButton : UIButton
 
 @property(nonatomic, strong, readwrite) UIColor *buttonColor UI_APPEARANCE_SELECTOR;
+@property(nonatomic, readwrite) CGSize buttonSize;
 
 @end

@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "NSPressableButton.h"
-
+#import "UIImageCustom.h"
 @interface ViewController ()
 
 @end
@@ -20,7 +20,6 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    [self setTitle:@"NSPressableButtons"];
     self.title=@"NSPressableButtons";
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -29,10 +28,20 @@
     button.layer.borderWidth = 1;
     [self.view addSubview:button];
     
-    NSPressableButton *rectButton;
+//    NSPressableButton *rectButton;
+//    rectButton.buttonColor = [UIColor redColor];
+//    [self.view addSubview:rectButton];
+    
+    CGRect rect = CGRectMake(40, 100, 160, 30);
+    NSPressableButton *rectButton = [NSPressableButton buttonWithType:UIButtonTypeSystem];
     rectButton.buttonColor = [UIColor redColor];
+    rectButton.buttonSize = CGSizeMake(160, 30);
+    rectButton.frame = rect;
     [rectButton setTitle:@"BUTTON" forState:UIControlStateNormal];
     [self.view addSubview:rectButton];
+    
+    
+    NSLog(@"in VIEW");
 
 }
 

@@ -18,6 +18,7 @@
         // Initialization code
     }
     return self;
+    NSLog(@"INIT");
 }
 
 /*
@@ -33,12 +34,20 @@
 {
     _buttonColor = buttonColor;
     [self createButton];
+    NSLog(@"in COLOR");
 }
 
+-(void) setButtonSize:(CGSize)buttonSize
+{
+    _buttonSize = buttonSize;
+    [self createButton];
+    NSLog(@"in SIZE");
+}
 -(void) createButton
 {
-    UIImage *buttonTop = [UIImage imageWithColor: _buttonColor];
-    UIImage *buttonDown = [UIImage imageWithColor: _buttonColor];
+    UIImage *buttonTop = [UIImage imageWithColor: _buttonColor andSize:_buttonSize];
+//    //UIImage *buttonDown = [UIImage imageWithColor: self.buttonColor];
     [self setBackgroundImage:buttonTop forState:UIControlStateNormal];
+    NSLog(@"in NSPRESS");
 }
 @end

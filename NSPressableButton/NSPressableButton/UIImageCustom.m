@@ -10,30 +10,21 @@
 
 @implementation UIImage (NSPressableButton)
 
-+ (UIImage *) imageWithColor: (UIColor *) color
++ (UIImage *) imageWithColor: (UIColor *) color andSize: (CGSize) size;
 {
     
-//    CGRect rect = CGRectMake(50.0f, 50.0f, 100.0f, 100.0f);
-//    UIGraphicsBeginImageContext(rect.size);
-//    CGContextRef context = UIGraphicsGetCurrentContext();
-//    
-//    CGContextSetFillColorWithColor(context, [color CGColor]);
-//    CGContextFillRect(context, rect);
-//    
-//    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-//    UIGraphicsEndImageContext();
-    
-    CGRect rect = CGRectMake(50, 50, 1, 1);
+    CGRect rect = CGRectMake(0, 0, size.width, size.height);
     UIGraphicsBeginImageContext(rect.size);
     CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetFillColorWithColor(context,
-                                   [[UIColor redColor] CGColor]);
-    //  [[UIColor colorWithRed:222./255 green:227./255 blue: 229./255 alpha:1] CGColor]) ;
-    CGContextFillRect(context, rect);
-    UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
     
-    return img;
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    NSLog(@"in UIImage");
+
+    return image;
 }
 
 @end
