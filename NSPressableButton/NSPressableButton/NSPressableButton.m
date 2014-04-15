@@ -13,12 +13,13 @@
 
 - (id)initWithFrame:(CGRect)frame
 {
+    NSLog(@"INIT");
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
+        [self createButton];
     }
     return self;
-    NSLog(@"INIT");
 }
 
 /*
@@ -30,17 +31,118 @@
 }
 */
 
+/**
+ * Set button color
+ * @author
+ *
+ * @param buttonColor color of the button
+ */
 -(void) setButtonColor:(UIColor *)buttonColor
 {
+    NSLog(@"in COLOR");
     _buttonColor = buttonColor;
     [self createButton];
-    NSLog(@"in COLOR");
 }
 
+/**
+ * Set button shadow color
+ * @author
+ *
+ * @param shadowColor color of the shadow
+ */
+-(void) setShadowColor:(UIColor *)shadowColor
+{
+    
+}
+
+
+/**
+ * Set the height of the shadow
+ * @author
+ *
+ * @param shadowHeight height of the shadow
+ */
+-(void) setShadowHeight:(CGRect)shadowHeight
+{
+    
+}
+
+
+/**************** START DEFAULT VALUE ***************/
+
+
+/**
+ * Set default button size according to the device screen width and height
+ * @author
+ *
+ * @attention Don't call this function!
+ */
+-(void) setDefaultButtonSize
+{
+    self.frame = CGRectMake(40, 100, 160, 30);
+}
+
+/**
+ * Set default color of the button
+ * @author
+ *
+ * @attention Don't call this function!
+ */
+-(void) setDefaultButtonColor
+{
+    _buttonColor = [UIColor cyanColor];
+}
+
+/**
+ * Algorithmically calculate the appropriate default color of the shadow according to the button color
+ * @author
+ *
+ * @attention Don't call this function!
+ * @param buttonColor color of the button
+ */
+-(void) setDefaultShadowColor:(UIColor *)buttonColor
+{
+    
+}
+
+/**
+ * Algorithmically calculate the appropriate default height of the shadow according to the button height
+ * @author
+ *
+ * @attention Don't call this function!
+ * @param buttonHeight height of the button
+ */
+-(void) setDefaultShadowHeight:(CGRect)buttonHeight
+{
+    
+}
+
+
+/**************** END DEFAULT VALUE ***************/
+
+
+/**
+ * Create NSPressableButton
+ * @author He Rin Kim
+ */
 -(void) createButton
 {
+    NSLog(@"in NSPRESS");
+    
+    bool isButtonColorSet = _buttonColor;
+    bool isButtonFrameNotSet = (self.frame.size.width == 0 && self.frame.size.height == 0);
+    
+    if(!isButtonColorSet)
+    {
+        [self setDefaultButtonColor];
+        NSLog(@"Set default button color");
+    }
+    if (isButtonFrameNotSet)
+    {
+        [self setDefaultButtonSize];
+        NSLog(@"Set default button size");
+    }
     UIImage *buttonTop = [UIImage imageWithColor: _buttonColor andSize:self.frame.size];
     [self setBackgroundImage:buttonTop forState:UIControlStateNormal];
-    NSLog(@"in NSPRESS");
 }
 @end
