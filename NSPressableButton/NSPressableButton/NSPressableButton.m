@@ -37,16 +37,9 @@
     NSLog(@"in COLOR");
 }
 
--(void) setButtonSize:(CGSize)buttonSize
-{
-    _buttonSize = buttonSize;
-    [self createButton];
-    NSLog(@"in SIZE");
-}
 -(void) createButton
 {
-    UIImage *buttonTop = [UIImage imageWithColor: _buttonColor andSize:_buttonSize];
-//    //UIImage *buttonDown = [UIImage imageWithColor: self.buttonColor];
+    UIImage *buttonTop = [UIImage imageWithColor: _buttonColor andSize:self.frame.size];
     [self setBackgroundImage:buttonTop forState:UIControlStateNormal];
     NSLog(@"in NSPRESS");
 }

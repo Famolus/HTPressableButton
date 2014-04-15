@@ -28,15 +28,11 @@
     button.layer.borderWidth = 1;
     [self.view addSubview:button];
     
-//    NSPressableButton *rectButton;
-//    rectButton.buttonColor = [UIColor redColor];
-//    [self.view addSubview:rectButton];
     
-    CGRect rect = CGRectMake(40, 100, 160, 30);
-    NSPressableButton *rectButton = [NSPressableButton buttonWithType:UIButtonTypeSystem];
+    
+    NSPressableButton *rectButton = [NSPressableButton buttonWithType:UIButtonTypeCustom];
+    rectButton.frame = CGRectMake(40, 100, 160, 30);
     rectButton.buttonColor = [UIColor redColor];
-    rectButton.buttonSize = CGSizeMake(160, 30);
-    rectButton.frame = rect;
     [rectButton setTitle:@"BUTTON" forState:UIControlStateNormal];
     [self.view addSubview:rectButton];
     

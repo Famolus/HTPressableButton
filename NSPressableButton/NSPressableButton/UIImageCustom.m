@@ -10,7 +10,7 @@
 
 @implementation UIImage (NSPressableButton)
 
-+ (UIImage *) imageWithColor: (UIColor *) color andSize: (CGSize) size;
++ (UIImage *) imageWithColor: (UIColor *) color andSize: (CGSize) size
 {
     
     CGRect rect = CGRectMake(0, 0, size.width, size.height);
