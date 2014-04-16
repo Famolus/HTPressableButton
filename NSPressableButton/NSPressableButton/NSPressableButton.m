@@ -17,8 +17,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        [self createButton];
-    }
+            }
     return self;
 }
 
@@ -69,18 +68,6 @@
 
 
 /**************** START DEFAULT VALUE ***************/
-
-
-/**
- * Set default button size according to the device screen width and height
- * @author
- *
- * @attention Don't call this function!
- */
--(void) setDefaultButtonSize
-{
-    self.frame = CGRectMake(40, 100, 160, 30);
-}
 
 /**
  * Set default color of the button
@@ -134,17 +121,11 @@
     [self setTitleEdgeInsets];
 
     bool isButtonColorSet = _buttonColor;
-    bool isButtonFrameNotSet = (self.frame.size.width == 0 && self.frame.size.height == 0);
     
     if(!isButtonColorSet)
     {
         [self setDefaultButtonColor];
         NSLog(@"Set default button color");
-    }
-    if (isButtonFrameNotSet)
-    {
-        [self setDefaultButtonSize];
-        NSLog(@"Set default button size");
     }
     
     UIImage *buttonNormal = [UIImage buttonWithColor: _buttonColor andSize:self.frame.size];
