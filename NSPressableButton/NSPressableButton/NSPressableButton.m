@@ -108,7 +108,11 @@
 }
 
 /**************** END DEFAULT VALUE ***************/
-
+- (void) setHighlighted:(BOOL)highlighted {
+    UIEdgeInsets insets = highlighted ? UIEdgeInsetsMake(0,0,-(_shadowHeight),0) :UIEdgeInsetsMake(0,0,_shadowHeight,0);
+    [super setTitleEdgeInsets:insets];
+    [super setHighlighted:highlighted];
+}
 
 /**
  * Create NSPressableButton
@@ -134,8 +138,9 @@
     
     UIImage *buttonNormal = [UIImage buttonWithColor: _buttonColor andSize:self.frame.size andShadowHeight:_shadowHeight];
     [self setBackgroundImage:buttonNormal forState:UIControlStateNormal];
-    
+
     UIImage *buttonHighlighted = [UIImage buttonWithHighlightedColor: [UIColor purpleColor] andSize:self.frame.size andShadowHeight:_shadowHeight];
     [self setBackgroundImage:buttonHighlighted forState:UIControlStateHighlighted];
+
 }
 @end

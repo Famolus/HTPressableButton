@@ -10,9 +10,10 @@
 
 @implementation UIImage (NSPressableButton)
 
-+ (UIImage *) buttonWithColor: (UIColor *) color andSize: (CGSize) size andShadowHeight: (CGFloat) shadowHeight
++ (UIImage *) buttonWithColor: (UIColor *) color
+                      andSize: (CGSize) size
+              andShadowHeight: (CGFloat) shadowHeight
 {
-    
     UIImage *frontImage = [UIImage imageWithColor:color andSize:CGSizeMake(size.width, size.height)];
     UIImage *backImage = [UIImage imageWithColor:[UIColor redColor] andSize:CGSizeMake(size.width, size.height+shadowHeight)];
 
@@ -32,7 +33,6 @@
     // end context
     UIGraphicsEndImageContext();
 
-    
     return buttonImage;
 }
 
@@ -40,19 +40,18 @@
                                  andSize: (CGSize) size
                          andShadowHeight: (CGFloat) shadowHeight
 {
-    UIImage *frontImage = [UIImage imageWithHighlightedColor:[UIColor cyanColor] andSize:CGSizeMake(size.width, size.height) andShadowHeight:shadowHeight];
+    UIImage *buttonImage = [UIImage imageWithHighlightedColor:[UIColor cyanColor] andSize:CGSizeMake(size.width, size.height) andShadowHeight:shadowHeight];
     
-    UIImage *buttonImage;
-    CGRect rect = CGRectMake(0, 0, frontImage.size.width, frontImage.size.height);
+    CGRect rect = CGRectMake(0, 0, buttonImage.size.width, buttonImage.size.height);
     
     // Begin context
     UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
     
     // draw images
-    [frontImage drawInRect:rect];
+    [buttonImage drawInRect:rect];
     
     // grab context
-    buttonImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsGetImageFromCurrentImageContext();
     
     // end context
     UIGraphicsEndImageContext();
@@ -62,11 +61,12 @@
 
 }
 
-+ (UIImage *) imageWithHighlightedColor: (UIColor *) color andSize: (CGSize) size andShadowHeight: (CGFloat) shadowHeight
++ (UIImage *) imageWithHighlightedColor: (UIColor *) color
+                                andSize: (CGSize) size
+                        andShadowHeight: (CGFloat) shadowHeight
 {
-    
     CGRect rect = CGRectMake(0, shadowHeight, size.width, size.height);
-    UIGraphicsBeginImageContext(rect.size);
+    UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
     CGContextRef context = UIGraphicsGetCurrentContext();
     
     CGContextSetFillColorWithColor(context, [color CGColor]);
@@ -82,9 +82,8 @@
 
 + (UIImage *) imageWithColor: (UIColor *) color andSize: (CGSize) size
 {
-    
     CGRect rect = CGRectMake(0, 0, size.width, size.height);
-    UIGraphicsBeginImageContext(rect.size);
+    UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
     CGContextRef context = UIGraphicsGetCurrentContext();
     
     CGContextSetFillColorWithColor(context, [color CGColor]);

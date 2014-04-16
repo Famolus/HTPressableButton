@@ -34,7 +34,7 @@
     
     NSPressableButton *rectButton = [NSPressableButton buttonWithType:UIButtonTypeCustom];
     rectButton.frame = CGRectMake(40, 100, 160, 30);
-    rectButton.buttonColor = [UIColor turquoiseColor];
+    rectButton.buttonColor = [UIColor cyanColor];
     //rectButton.shadowHeight = 20.0;
     [rectButton setTitle:@"BUTTON" forState:UIControlStateNormal];
     [self.view addSubview:rectButton];
