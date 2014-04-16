@@ -10,11 +10,11 @@
 
 @implementation UIImage (NSPressableButton)
 
-+ (UIImage *) buttonWithColor: (UIColor *) color andSize: (CGSize) size
++ (UIImage *) buttonWithColor: (UIColor *) color andSize: (CGSize) size andShadowHeight: (CGFloat) shadowHeight
 {
     
     UIImage *frontImage = [UIImage imageWithColor:color andSize:CGSizeMake(size.width, size.height)];
-    UIImage *backImage = [UIImage imageWithColor:[UIColor redColor] andSize:CGSizeMake(size.width, size.height+10)];
+    UIImage *backImage = [UIImage imageWithColor:[UIColor redColor] andSize:CGSizeMake(size.width, size.height+shadowHeight)];
 
     UIImage *buttonImage;
     CGRect rect = CGRectMake(0, 0, backImage.size.width, backImage.size.height);
@@ -38,8 +38,9 @@
 
 + (UIImage *) buttonWithHighlightedColor: (UIColor *) color
                                  andSize: (CGSize) size
+                         andShadowHeight: (CGFloat) shadowHeight
 {
-    UIImage *frontImage = [UIImage imageWithHighlightedColor:[UIColor cyanColor] andSize:CGSizeMake(size.width, size.height)];
+    UIImage *frontImage = [UIImage imageWithHighlightedColor:[UIColor cyanColor] andSize:CGSizeMake(size.width, size.height) andShadowHeight:shadowHeight];
     
     UIImage *buttonImage;
     CGRect rect = CGRectMake(0, 0, frontImage.size.width, frontImage.size.height);
@@ -61,10 +62,10 @@
 
 }
 
-+ (UIImage *) imageWithHighlightedColor: (UIColor *) color andSize: (CGSize) size
++ (UIImage *) imageWithHighlightedColor: (UIColor *) color andSize: (CGSize) size andShadowHeight: (CGFloat) shadowHeight
 {
     
-    CGRect rect = CGRectMake(0, 10, size.width, size.height);
+    CGRect rect = CGRectMake(0, shadowHeight, size.width, size.height);
     UIGraphicsBeginImageContext(rect.size);
     CGContextRef context = UIGraphicsGetCurrentContext();
     

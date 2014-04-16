@@ -61,9 +61,11 @@
  *
  * @param shadowHeight height of the shadow
  */
--(void) setShadowHeight:(CGRect)shadowHeight
+-(void) setShadowHeight:(CGFloat)shadowHeight
 {
-    
+    _shadowHeight = shadowHeight;
+    [super setTitleEdgeInsets:UIEdgeInsetsMake(0.0f, 0.0f, shadowHeight, 0.0f)];
+    [self createButton];
 }
 
 
@@ -99,12 +101,9 @@
  * @attention Don't call this function!
  * @param buttonHeight height of the button
  */
--(void) setDefaultShadowHeight:(CGRect)buttonHeight
+-(void) setDefaultShadowHeight
 {
-    
-}
-
-- (void) setTitleEdgeInsets {
+    _shadowHeight = 10;
     [super setTitleEdgeInsets:UIEdgeInsetsMake(0.0f, 0.0f, 10.0f, 0.0f)];
 }
 
@@ -118,20 +117,25 @@
 -(void) createButton
 {
     NSLog(@"in NSPRESS");
-    [self setTitleEdgeInsets];
 
     bool isButtonColorSet = _buttonColor;
+    bool isButtonShadowHeightSet = _shadowHeight;
     
     if(!isButtonColorSet)
     {
         [self setDefaultButtonColor];
         NSLog(@"Set default button color");
     }
+    if(!isButtonShadowHeightSet)
+    {
+        [self setDefaultShadowHeight];
+        NSLog(@"Set default button shadow height");
+    }
     
-    UIImage *buttonNormal = [UIImage buttonWithColor: _buttonColor andSize:self.frame.size];
+    UIImage *buttonNormal = [UIImage buttonWithColor: _buttonColor andSize:self.frame.size andShadowHeight:_shadowHeight];
     [self setBackgroundImage:buttonNormal forState:UIControlStateNormal];
     
-    UIImage *buttonHighlighted = [UIImage buttonWithHighlightedColor: [UIColor purpleColor] andSize:self.frame.size];
+    UIImage *buttonHighlighted = [UIImage buttonWithHighlightedColor: [UIColor purpleColor] andSize:self.frame.size andShadowHeight:_shadowHeight];
     [self setBackgroundImage:buttonHighlighted forState:UIControlStateHighlighted];
 }
 @end
