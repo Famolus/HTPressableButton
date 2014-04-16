@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "NSPressableButton.h"
 #import "UIImageCustom.h"
+#import "UIFlatColor.h"
+
 @interface ViewController ()
 
 @end
@@ -32,7 +34,7 @@
     
     NSPressableButton *rectButton = [NSPressableButton buttonWithType:UIButtonTypeCustom];
     rectButton.frame = CGRectMake(40, 100, 160, 30);
-    rectButton.buttonColor = [UIColor cyanColor];
+    rectButton.buttonColor = [UIColor turquoiseColor];
     //rectButton.shadowHeight = 20.0;
     [rectButton setTitle:@"BUTTON" forState:UIControlStateNormal];
     [self.view addSubview:rectButton];
