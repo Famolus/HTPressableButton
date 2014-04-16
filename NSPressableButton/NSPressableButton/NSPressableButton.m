@@ -117,6 +117,9 @@
     
 }
 
+- (void) setTitleEdgeInsets {
+    [super setTitleEdgeInsets:UIEdgeInsetsMake(0.0f, 0.0f, 10.0f, 0.0f)];
+}
 
 /**************** END DEFAULT VALUE ***************/
 
@@ -128,7 +131,8 @@
 -(void) createButton
 {
     NSLog(@"in NSPRESS");
-    
+    [self setTitleEdgeInsets];
+
     bool isButtonColorSet = _buttonColor;
     bool isButtonFrameNotSet = (self.frame.size.width == 0 && self.frame.size.height == 0);
     
@@ -142,7 +146,11 @@
         [self setDefaultButtonSize];
         NSLog(@"Set default button size");
     }
-    UIImage *buttonTop = [UIImage imageWithColor: _buttonColor andSize:self.frame.size];
-    [self setBackgroundImage:buttonTop forState:UIControlStateNormal];
+    
+    UIImage *buttonNormal = [UIImage buttonWithColor: _buttonColor andSize:self.frame.size];
+    [self setBackgroundImage:buttonNormal forState:UIControlStateNormal];
+    
+    UIImage *buttonHighlighted = [UIImage buttonWithHighlightedColor: [UIColor purpleColor] andSize:self.frame.size];
+    [self setBackgroundImage:buttonHighlighted forState:UIControlStateHighlighted];
 }
 @end

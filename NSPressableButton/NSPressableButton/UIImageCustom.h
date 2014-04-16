@@ -10,7 +10,13 @@
 
 @interface UIImage (NSPressableButton)
 
-+ (UIImage *) imageWithColor: (UIColor *) color
++ (UIImage *) buttonWithColor: (UIColor *) color
                      andSize: (CGSize) size;
++ (UIImage *) buttonWithHighlightedColor: (UIColor *) color
+                      andSize: (CGSize) size;
+
++ (UIImage *) imageWithColor: (UIColor *) color
+                      andSize: (CGSize) size;
++ (UIImage *) imageWithHighlightedColor: (UIColor *) color andSize: (CGSize) size;
 
 @end
