@@ -36,12 +36,13 @@
     rectButton.frame = CGRectMake(40, 100, 160, 40);
     rectButton.buttonColor = [UIColor cyanColor];
     //rectButton.shadowHeight = 20.0;
+    rectButton.style = square;
     [rectButton setTitle:@"Rect" forState:UIControlStateNormal];
     [self.view addSubview:rectButton];
     
     NSPressableButton *roundedRectButton = [NSPressableButton buttonWithType:UIButtonTypeCustom];
     roundedRectButton.frame = CGRectMake(40, 150, 160, 40);
-    roundedRectButton.style = @"rounded";
+    roundedRectButton.style = rounded;
     roundedRectButton.buttonColor = [UIColor purpleColor];
     roundedRectButton.shadowHeight = 20.0;
     [roundedRectButton setTitle:@"Rounded" forState:UIControlStateNormal];

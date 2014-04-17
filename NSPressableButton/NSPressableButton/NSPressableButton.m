@@ -21,15 +21,6 @@
     return self;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
-
 /**
  * Set button color
  * @author
@@ -72,17 +63,26 @@
  * Set the shape of the button
  * @author
  *
- * @param style type of shape
+ * @param style UIButtonStyle of the button
  */
--(void) setStyle:(NSString *) style
+-(void) setStyle:(UIButtonStyle) style
 {
     NSLog(@"in STYLE");
-    if ([style isEqual:@"circle"])
-        _cornerRadius = self.frame.size.height/2;
-    else if([style isEqual:@"rounded"])
-        _cornerRadius = 10.0;
-    else
-        _cornerRadius = 0.0;
+    switch (style) {
+        case square:
+            _cornerRadius = 0.0;
+            break;
+        case rounded:
+            _cornerRadius = 10.0;
+            break;
+        case circle:
+            _cornerRadius = self.frame.size.height/2;
+            break;
+
+        default:
+            _cornerRadius = 0.0;
+            break;
+    }
     [self createButton];
 }
 

@@ -8,11 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger, UIButtonStyle) {
+    square,
+    rounded,
+    circle
+};
+
 @interface NSPressableButton : UIButton
 
 @property(nonatomic, strong, readwrite) UIColor *buttonColor UI_APPEARANCE_SELECTOR;
 @property(nonatomic, readwrite) CGFloat shadowHeight UI_APPEARANCE_SELECTOR;
-@property(nonatomic, readwrite) NSString *style UI_APPEARANCE_SELECTOR;
 @property(nonatomic, readwrite) CGFloat cornerRadius UI_APPEARANCE_SELECTOR;
+@property(nonatomic, readwrite) UIButtonStyle style;
 
 @end
