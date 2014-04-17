@@ -19,6 +19,12 @@ typedef NS_ENUM(NSInteger, UIButtonStyle) {
 @property(nonatomic, strong, readwrite) UIColor *buttonColor UI_APPEARANCE_SELECTOR;
 @property(nonatomic, readwrite) CGFloat shadowHeight UI_APPEARANCE_SELECTOR;
 @property(nonatomic, readwrite) CGFloat cornerRadius UI_APPEARANCE_SELECTOR;
+
+/**
+ * Set button style
+ *
+ * @param style Choose between: square, rounded, or circle
+ */
 @property(nonatomic, readwrite) UIButtonStyle style;
 
 @end
