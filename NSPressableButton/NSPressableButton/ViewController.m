@@ -36,17 +36,25 @@
     rectButton.frame = CGRectMake(40, 100, 160, 40);
     rectButton.buttonColor = [UIColor cyanColor];
     //rectButton.shadowHeight = 20.0;
-    rectButton.style = square;
+    rectButton.style = rect;
     [rectButton setTitle:@"Rect" forState:UIControlStateNormal];
     [self.view addSubview:rectButton];
     
     NSPressableButton *roundedRectButton = [NSPressableButton buttonWithType:UIButtonTypeCustom];
-    roundedRectButton.frame = CGRectMake(40, 150, 160, 40);
+    roundedRectButton.frame = CGRectMake(40, 150, 160, 50);
     roundedRectButton.style = rounded;
     roundedRectButton.buttonColor = [UIColor purpleColor];
     roundedRectButton.shadowHeight = 20.0;
     [roundedRectButton setTitle:@"Rounded" forState:UIControlStateNormal];
     [self.view addSubview:roundedRectButton];
+    
+    NSPressableButton *circleButton = [NSPressableButton buttonWithType:UIButtonTypeCustom];
+    circleButton.frame = CGRectMake(40, 300, 80, 80);
+    circleButton.style = circle;
+    circleButton.buttonColor = [UIColor darkGrayColor];
+    //circleButton.shadowHeight = 20.0;
+    [circleButton setTitle:@"Circle" forState:UIControlStateNormal];
+    [self.view addSubview:circleButton];
 
     
     NSLog(@"in VIEW");

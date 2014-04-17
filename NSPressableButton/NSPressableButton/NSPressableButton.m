@@ -69,7 +69,7 @@
 {
     NSLog(@"in STYLE");
     switch (style) {
-        case square:
+        case rect:
             _cornerRadius = 0.0;
             break;
         case rounded:

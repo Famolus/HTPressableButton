@@ -46,16 +46,27 @@
                          andShadowHeight: (CGFloat) shadowHeight
                          andCornerRadius:(CGFloat) cornerRadius
 {
-    UIImage *buttonImage = [UIImage imageWithHighlightedColor:color andSize:size andShadowHeight:shadowHeight andCornerRadius:cornerRadius];
-    UIImage *buttonImage2 = [UIImage imageWithRoundedCorners:cornerRadius usingImage:buttonImage];
+    //UIImage *buttonImage = [UIImage imageWithHighlightedColor:color andSize:size andShadowHeight:shadowHeight andCornerRadius:cornerRadius];
+    //UIImage *buttonImage2 = [UIImage imageWithRoundedCorners:cornerRadius usingImage:buttonImage];
     
-    CGRect rect = CGRectMake(0, 0, buttonImage.size.width, buttonImage.size.height+shadowHeight);
+    UIImage *frontImage = [UIImage imageWithColor:color andSize:CGSizeMake(size.width, size.height+shadowHeight)];
+    UIImage *frontImage2 = [UIImage imageWithRoundedCorners:cornerRadius usingImage:frontImage];
+    
+    UIImage *backImage = [UIImage imageWithColor:[UIColor clearColor] andSize:CGSizeMake(size.width, size.height+shadowHeight)];
+    UIImage *backImage2 = [UIImage imageWithRoundedCorners:cornerRadius usingImage:backImage];
+    
+    UIImage *buttonHighlightedImage;
+    CGRect rect = CGRectMake(0, 0, backImage.size.width, backImage.size.height+shadowHeight);
     
     // Begin context
     UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
     
     // draw images
-    [buttonImage2 drawInRect:rect];
+    [backImage2 drawAtPoint:CGPointMake(0, 0)];
+    [frontImage2 drawAtPoint:CGPointMake(0, shadowHeight)];
+    
+    // grab context
+    buttonHighlightedImage = UIGraphicsGetImageFromCurrentImageContext();
     
     // grab context
     UIGraphicsGetImageFromCurrentImageContext();
@@ -63,29 +74,9 @@
     // end context
     UIGraphicsEndImageContext();
     
-    return buttonImage2;
+    return buttonHighlightedImage;
 
 }
-
-+ (UIImage *) imageWithHighlightedColor: (UIColor *) color
-                                andSize: (CGSize) size
-                        andShadowHeight: (CGFloat) shadowHeight
-                        andCornerRadius:(CGFloat) cornerRadius
-{
-    CGRect rect = CGRectMake(0, shadowHeight, size.width, size.height+shadowHeight);
-    UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    
-    CGContextSetFillColorWithColor(context, [color CGColor]);
-    CGContextFillRect(context, rect);
-    
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    NSLog(@"in UIImage");
-    
-    return image;
-}
-
 
 + (UIImage *) imageWithColor: (UIColor *) color
                      andSize: (CGSize) size
