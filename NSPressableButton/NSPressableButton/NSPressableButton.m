@@ -68,7 +68,12 @@
     [self createButton];
 }
 
-
+/**
+ * Set the shape of the button
+ * @author
+ *
+ * @param style type of shape
+ */
 -(void) setStyle:(NSString *) style
 {
     NSLog(@"in STYLE");
@@ -83,49 +88,21 @@
 
 /**************** START DEFAULT VALUE ***************/
 
-/**
- * Set default color of the button
- * @author
- *
- * @attention Don't call this function!
- */
 -(void) setDefaultButtonColor
 {
     _buttonColor = [UIColor cyanColor];
 }
 
-/**
- * Algorithmically calculate the appropriate default color of the shadow according to the button color
- * @author
- *
- * @attention Don't call this function!
- * @param buttonColor color of the button
- */
 -(void) setDefaultShadowColor:(UIColor *)buttonColor
 {
     
 }
 
-/**
- * Algorithmically calculate the appropriate default height of the shadow according to the button height
- * @author
- *
- * @attention Don't call this function!
- * @param buttonHeight height of the button
- */
 -(void) setDefaultShadowHeight
 {
     _shadowHeight = self.frame.size.height/( self.frame.size.height/10);
     [super setTitleEdgeInsets:UIEdgeInsetsMake(0.0f, 0.0f, 10.0f, 0.0f)];
 }
-
-/**
- * Calculate the position of button title according to shadowheight using inset
- * @author
- *
- * @attention Don't call this function!
- * @param highlighed when the button is pressed
- */
 
 - (void) setHighlighted:(BOOL)highlighted {
     if (highlighted)
@@ -137,10 +114,6 @@
 
 /**************** END DEFAULT VALUE ***************/
 
-/**
- * Create NSPressableButton
- * @author He Rin Kim
- */
 -(void) createButton
 {
     NSLog(@"in NSPRESS");
