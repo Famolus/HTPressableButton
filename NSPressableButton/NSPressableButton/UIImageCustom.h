@@ -12,17 +12,22 @@
 
 + (UIImage *) buttonWithColor: (UIColor *) color
                       andSize: (CGSize) size
-              andShadowHeight: (CGFloat) shadowHeight;
+              andShadowHeight: (CGFloat) shadowHeight
+              andCornerRadius: (CGFloat) cornerRadius;
 
 + (UIImage *) buttonWithHighlightedColor: (UIColor *) color
                                  andSize: (CGSize) size
-                         andShadowHeight: (CGFloat) shadowHeight;
+                         andShadowHeight: (CGFloat) shadowHeight
+                         andCornerRadius: (CGFloat) cornerRadius;
 
 + (UIImage *) imageWithColor: (UIColor *) color
                      andSize: (CGSize) size;
 
 + (UIImage *) imageWithHighlightedColor: (UIColor *) color
                                 andSize: (CGSize) size
-                        andShadowHeight: (CGFloat) shadowHeight;
+                        andShadowHeight: (CGFloat) shadowHeight
+                        andCornerRadius: (CGFloat) cornerRadius;
 
++ (UIImage *) imageWithRoundedCorners:(float)cornerRadius
+                           usingImage:(UIImage *)original;
 @end

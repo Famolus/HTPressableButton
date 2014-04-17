@@ -12,5 +12,7 @@
 
 @property(nonatomic, strong, readwrite) UIColor *buttonColor UI_APPEARANCE_SELECTOR;
 @property(nonatomic, readwrite) CGFloat shadowHeight UI_APPEARANCE_SELECTOR;
+@property(nonatomic, readwrite) NSString *style UI_APPEARANCE_SELECTOR;
+@property(nonatomic, readwrite) CGFloat cornerRadius UI_APPEARANCE_SELECTOR;
 
 @end

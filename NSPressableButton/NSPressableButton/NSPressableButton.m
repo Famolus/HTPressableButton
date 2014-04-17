@@ -69,6 +69,18 @@
 }
 
 
+-(void) setStyle:(NSString *) style
+{
+    NSLog(@"in STYLE");
+    if ([style isEqual:@"circle"])
+        _cornerRadius = self.frame.size.height/2;
+    else if([style isEqual:@"rounded"])
+        _cornerRadius = 10.0;
+    else
+        _cornerRadius = 0.0;
+    [self createButton];
+}
+
 /**************** START DEFAULT VALUE ***************/
 
 /**
@@ -103,16 +115,27 @@
  */
 -(void) setDefaultShadowHeight
 {
-    _shadowHeight = 10;
+    _shadowHeight = self.frame.size.height/( self.frame.size.height/10);
     [super setTitleEdgeInsets:UIEdgeInsetsMake(0.0f, 0.0f, 10.0f, 0.0f)];
 }
 
-/**************** END DEFAULT VALUE ***************/
+/**
+ * Calculate the position of button title according to shadowheight using inset
+ * @author
+ *
+ * @attention Don't call this function!
+ * @param highlighed when the button is pressed
+ */
+
 - (void) setHighlighted:(BOOL)highlighted {
-    UIEdgeInsets insets = highlighted ? UIEdgeInsetsMake(0,0,-(_shadowHeight),0) :UIEdgeInsetsMake(0,0,_shadowHeight,0);
-    [super setTitleEdgeInsets:insets];
+    if (highlighted)
+        [super setTitleEdgeInsets:UIEdgeInsetsMake(0,0,-(_shadowHeight),0)];
+    else
+        [super setTitleEdgeInsets:UIEdgeInsetsMake(0,0,_shadowHeight,0)];
     [super setHighlighted:highlighted];
 }
+
+/**************** END DEFAULT VALUE ***************/
 
 /**
  * Create NSPressableButton
@@ -136,10 +159,10 @@
         NSLog(@"Set default button shadow height");
     }
     
-    UIImage *buttonNormal = [UIImage buttonWithColor: _buttonColor andSize:self.frame.size andShadowHeight:_shadowHeight];
+    UIImage *buttonNormal = [UIImage buttonWithColor: _buttonColor andSize:self.frame.size andShadowHeight:_shadowHeight andCornerRadius:_cornerRadius];
     [self setBackgroundImage:buttonNormal forState:UIControlStateNormal];
 
-    UIImage *buttonHighlighted = [UIImage buttonWithHighlightedColor: [UIColor purpleColor] andSize:self.frame.size andShadowHeight:_shadowHeight];
+    UIImage *buttonHighlighted = [UIImage buttonWithHighlightedColor: _buttonColor andSize:self.frame.size andShadowHeight:_shadowHeight andCornerRadius:_cornerRadius];
     [self setBackgroundImage:buttonHighlighted forState:UIControlStateHighlighted];
 
 }
