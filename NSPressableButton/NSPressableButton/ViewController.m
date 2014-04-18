@@ -49,7 +49,7 @@
     [self.view addSubview:roundedRectButton];
     
     NSPressableButton *circleButton = [NSPressableButton buttonWithType:UIButtonTypeCustom];
-    circleButton.frame = CGRectMake(120, 300, 80, 80);
+    circleButton.frame = CGRectMake(100, 300, 120, 120);
     circleButton.style = circle;
     circleButton.buttonColor = [UIColor darkGrayColor];
     //circleButton.shadowHeight = 20.0;

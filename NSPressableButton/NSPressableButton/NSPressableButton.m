@@ -76,6 +76,7 @@
             break;
         case circle:
             _cornerRadius = self.frame.size.height/2;
+            self.clipsToBounds=YES;
             break;
 
         default:
@@ -131,13 +132,18 @@
         NSLog(@"Set default button shadow height");
     }
     
-    //UIImage *buttonNormal = [UIImage buttonWithColor: _buttonColor andSize:self.frame.size andShadowHeight:_shadowHeight andCornerRadius:_cornerRadius];
+    UIImage *buttonNormal = [UIImage buttonWithColor: _buttonColor andSize:self.frame.size andShadowHeight:_shadowHeight andCornerRadius:_cornerRadius];
     
-    UIImage *buttonNormal = [UIImage circleButtonWithColor: _buttonColor andSize:self.frame.size andShadowHeight:_shadowHeight andCornerRadius:_cornerRadius];
+    UIImage *buttonHighlighted = [UIImage buttonWithHighlightedColor: _buttonColor andSize:self.frame.size andShadowHeight:_shadowHeight andCornerRadius:_cornerRadius];
+    
+    if (_cornerRadius>10) {
+        buttonNormal = [UIImage circleButtonWithColor: _buttonColor andSize:self.frame.size andShadowHeight:_shadowHeight andCornerRadius:_cornerRadius];
+        buttonHighlighted = [UIImage circleButtonWithHighlightedColor: _buttonColor andSize:self.frame.size andShadowHeight:_shadowHeight andCornerRadius:_cornerRadius];
+    }
     [self setBackgroundImage:buttonNormal forState:UIControlStateNormal];
 
 
-    UIImage *buttonHighlighted = [UIImage buttonWithHighlightedColor: _buttonColor andSize:self.frame.size andShadowHeight:_shadowHeight andCornerRadius:_cornerRadius];
+    
     [self setBackgroundImage:buttonHighlighted forState:UIControlStateHighlighted];
 
 }
