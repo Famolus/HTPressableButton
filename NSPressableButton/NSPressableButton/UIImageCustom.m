@@ -41,14 +41,43 @@
     return buttonImage;
 }
 
++ (UIImage *) circleButtonWithColor: (UIColor *) color
+                      andSize: (CGSize) size
+              andShadowHeight: (CGFloat) shadowHeight
+              andCornerRadius:(CGFloat) cornerRadius
+{
+    UIImage *frontImage = [UIImage imageWithColor:color andSize:CGSizeMake(size.width, size.height)];
+    UIImage *frontImage2 = [UIImage imageWithRoundedCorners:cornerRadius usingImage:frontImage];
+    
+    UIImage *backImage = [UIImage imageWithColor:[UIColor redColor] andSize:CGSizeMake(size.width, size.height+shadowHeight)];
+    UIImage *backImage2 = [UIImage imageWithRoundedCorners:cornerRadius usingImage:backImage];
+    
+    
+    UIImage *buttonImage;
+    CGRect rect = CGRectMake(0, 0, backImage.size.width+15, backImage.size.height+5);
+    
+    // Begin context
+    UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
+    
+    // draw images
+    [backImage2 drawAtPoint:CGPointMake(7, 3)];
+    [frontImage2 drawAtPoint:CGPointMake(7, 2)];
+    
+    // grab context
+    buttonImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    // end context
+    UIGraphicsEndImageContext();
+    
+    return buttonImage;
+}
+
+
 + (UIImage *) buttonWithHighlightedColor: (UIColor *) color
                                  andSize: (CGSize) size
                          andShadowHeight: (CGFloat) shadowHeight
                          andCornerRadius:(CGFloat) cornerRadius
 {
-    //UIImage *buttonImage = [UIImage imageWithHighlightedColor:color andSize:size andShadowHeight:shadowHeight andCornerRadius:cornerRadius];
-    //UIImage *buttonImage2 = [UIImage imageWithRoundedCorners:cornerRadius usingImage:buttonImage];
-    
     UIImage *frontImage = [UIImage imageWithColor:color andSize:CGSizeMake(size.width, size.height+shadowHeight)];
     UIImage *frontImage2 = [UIImage imageWithRoundedCorners:cornerRadius usingImage:frontImage];
     
@@ -90,7 +119,6 @@
     
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    NSLog(@"in UIImage");
     
     return image;
 }

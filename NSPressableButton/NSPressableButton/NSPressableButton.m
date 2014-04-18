@@ -67,7 +67,6 @@
  */
 -(void) setStyle:(UIButtonStyle) style
 {
-    NSLog(@"in STYLE");
     switch (style) {
         case rect:
             _cornerRadius = 0.0;
@@ -100,8 +99,8 @@
 
 -(void) setDefaultShadowHeight
 {
-    _shadowHeight = self.frame.size.height/( self.frame.size.height/10);
-    [super setTitleEdgeInsets:UIEdgeInsetsMake(0.0f, 0.0f, 10.0f, 0.0f)];
+    _shadowHeight = self.frame.size.height/(self.frame.size.height/10);
+    [super setTitleEdgeInsets:UIEdgeInsetsMake(0.0f, 0.0f, _shadowHeight, 0.0f)];
 }
 
 - (void) setHighlighted:(BOOL)highlighted {
@@ -132,8 +131,11 @@
         NSLog(@"Set default button shadow height");
     }
     
-    UIImage *buttonNormal = [UIImage buttonWithColor: _buttonColor andSize:self.frame.size andShadowHeight:_shadowHeight andCornerRadius:_cornerRadius];
+    //UIImage *buttonNormal = [UIImage buttonWithColor: _buttonColor andSize:self.frame.size andShadowHeight:_shadowHeight andCornerRadius:_cornerRadius];
+    
+    UIImage *buttonNormal = [UIImage circleButtonWithColor: _buttonColor andSize:self.frame.size andShadowHeight:_shadowHeight andCornerRadius:_cornerRadius];
     [self setBackgroundImage:buttonNormal forState:UIControlStateNormal];
+
 
     UIImage *buttonHighlighted = [UIImage buttonWithHighlightedColor: _buttonColor andSize:self.frame.size andShadowHeight:_shadowHeight andCornerRadius:_cornerRadius];
     [self setBackgroundImage:buttonHighlighted forState:UIControlStateHighlighted];

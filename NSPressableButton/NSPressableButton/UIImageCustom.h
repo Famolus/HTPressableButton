@@ -20,6 +20,12 @@
                          andShadowHeight: (CGFloat) shadowHeight
                          andCornerRadius: (CGFloat) cornerRadius;
 
++ (UIImage *) circleButtonWithColor: (UIColor *) color
+                            andSize: (CGSize) size
+                    andShadowHeight: (CGFloat) shadowHeight
+                    andCornerRadius:(CGFloat) cornerRadius;
+
+
 + (UIImage *) imageWithColor: (UIColor *) color
                      andSize: (CGSize) size;
 
