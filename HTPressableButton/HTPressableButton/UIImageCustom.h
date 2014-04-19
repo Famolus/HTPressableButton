@@ -10,24 +10,28 @@
 
 @interface UIImage (NSPressableButton)
 
-+ (UIImage *) buttonWithColor: (UIColor *) color
++ (UIImage *) buttonWithColor: (UIColor *) buttonColor
                       andSize: (CGSize) size
               andShadowHeight: (CGFloat) shadowHeight
+               andShadowColor: (UIColor *) shadowColor
               andCornerRadius: (CGFloat) cornerRadius;
 
-+ (UIImage *) buttonWithHighlightedColor: (UIColor *) color
++ (UIImage *) buttonWithHighlightedColor: (UIColor *) buttonColor
                                  andSize: (CGSize) size
                          andShadowHeight: (CGFloat) shadowHeight
+                          andShadowColor: (UIColor *) shadowColor
                          andCornerRadius: (CGFloat) cornerRadius;
 
-+ (UIImage *) circleButtonWithColor: (UIColor *) color
++ (UIImage *) circleButtonWithColor: (UIColor *) buttonColor
                             andSize: (CGSize) size
                     andShadowHeight: (CGFloat) shadowHeight
-                    andCornerRadius:(CGFloat) cornerRadius;
+                     andShadowColor: (UIColor *) shadowColor
+                    andCornerRadius: (CGFloat) cornerRadius;
 
-+ (UIImage *) circleButtonWithHighlightedColor: (UIColor *) color
++ (UIImage *) circleButtonWithHighlightedColor: (UIColor *) buttonColor
                                        andSize: (CGSize) size
                                andShadowHeight: (CGFloat) shadowHeight
+                                andShadowColor: (UIColor *) shadowColor
                                andCornerRadius:(CGFloat) cornerRadius;
 
 + (UIImage *) imageWithColor: (UIColor *) color

@@ -8,6 +8,7 @@
 
 #import "HTPressableButton.h"
 #import "UIImageCustom.h"
+#import "UIFlatColor.h"
 
 @implementation HTPressableButton
 
@@ -42,7 +43,8 @@
  */
 -(void) setShadowColor:(UIColor *)shadowColor
 {
-    
+    _shadowColor = shadowColor;
+    [self createButton];
 }
 
 
@@ -93,7 +95,8 @@
 
 -(void) setDefaultShadowColor:(UIColor *)buttonColor
 {
-    
+    // Still need to implement an algorithm for this
+    _shadowColor = [UIColor alizarinColor];
 }
 
 -(void) setDefaultShadowHeight
@@ -121,7 +124,8 @@
     UIImage *buttonNormal;
     UIImage *buttonHighlighted;
     bool isButtonColorSet = _buttonColor;
-    bool isButtonShadowHeightSet = _shadowHeight;
+    bool isShadowColorSet = _shadowColor;
+    bool isShadowHeightSet = _shadowHeight;
     bool isButtonCircle = false;
     
     if(!isButtonColorSet)
@@ -129,23 +133,46 @@
         [self setDefaultButtonColor];
         NSLog(@"Set default button color");
     }
-    if(!isButtonShadowHeightSet)
+    if(!isShadowHeightSet)
     {
         [self setDefaultShadowHeight];
+        NSLog(@"Set default button shadow height");
+    }
+    if(!isShadowColorSet)
+    {
+        [self setDefaultShadowColor: _buttonColor];
         NSLog(@"Set default button shadow height");
     }
     
     isButtonCircle = (_cornerRadius > 10);
     if (isButtonCircle)
     {
-        buttonNormal = [UIImage circleButtonWithColor: _buttonColor andSize:self.frame.size andShadowHeight:_shadowHeight andCornerRadius:_cornerRadius];
-        buttonHighlighted = [UIImage circleButtonWithHighlightedColor: _buttonColor andSize:self.frame.size andShadowHeight:_shadowHeight andCornerRadius:_cornerRadius];
+        buttonNormal = [UIImage circleButtonWithColor:_buttonColor
+                                              andSize:self.frame.size
+                                      andShadowHeight:_shadowHeight
+                                       andShadowColor:_shadowColor
+                                      andCornerRadius:_cornerRadius];
+        
+        buttonHighlighted = [UIImage circleButtonWithHighlightedColor:_buttonColor
+                                                              andSize:self.frame.size
+                                                      andShadowHeight:_shadowHeight
+                                                       andShadowColor:_shadowColor
+                                                      andCornerRadius:_cornerRadius];
     }
     else
     {
         // Rectangular or rounded-corner buttons
-        buttonNormal = [UIImage buttonWithColor: _buttonColor andSize:self.frame.size andShadowHeight:_shadowHeight andCornerRadius:_cornerRadius];
-        buttonHighlighted = [UIImage buttonWithHighlightedColor: _buttonColor andSize:self.frame.size andShadowHeight:_shadowHeight andCornerRadius:_cornerRadius];
+        buttonNormal = [UIImage buttonWithColor:_buttonColor
+                                        andSize:self.frame.size
+                                andShadowHeight:_shadowHeight
+                                 andShadowColor:_shadowColor
+                                andCornerRadius:_cornerRadius];
+        
+        buttonHighlighted = [UIImage buttonWithHighlightedColor:_buttonColor
+                                                        andSize:self.frame.size
+                                                andShadowHeight:_shadowHeight
+                                                 andShadowColor:_shadowColor
+                                                andCornerRadius:_cornerRadius];
     }
     
     [self setBackgroundImage:buttonNormal forState:UIControlStateNormal];
