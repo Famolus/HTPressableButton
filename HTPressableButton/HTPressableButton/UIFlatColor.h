@@ -57,4 +57,7 @@
 + (UIColor *) leadColor;
 + (UIColor *) leadDarkColor;
 
++ (UIColor *) jayColor;
++ (UIColor *) jayDarkColor;
+
 @end

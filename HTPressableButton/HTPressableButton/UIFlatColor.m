@@ -234,4 +234,14 @@
     return UIColorFromRGB(0x434a54);
 }
 
++ (UIColor *) jayColor
+{
+    return UIColorFromRGB(0x00d2ff);
+}
+
++ (UIColor *) jayDarkColor
+{
+    return UIColorFromRGB(0x00a7cc);
+}
+
 @end
