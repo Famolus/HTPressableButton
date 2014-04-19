@@ -68,7 +68,7 @@
     return UIColorFromRGB(0xf1c40f);
 }
 
-// Originally call orangeColor !!
+// Original name: orangeColor
 + (UIColor *) citrusColor
 {
     return UIColorFromRGB(0xf39c12);
@@ -112,6 +112,126 @@
 + (UIColor *) asbestosColor
 {
     return UIColorFromRGB(0x7f8c8d);
+}
+
++ (UIColor *) grapeFruitColor
+{
+    return UIColorFromRGB(0xed5565);
+}
+
++ (UIColor *) grapeFruitDarkColor
+{
+    return UIColorFromRGB(0xda4453);
+}
+
++ (UIColor *) bitterSweetColor
+{
+    return UIColorFromRGB(0xfc6e51);
+}
+
++ (UIColor *) bitterSweetDarkColor
+{
+    return UIColorFromRGB(0xe9573f);
+}
+
++ (UIColor *) lemonColor
+{
+    return UIColorFromRGB(0xffce54);
+}
+
++ (UIColor *) lemonDarkColor
+{
+    return UIColorFromRGB(0xf6bb42);
+}
+
++ (UIColor *) grassColor
+{
+    return UIColorFromRGB(0xa0d468);
+}
+
++ (UIColor *) grassDarkColor
+{
+    return UIColorFromRGB(0x8cc152);
+}
+
++ (UIColor *) mintColor
+{
+    return UIColorFromRGB(0x48cfad);
+}
+
++ (UIColor *) mintDarkColor
+{
+    return UIColorFromRGB(0x37bc98);
+}
+
++ (UIColor *) aquaColor
+{
+    return UIColorFromRGB(0x4fc1e9);
+}
+
++ (UIColor *) aquaDarkColor
+{
+    return UIColorFromRGB(0x3bafda);
+}
+
++ (UIColor *) blueJeansColor
+{
+    return UIColorFromRGB(0x5d9cec);
+}
+
++ (UIColor *) blueJeansDarkColor
+{
+    return UIColorFromRGB(0x4a89dc);
+}
+
++ (UIColor *) lavenderColor
+{
+    return UIColorFromRGB(0xac92ec);
+}
+
++ (UIColor *) lavenderDarkColor
+{
+    return UIColorFromRGB(0x967adc);
+}
+
++ (UIColor *) pinkRoseColor
+{
+    return UIColorFromRGB(0xec87c0);
+}
+
++ (UIColor *) pinkRoseDarkColor
+{
+    return UIColorFromRGB(0xd770ad);
+}
+
++ (UIColor *) ashColor
+{
+    return UIColorFromRGB(0xf5f7fa);
+}
+
++ (UIColor *) ashDarkColor
+{
+    return UIColorFromRGB(0xe6e9ed);
+}
+
++ (UIColor *) mediumColor
+{
+    return UIColorFromRGB(0xccd1d9);
+}
+
++ (UIColor *) mediumDarkColor
+{
+    return UIColorFromRGB(0xaab2bd);
+}
+
++ (UIColor *) leadColor
+{
+    return UIColorFromRGB(0x656d78);
+}
+
++ (UIColor *) leadDarkColor
+{
+    return UIColorFromRGB(0x434a54);
 }
 
 @end

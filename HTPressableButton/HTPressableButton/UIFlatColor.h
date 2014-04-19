@@ -32,4 +32,29 @@
 + (UIColor *) concreteColor;
 + (UIColor *) asbestosColor;
 
++ (UIColor *) grapeFruitColor;
++ (UIColor *) grapeFruitDarkColor;
++ (UIColor *) bitterSweetColor;
++ (UIColor *) bitterSweetDarkColor;
++ (UIColor *) lemonColor;
++ (UIColor *) lemonDarkColor;
++ (UIColor *) grassColor;
++ (UIColor *) grassDarkColor;
++ (UIColor *) mintColor;
++ (UIColor *) mintDarkColor;
++ (UIColor *) aquaColor;
++ (UIColor *) aquaDarkColor;
++ (UIColor *) blueJeansColor;
++ (UIColor *) blueJeansDarkColor;
++ (UIColor *) lavenderColor;
++ (UIColor *) lavenderDarkColor;
++ (UIColor *) pinkRoseColor;
++ (UIColor *) pinkRoseDarkColor;
++ (UIColor *) ashColor;
++ (UIColor *) ashDarkColor;
++ (UIColor *) mediumColor;
++ (UIColor *) mediumDarkColor;
++ (UIColor *) leadColor;
++ (UIColor *) leadDarkColor;
+
 @end

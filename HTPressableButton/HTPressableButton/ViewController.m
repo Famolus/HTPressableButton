@@ -43,8 +43,8 @@
     HTPressableButton *roundedRectButton = [HTPressableButton buttonWithType:UIButtonTypeCustom];
     roundedRectButton.frame = CGRectMake(80, 230, 160, 40);
     roundedRectButton.style = rounded;
-    roundedRectButton.buttonColor = [UIColor amethystColor];
-    //roundedRectButton.shadowHeight = 20.0;
+    roundedRectButton.buttonColor = [UIColor aquaColor];
+    roundedRectButton.shadowColor = [UIColor aquaDarkColor];
     [roundedRectButton setTitle:@"Rounded" forState:UIControlStateNormal];
     [self.view addSubview:roundedRectButton];
     
@@ -52,6 +52,7 @@
     circleButton.frame = CGRectMake(100, 300, 100, 100);
     circleButton.style = circle;
     circleButton.buttonColor = [UIColor sunflowerColor];
+    circleButton.shadowColor = [UIColor citrusColor];
     //circleButton.shadowHeight = 20.0;
     [circleButton setTitle:@"Circle" forState:UIControlStateNormal];
     [self.view addSubview:circleButton];
