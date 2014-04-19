@@ -31,8 +31,7 @@
                                andCornerRadius:(CGFloat) cornerRadius;
 
 + (UIImage *) imageWithColor: (UIColor *) color
-                     andSize: (CGSize) size;
+                     andSize: (CGSize) size
+             andCornerRadius: (CGFloat) cornerRadius;
 
-+ (UIImage *) imageWithRoundedCorners:(float)cornerRadius
-                           usingImage:(UIImage *)original;
 @end
