@@ -61,11 +61,12 @@
     UIImage *buttonHighlightedImage;
     
     UIImage *frontImage = [UIImage imageWithColor:color andSize:size andCornerRadius:cornerRadius];
-    
+    UIImage *backImage = [UIImage imageWithColor:[UIColor redColor] andSize:size andCornerRadius:cornerRadius];
     CGRect rect = CGRectMake(0, 0, frontImage.size.width, frontImage.size.height+shadowHeight);
     
     UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
-    [frontImage drawAtPoint:CGPointMake(0, shadowHeight)];
+    [backImage drawAtPoint:CGPointMake(0, shadowHeight)];
+    [frontImage drawAtPoint:CGPointMake(0, shadowHeight/1.5)];
     buttonHighlightedImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
@@ -82,11 +83,13 @@
     UIImage *buttonHighlightedImage;
     
     UIImage *frontImage = [UIImage imageWithColor:color andSize:size andCornerRadius:cornerRadius];
+    UIImage *backImage = [UIImage imageWithColor:[UIColor redColor] andSize:size andCornerRadius:cornerRadius];
     
     CGRect rect = CGRectMake(0, 0, frontImage.size.width+shadowHeight+shadowHeight/2, frontImage.size.height+shadowHeight+shadowHeight/2);
     
     UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
-    [frontImage drawAtPoint:CGPointMake(shadowHeight/2+2.5, shadowHeight)];
+    [backImage drawAtPoint:CGPointMake(shadowHeight/2+2.5, shadowHeight)];
+    [frontImage drawAtPoint:CGPointMake(shadowHeight/2+2.5, shadowHeight/1.5)];
     buttonHighlightedImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

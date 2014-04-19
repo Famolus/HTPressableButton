@@ -105,7 +105,7 @@
 - (void) setHighlighted:(BOOL)highlighted {
     if (highlighted)
     {
-        [super setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, -(_shadowHeight), 0)];
+        [super setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, -(_shadowHeight/1.5), 0)];
     }
     else
     {
