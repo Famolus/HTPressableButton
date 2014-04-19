@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 He Rin Kim & Thanakron Tandavas. All rights reserved.
 //
 
-#import "NSPressableButton.h"
+#import "HTPressableButton.h"
 #import "UIImageCustom.h"
 
-@implementation NSPressableButton
+@implementation HTPressableButton
 
 - (id)initWithFrame:(CGRect)frame
 {

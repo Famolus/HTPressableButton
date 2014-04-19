@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "NSPressableButton.h"
+#import "HTPressableButton.h"
 #import "UIImageCustom.h"
 #import "UIFlatColor.h"
 
@@ -32,15 +32,15 @@
     
     
     
-    NSPressableButton *rectButton = [NSPressableButton buttonWithType:UIButtonTypeCustom];
+    HTPressableButton *rectButton = [HTPressableButton buttonWithType:UIButtonTypeCustom];
     rectButton.frame = CGRectMake(80, 160, 160, 40);
-    rectButton.buttonColor = [UIColor cyanColor];
+    rectButton.buttonColor = [UIColor peterRiverColor];
     //rectButton.shadowHeight = 20.0;
     rectButton.style = rect;
     [rectButton setTitle:@"Rect" forState:UIControlStateNormal];
     [self.view addSubview:rectButton];
     
-    NSPressableButton *roundedRectButton = [NSPressableButton buttonWithType:UIButtonTypeCustom];
+    HTPressableButton *roundedRectButton = [HTPressableButton buttonWithType:UIButtonTypeCustom];
     roundedRectButton.frame = CGRectMake(80, 230, 160, 40);
     roundedRectButton.style = rounded;
     roundedRectButton.buttonColor = [UIColor amethystColor];
@@ -48,10 +48,10 @@
     [roundedRectButton setTitle:@"Rounded" forState:UIControlStateNormal];
     [self.view addSubview:roundedRectButton];
     
-    NSPressableButton *circleButton = [NSPressableButton buttonWithType:UIButtonTypeCustom];
+    HTPressableButton *circleButton = [HTPressableButton buttonWithType:UIButtonTypeCustom];
     circleButton.frame = CGRectMake(100, 300, 100, 100);
     circleButton.style = circle;
-    circleButton.buttonColor = [UIColor darkGrayColor];
+    circleButton.buttonColor = [UIColor sunflowerColor];
     //circleButton.shadowHeight = 20.0;
     [circleButton setTitle:@"Circle" forState:UIControlStateNormal];
     [self.view addSubview:circleButton];
