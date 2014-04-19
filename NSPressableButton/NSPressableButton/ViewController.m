@@ -43,7 +43,7 @@
     NSPressableButton *roundedRectButton = [NSPressableButton buttonWithType:UIButtonTypeCustom];
     roundedRectButton.frame = CGRectMake(80, 230, 160, 40);
     roundedRectButton.style = rounded;
-    roundedRectButton.buttonColor = [UIColor purpleColor];
+    roundedRectButton.buttonColor = [UIColor amethystColor];
     //roundedRectButton.shadowHeight = 20.0;
     [roundedRectButton setTitle:@"Rounded" forState:UIControlStateNormal];
     [self.view addSubview:roundedRectButton];

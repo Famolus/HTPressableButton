@@ -10,10 +10,10 @@
 
 @interface UIColor (NSPressableButton)
 
-// Thanks to http://designmodo.github.io/Flat-UI/
+// FLAT UI colors by Designmodo. Thanks to http://designmodo.github.io/Flat-UI/
 + (UIColor *) turquoiseColor;
 + (UIColor *) greenSeaColor;
-+ (UIColor *) emerlandColor;
++ (UIColor *) emelaldColor;
 + (UIColor *) nephritisColor;
 + (UIColor *) peterRiverColor;
 + (UIColor *) belizeHoleColor;
@@ -22,7 +22,7 @@
 + (UIColor *) wetAsphaltColor;
 + (UIColor *) midnightBlueColor;
 + (UIColor *) sunflowerColor;
-+ (UIColor *) tangerineColor;
++ (UIColor *) citrusColor;
 + (UIColor *) carrotColor;
 + (UIColor *) pumpkinColor;
 + (UIColor *) alizarinColor;
