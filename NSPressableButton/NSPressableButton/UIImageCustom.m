@@ -15,27 +15,20 @@
               andShadowHeight: (CGFloat) shadowHeight
               andCornerRadius:(CGFloat) cornerRadius
 {
+    UIImage *buttonImage;
+    
     UIImage *frontImage = [UIImage imageWithColor:color andSize:CGSizeMake(size.width, size.height)];
     UIImage *frontImage2 = [UIImage imageWithRoundedCorners:cornerRadius usingImage:frontImage];
     
     UIImage *backImage = [UIImage imageWithColor:[UIColor redColor] andSize:CGSizeMake(size.width, size.height)];
     UIImage *backImage2 = [UIImage imageWithRoundedCorners:cornerRadius usingImage:backImage];
 
-    
-    UIImage *buttonImage;
     CGRect rect = CGRectMake(0, 0, backImage.size.width, backImage.size.height+shadowHeight);
     
-    // Begin context
     UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
-    
-    // draw images
     [backImage2 drawAtPoint:CGPointMake(0, shadowHeight)];
     [frontImage2 drawAtPoint:CGPointMake(0, 0)];
-    
-    // grab context
     buttonImage = UIGraphicsGetImageFromCurrentImageContext();
-    
-    // end context
     UIGraphicsEndImageContext();
 
     return buttonImage;
@@ -46,27 +39,20 @@
               andShadowHeight: (CGFloat) shadowHeight
               andCornerRadius:(CGFloat) cornerRadius
 {
+    UIImage *buttonImage;
+    
     UIImage *frontImage = [UIImage imageWithColor:color andSize:CGSizeMake(size.width, size.height)];
     UIImage *frontImage2 = [UIImage imageWithRoundedCorners:cornerRadius usingImage:frontImage];
     
     UIImage *backImage = [UIImage imageWithColor:[UIColor redColor] andSize:CGSizeMake(size.width, size.height)];
     UIImage *backImage2 = [UIImage imageWithRoundedCorners:cornerRadius usingImage:backImage];
     
-    
-    UIImage *buttonImage;
     CGRect rect = CGRectMake(0, 0, backImage.size.width+shadowHeight+shadowHeight/2, backImage.size.height+shadowHeight+shadowHeight/2);
     
-    // Begin context
     UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
-    
-    // draw images
     [backImage2 drawAtPoint:CGPointMake(shadowHeight/2+2.5, shadowHeight)];
     [frontImage2 drawAtPoint:CGPointMake(shadowHeight/2+2.5, shadowHeight/4)];
-    
-    // grab context
     buttonImage = UIGraphicsGetImageFromCurrentImageContext();
-    
-    // end context
     UIGraphicsEndImageContext();
     
     return buttonImage;
@@ -78,25 +64,17 @@
                          andShadowHeight: (CGFloat) shadowHeight
                          andCornerRadius:(CGFloat) cornerRadius
 {
+    UIImage *buttonHighlightedImage;
+    
     UIImage *frontImage = [UIImage imageWithColor:color andSize:CGSizeMake(size.width, size.height)];
     UIImage *frontImage2 = [UIImage imageWithRoundedCorners:cornerRadius usingImage:frontImage];
     
-    UIImage *buttonHighlightedImage;
     CGRect rect = CGRectMake(0, 0, frontImage.size.width, frontImage.size.height+shadowHeight);
     
-    // Begin context
     UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
-    
-    // draw images
     [frontImage2 drawAtPoint:CGPointMake(0, shadowHeight)];
-    
-    // grab context
     buttonHighlightedImage = UIGraphicsGetImageFromCurrentImageContext();
-    
-    // grab context
     UIGraphicsGetImageFromCurrentImageContext();
-    
-    // end context
     UIGraphicsEndImageContext();
     
     return buttonHighlightedImage;
@@ -108,26 +86,18 @@
                          andShadowHeight: (CGFloat) shadowHeight
                          andCornerRadius:(CGFloat) cornerRadius
 {
+    UIImage *buttonHighlightedImage;
+    
     UIImage *frontImage = [UIImage imageWithColor:color andSize:CGSizeMake(size.width, size.height)];
     UIImage *frontImage2 = [UIImage imageWithRoundedCorners:cornerRadius usingImage:frontImage];
     
-    UIImage *buttonHighlightedImage;
     CGRect rect = CGRectMake(0, 0, frontImage.size.width+shadowHeight+shadowHeight/2, frontImage.size.height+shadowHeight+shadowHeight/2);
     
-    // Begin context
     UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
-    
-    // draw images
     //[backImage2 drawAtPoint:CGPointMake(shadowHeight/2+2.5, shadowHeight)];
     [frontImage2 drawAtPoint:CGPointMake(shadowHeight/2+2.5, shadowHeight)];
-    
-    // grab context
     buttonHighlightedImage = UIGraphicsGetImageFromCurrentImageContext();
-    
-    // grab context
     UIGraphicsGetImageFromCurrentImageContext();
-    
-    // end context
     UIGraphicsEndImageContext();
     
     return buttonHighlightedImage;

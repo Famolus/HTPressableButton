@@ -22,7 +22,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    self.title=@"NSPressableButtons";
+    self.title = @"NSPressableButtons";
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [button setTitle:@"Show View" forState:UIControlStateNormal];
@@ -49,7 +49,7 @@
     [self.view addSubview:roundedRectButton];
     
     NSPressableButton *circleButton = [NSPressableButton buttonWithType:UIButtonTypeCustom];
-    circleButton.frame = CGRectMake(100, 300, 120, 120);
+    circleButton.frame = CGRectMake(100, 300, 100, 100);
     circleButton.style = circle;
     circleButton.buttonColor = [UIColor darkGrayColor];
     //circleButton.shadowHeight = 20.0;
