@@ -98,7 +98,7 @@
  */
 -(void) setDefaultButtonColor
 {
-    _buttonColor = [UIColor cyanColor];
+    _buttonColor = [UIColor jayColor];
 }
 
 /**
@@ -108,8 +108,7 @@
  */
 -(void) setDefaultShadowColor:(UIColor *)shadowColor
 {
-    // Need to replace this
-    _shadowColor = [UIColor alizarinColor];
+    _shadowColor = [UIColor jayDarkColor];
 }
 
 /**

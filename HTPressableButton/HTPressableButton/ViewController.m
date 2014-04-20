@@ -42,8 +42,6 @@
     HTPressableButton *roundedRectButton = [HTPressableButton buttonWithType:UIButtonTypeCustom];
     roundedRectButton.frame = CGRectMake(80, 230, 160, 40);
     roundedRectButton.style = rounded;
-    roundedRectButton.buttonColor = [UIColor aquaColor];
-    roundedRectButton.shadowColor = [UIColor aquaDarkColor];
     [roundedRectButton setTitle:@"Rounded" forState:UIControlStateNormal];
     [self.view addSubview:roundedRectButton];
     

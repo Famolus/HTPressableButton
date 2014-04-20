@@ -241,7 +241,7 @@
 
 + (UIColor *) jayDarkColor
 {
-    return UIColorFromRGB(0x00a7cc);
+    return UIColorFromRGB(0x00b0d6);
 }
 
 @end
