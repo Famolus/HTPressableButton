@@ -24,6 +24,7 @@
 		83A1F50F18FB0C1E00144443 /* NSPressableButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A1F50E18FB0C1E00144443 /* NSPressableButtonTests.m */; };
 		83A1F51A18FB0C6B00144443 /* HTPressableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A1F51918FB0C6B00144443 /* HTPressableButton.m */; };
 		9069580018FEE49B00A2F4C3 /* UIFlatColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 906957FF18FEE49B00A2F4C3 /* UIFlatColor.m */; };
+		90EEC3C11904295000B8B776 /* HTPressableButtonPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EEC3C01904295000B8B776 /* HTPressableButtonPrefs.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		83A1F51918FB0C6B00144443 /* HTPressableButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTPressableButton.m; sourceTree = "<group>"; };
 		906957FE18FEE49B00A2F4C3 /* UIFlatColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIFlatColor.h; sourceTree = "<group>"; };
 		906957FF18FEE49B00A2F4C3 /* UIFlatColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIFlatColor.m; sourceTree = "<group>"; };
+		90EEC3BF1904295000B8B776 /* HTPressableButtonPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTPressableButtonPrefs.h; sourceTree = "<group>"; };
+		90EEC3C01904295000B8B776 /* HTPressableButtonPrefs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTPressableButtonPrefs.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +133,8 @@
 				83A1F51918FB0C6B00144443 /* HTPressableButton.m */,
 				837DE60618FC2BB9009574A8 /* UIImageCustom.h */,
 				837DE60718FC2BB9009574A8 /* UIImageCustom.m */,
+				90EEC3BF1904295000B8B776 /* HTPressableButtonPrefs.h */,
+				90EEC3C01904295000B8B776 /* HTPressableButtonPrefs.m */,
 				906957FE18FEE49B00A2F4C3 /* UIFlatColor.h */,
 				906957FF18FEE49B00A2F4C3 /* UIFlatColor.m */,
 				83A1F4FB18FB0C1E00144443 /* Images.xcassets */,
@@ -269,6 +274,7 @@
 				837DE60818FC2BB9009574A8 /* UIImageCustom.m in Sources */,
 				83A1F4F418FB0C1E00144443 /* AppDelegate.m in Sources */,
 				9069580018FEE49B00A2F4C3 /* UIFlatColor.m in Sources */,
+				90EEC3C11904295000B8B776 /* HTPressableButtonPrefs.m in Sources */,
 				83A1F4F018FB0C1E00144443 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

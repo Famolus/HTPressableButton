@@ -24,7 +24,7 @@ typedef NS_ENUM(NSInteger, UIButtonStyle) {
 /**
  * Button style
  *
- * @param style Choose between: square, rounded, or circle
+ * @remarks Choose between: square, rounded, or circle
  */
 @property(nonatomic, readwrite) UIButtonStyle style;
 

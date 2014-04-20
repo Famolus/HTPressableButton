@@ -9,6 +9,7 @@
 #import "HTPressableButton.h"
 #import "UIImageCustom.h"
 #import "UIFlatColor.h"
+#import "HTPressableButtonPrefs.h"
 
 @implementation HTPressableButton
 
@@ -116,20 +117,37 @@
  */
 -(void) setDefaultShadowHeight
 {
-    _shadowHeight = self.frame.size.height/(self.frame.size.height/10);
+    bool isButtonCircle = (_cornerRadius > 10);
+    if (isButtonCircle)
+    {
+        _shadowHeight = self.frame.size.height * shadowCircleDefaultHeightPercentage;
+    }
+    else
+    {
+        _shadowHeight = self.frame.size.height * shadowDefaultHeightPercentage;
+    }
     [super setTitleEdgeInsets:UIEdgeInsetsMake(0.0f, 0.0f, _shadowHeight, 0.0f)];
 }
 
 /**
- * Set
+ * Override setHighlighted to move text down when pressed
  *
- * @param highlighted
+ * @param highlighted state of the button
  */
 -(void) setHighlighted:(BOOL)highlighted
 {
+    bool isButtonCircle = (_cornerRadius > 10);
     if (highlighted)
     {
-        [super setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, -(_shadowHeight/1.5), 0)];
+        if (isButtonCircle)
+        {
+            [super setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, -((_shadowHeight/4) * shadowOffetWhenPressed), 0)];
+        }
+        else
+        {
+            [super setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, -(_shadowHeight * shadowOffetWhenPressed), 0)];
+        }
+        
     }
     else
     {
@@ -151,7 +169,7 @@
     bool isButtonColorSet = _buttonColor;
     bool isShadowColorSet = _shadowColor;
     bool isShadowHeightSet = _shadowHeight;
-    bool isButtonCircle = false;
+    bool isButtonCircle = (_cornerRadius > 10);
     
     if(!isButtonColorSet)
     {
@@ -168,8 +186,6 @@
         [self setDefaultShadowColor: _buttonColor];
         NSLog(@"Set default button shadow height");
     }
-    
-    isButtonCircle = (_cornerRadius > 10);
     if (isButtonCircle)
     {
         buttonNormal = [UIImage circleButtonWithColor:_buttonColor

@@ -14,6 +14,8 @@
 
 @implementation UIColor (NSPressableButton)
 
+// FLAT UI colors by Designmodo. Thanks to http://designmodo.github.io/Flat-UI/
+#pragma mark - Designmodo color schemes
 + (UIColor *) turquoiseColor
 {
     return UIColorFromRGB(0x1abc9c);
@@ -114,6 +116,7 @@
     return UIColorFromRGB(0x7f8c8d);
 }
 
+#pragma mark - Flat color schemes
 + (UIColor *) grapeFruitColor
 {
     return UIColorFromRGB(0xed5565);
@@ -234,6 +237,7 @@
     return UIColorFromRGB(0x434a54);
 }
 
+#pragma mark - Tandavas color schemes
 + (UIColor *) jayColor
 {
     return UIColorFromRGB(0x00d2ff);

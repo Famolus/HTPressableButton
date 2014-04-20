@@ -11,6 +11,7 @@
 @interface UIColor (NSPressableButton)
 
 // FLAT UI colors by Designmodo. Thanks to http://designmodo.github.io/Flat-UI/
+#pragma mark - Designmodo color schemes
 + (UIColor *) turquoiseColor;
 + (UIColor *) greenSeaColor;
 + (UIColor *) emelaldColor;
@@ -32,6 +33,7 @@
 + (UIColor *) concreteColor;
 + (UIColor *) asbestosColor;
 
+#pragma mark - Flat color schemes
 + (UIColor *) grapeFruitColor;
 + (UIColor *) grapeFruitDarkColor;
 + (UIColor *) bitterSweetColor;
@@ -57,6 +59,7 @@
 + (UIColor *) leadColor;
 + (UIColor *) leadDarkColor;
 
+#pragma mark - Tandavas color schemes
 + (UIColor *) jayColor;
 + (UIColor *) jayDarkColor;
 

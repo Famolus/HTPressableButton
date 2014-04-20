@@ -30,26 +30,28 @@
     button.layer.borderWidth = 1;
     [self.view addSubview:button];
     
-    
+    // Grape Fruit color
     HTPressableButton *rectButton = [HTPressableButton buttonWithType:UIButtonTypeCustom];
-    rectButton.frame = CGRectMake(80, 160, 160, 40);
-    rectButton.buttonColor = [UIColor peterRiverColor];
-    //rectButton.shadowHeight = 20.0;
+    rectButton.frame = CGRectMake(30, 150, 260, 50);
+    rectButton.buttonColor = [UIColor grapeFruitColor];
+    rectButton.shadowColor = [UIColor grapeFruitDarkColor];
     rectButton.style = rect;
     [rectButton setTitle:@"Rect" forState:UIControlStateNormal];
     [self.view addSubview:rectButton];
     
+    // Default color
     HTPressableButton *roundedRectButton = [HTPressableButton buttonWithType:UIButtonTypeCustom];
-    roundedRectButton.frame = CGRectMake(80, 230, 160, 40);
+    roundedRectButton.frame = CGRectMake(30, 230, 260, 50);
     roundedRectButton.style = rounded;
     [roundedRectButton setTitle:@"Rounded" forState:UIControlStateNormal];
     [self.view addSubview:roundedRectButton];
     
+    // Mint color
     HTPressableButton *circleButton = [HTPressableButton buttonWithType:UIButtonTypeCustom];
-    circleButton.frame = CGRectMake(100, 300, 100, 100);
+    circleButton.frame = CGRectMake(110, 300, 100, 100);
     circleButton.style = circle;
-    circleButton.buttonColor = [UIColor sunflowerColor];
-    circleButton.shadowColor = [UIColor citrusColor];
+    circleButton.buttonColor = [UIColor mintColor];
+    circleButton.shadowColor = [UIColor mintDarkColor];
     //circleButton.shadowHeight = 20.0;
     [circleButton setTitle:@"Circle" forState:UIControlStateNormal];
     [self.view addSubview:circleButton];
