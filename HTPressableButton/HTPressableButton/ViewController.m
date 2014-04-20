@@ -31,7 +31,6 @@
     [self.view addSubview:button];
     
     
-    
     HTPressableButton *rectButton = [HTPressableButton buttonWithType:UIButtonTypeCustom];
     rectButton.frame = CGRectMake(80, 160, 160, 40);
     rectButton.buttonColor = [UIColor peterRiverColor];

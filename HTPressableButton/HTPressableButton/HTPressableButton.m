@@ -12,19 +12,26 @@
 
 @implementation HTPressableButton
 
+#pragma mark - Init
+/**
+ * Initialize a button
+ *
+ * @param frame Position and size of the button
+ */
 - (id)initWithFrame:(CGRect)frame
 {
     NSLog(@"INIT");
     self = [super initWithFrame:frame];
-    if (self) {
+    if (self)
+    {
         // Initialization code
-            }
+    }
     return self;
 }
 
+#pragma mark - Set Button Style
 /**
  * Set button color
- * @author
  *
  * @param buttonColor color of the button
  */
@@ -37,7 +44,6 @@
 
 /**
  * Set button shadow color
- * @author
  *
  * @param shadowColor color of the shadow
  */
@@ -49,10 +55,9 @@
 
 
 /**
- * Set the height of the shadow
- * @author
+ * Set the shape of the button
  *
- * @param shadowHeight height of the shadow
+ * @param style UIButtonStyle of the button
  */
 -(void) setShadowHeight:(CGFloat)shadowHeight
 {
@@ -63,7 +68,6 @@
 
 /**
  * Set the shape of the button
- * @author
  *
  * @param style UIButtonStyle of the button
  */
@@ -88,24 +92,42 @@
     [self createButton];
 }
 
+#pragma mark - Set Button Default Style
+/**
+ * Set default button color
+ */
 -(void) setDefaultButtonColor
 {
     _buttonColor = [UIColor cyanColor];
 }
 
--(void) setDefaultShadowColor:(UIColor *)buttonColor
+/**
+ * Set default shadow color
+ *
+ * @param shadowColor color of the shadow
+ */
+-(void) setDefaultShadowColor:(UIColor *)shadowColor
 {
-    // Still need to implement an algorithm for this
+    // Need to replace this
     _shadowColor = [UIColor alizarinColor];
 }
 
+/**
+ * Set default shadow height
+ */
 -(void) setDefaultShadowHeight
 {
     _shadowHeight = self.frame.size.height/(self.frame.size.height/10);
     [super setTitleEdgeInsets:UIEdgeInsetsMake(0.0f, 0.0f, _shadowHeight, 0.0f)];
 }
 
-- (void) setHighlighted:(BOOL)highlighted {
+/**
+ * Set
+ *
+ * @param highlighted
+ */
+-(void) setHighlighted:(BOOL)highlighted
+{
     if (highlighted)
     {
         [super setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, -(_shadowHeight/1.5), 0)];
@@ -117,6 +139,10 @@
     [super setHighlighted:highlighted];
 }
 
+#pragma mark - Create Button
+/**
+ * Create button
+ */
 -(void) createButton
 {
     NSLog(@"in NSPRESS");
@@ -174,9 +200,8 @@
                                                  andShadowColor:_shadowColor
                                                 andCornerRadius:_cornerRadius];
     }
-    
     [self setBackgroundImage:buttonNormal forState:UIControlStateNormal];
     [self setBackgroundImage:buttonHighlighted forState:UIControlStateHighlighted];
-
 }
+
 @end

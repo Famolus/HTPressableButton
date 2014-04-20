@@ -22,10 +22,28 @@ typedef NS_ENUM(NSInteger, UIButtonStyle) {
 @property(nonatomic, readwrite) CGFloat cornerRadius UI_APPEARANCE_SELECTOR;
 
 /**
- * Set button style
+ * Button style
  *
  * @param style Choose between: square, rounded, or circle
  */
 @property(nonatomic, readwrite) UIButtonStyle style;
+
+#pragma mark - Init
+- (id)initWithFrame:(CGRect)frame;
+
+#pragma mark - Set Button Style
+-(void) setButtonColor:(UIColor *)buttonColor;
+-(void) setShadowColor:(UIColor *)shadowColor;
+-(void) setShadowHeight:(CGFloat)shadowHeight;
+-(void) setStyle:(UIButtonStyle) style;
+
+#pragma mark - Set Button Default Style
+-(void) setDefaultButtonColor;
+-(void) setDefaultShadowColor:(UIColor *)buttonColor;
+-(void) setDefaultShadowHeight;
+-(void) setHighlighted:(BOOL)highlighted;
+
+#pragma mark - Create Button
+-(void) createButton;
 
 @end
