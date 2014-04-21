@@ -8,8 +8,8 @@
 
 #import "ViewController.h"
 #import "HTPressableButton.h"
-#import "UIImageCustom.h"
-#import "UIFlatColor.h"
+#import "UIImage+HTButton.h"
+#import "UIColor+HTColor.h"
 
 @interface ViewController ()
 
@@ -53,12 +53,8 @@
     circleButton.style = circle;
     circleButton.buttonColor = [UIColor mintColor];
     circleButton.shadowColor = [UIColor mintDarkColor];
-    //circleButton.shadowHeight = 20.0;
     [circleButton setTitle:@"Circle" forState:UIControlStateNormal];
     [self.view addSubview:circleButton];
-
-    
-    NSLog(@"in VIEW");
 
 }
 

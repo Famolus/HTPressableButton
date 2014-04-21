@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIColor (NSPressableButton)
+@interface UIColor (HTColor)
 
 // FLAT UI colors by Designmodo. Thanks to http://designmodo.github.io/Flat-UI/
 #pragma mark - Designmodo color schemes

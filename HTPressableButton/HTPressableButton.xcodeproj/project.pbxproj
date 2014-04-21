@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		837DE60818FC2BB9009574A8 /* UIImageCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 837DE60718FC2BB9009574A8 /* UIImageCustom.m */; };
+		837DE60818FC2BB9009574A8 /* UIImage+HTButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 837DE60718FC2BB9009574A8 /* UIImage+HTButton.m */; };
 		8380AF691902CAD2008E3EEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A1F4F518FB0C1E00144443 /* Main.storyboard */; };
 		83A1F4E418FB0C1E00144443 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A1F4E318FB0C1E00144443 /* Foundation.framework */; };
 		83A1F4E618FB0C1E00144443 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A1F4E518FB0C1E00144443 /* CoreGraphics.framework */; };
@@ -23,7 +23,7 @@
 		83A1F50D18FB0C1E00144443 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83A1F50B18FB0C1E00144443 /* InfoPlist.strings */; };
 		83A1F50F18FB0C1E00144443 /* NSPressableButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A1F50E18FB0C1E00144443 /* NSPressableButtonTests.m */; };
 		83A1F51A18FB0C6B00144443 /* HTPressableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A1F51918FB0C6B00144443 /* HTPressableButton.m */; };
-		9069580018FEE49B00A2F4C3 /* UIFlatColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 906957FF18FEE49B00A2F4C3 /* UIFlatColor.m */; };
+		9069580018FEE49B00A2F4C3 /* UIColor+HTColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 906957FF18FEE49B00A2F4C3 /* UIColor+HTColor.m */; };
 		90EEC3C11904295000B8B776 /* HTPressableButtonPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EEC3C01904295000B8B776 /* HTPressableButtonPrefs.m */; };
 /* End PBXBuildFile section */
 
@@ -38,8 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		837DE60618FC2BB9009574A8 /* UIImageCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageCustom.h; sourceTree = "<group>"; };
-		837DE60718FC2BB9009574A8 /* UIImageCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageCustom.m; sourceTree = "<group>"; };
+		837DE60618FC2BB9009574A8 /* UIImage+HTButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+HTButton.h"; sourceTree = "<group>"; };
+		837DE60718FC2BB9009574A8 /* UIImage+HTButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HTButton.m"; sourceTree = "<group>"; };
 		83A1F4E018FB0C1E00144443 /* HTPressableButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HTPressableButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A1F4E318FB0C1E00144443 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		83A1F4E518FB0C1E00144443 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,8 +61,8 @@
 		83A1F50E18FB0C1E00144443 /* NSPressableButtonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSPressableButtonTests.m; sourceTree = "<group>"; };
 		83A1F51818FB0C6B00144443 /* HTPressableButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTPressableButton.h; sourceTree = "<group>"; };
 		83A1F51918FB0C6B00144443 /* HTPressableButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTPressableButton.m; sourceTree = "<group>"; };
-		906957FE18FEE49B00A2F4C3 /* UIFlatColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIFlatColor.h; sourceTree = "<group>"; };
-		906957FF18FEE49B00A2F4C3 /* UIFlatColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIFlatColor.m; sourceTree = "<group>"; };
+		906957FE18FEE49B00A2F4C3 /* UIColor+HTColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HTColor.h"; sourceTree = "<group>"; };
+		906957FF18FEE49B00A2F4C3 /* UIColor+HTColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HTColor.m"; sourceTree = "<group>"; };
 		90EEC3BF1904295000B8B776 /* HTPressableButtonPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTPressableButtonPrefs.h; sourceTree = "<group>"; };
 		90EEC3C01904295000B8B776 /* HTPressableButtonPrefs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTPressableButtonPrefs.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,12 +131,12 @@
 				83A1F4F918FB0C1E00144443 /* ViewController.m */,
 				83A1F51818FB0C6B00144443 /* HTPressableButton.h */,
 				83A1F51918FB0C6B00144443 /* HTPressableButton.m */,
-				837DE60618FC2BB9009574A8 /* UIImageCustom.h */,
-				837DE60718FC2BB9009574A8 /* UIImageCustom.m */,
+				837DE60618FC2BB9009574A8 /* UIImage+HTButton.h */,
+				837DE60718FC2BB9009574A8 /* UIImage+HTButton.m */,
 				90EEC3BF1904295000B8B776 /* HTPressableButtonPrefs.h */,
 				90EEC3C01904295000B8B776 /* HTPressableButtonPrefs.m */,
-				906957FE18FEE49B00A2F4C3 /* UIFlatColor.h */,
-				906957FF18FEE49B00A2F4C3 /* UIFlatColor.m */,
+				906957FE18FEE49B00A2F4C3 /* UIColor+HTColor.h */,
+				906957FF18FEE49B00A2F4C3 /* UIColor+HTColor.m */,
 				83A1F4FB18FB0C1E00144443 /* Images.xcassets */,
 				83A1F4EA18FB0C1E00144443 /* Supporting Files */,
 			);
@@ -271,9 +271,9 @@
 			files = (
 				83A1F51A18FB0C6B00144443 /* HTPressableButton.m in Sources */,
 				83A1F4FA18FB0C1E00144443 /* ViewController.m in Sources */,
-				837DE60818FC2BB9009574A8 /* UIImageCustom.m in Sources */,
+				837DE60818FC2BB9009574A8 /* UIImage+HTButton.m in Sources */,
 				83A1F4F418FB0C1E00144443 /* AppDelegate.m in Sources */,
-				9069580018FEE49B00A2F4C3 /* UIFlatColor.m in Sources */,
+				9069580018FEE49B00A2F4C3 /* UIColor+HTColor.m in Sources */,
 				90EEC3C11904295000B8B776 /* HTPressableButtonPrefs.m in Sources */,
 				83A1F4F018FB0C1E00144443 /* main.m in Sources */,
 			);

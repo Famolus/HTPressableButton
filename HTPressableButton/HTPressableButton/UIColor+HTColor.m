@@ -10,9 +10,9 @@
 // Thanks to http://stackoverflow.com/a/3532264/1031955
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
-#import "UIFlatColor.h"
+#import "UIColor+HTColor.h"
 
-@implementation UIColor (NSPressableButton)
+@implementation UIColor (HTColor)
 
 // FLAT UI colors by Designmodo. Thanks to http://designmodo.github.io/Flat-UI/
 #pragma mark - Designmodo color schemes

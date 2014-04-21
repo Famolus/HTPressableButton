@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIImage (NSPressableButton)
+@interface UIImage (HTButton)
 
 + (UIImage *) buttonWithColor: (UIColor *) buttonColor
                       andSize: (CGSize) size

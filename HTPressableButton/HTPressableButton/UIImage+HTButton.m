@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 He Rin Kim & Thanakron Tandavas. All rights reserved.
 //
 
-#import "UIImageCustom.h"
+#import "UIImage+HTButton.h"
 #import "HTPressableButtonPrefs.h"
 
-@implementation UIImage (NSPressableButton)
+@implementation UIImage (HTButton)
 
 + (UIImage *) buttonWithColor: (UIColor *) buttonColor
                       andSize: (CGSize) size

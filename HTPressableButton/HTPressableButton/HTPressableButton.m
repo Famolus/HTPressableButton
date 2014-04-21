@@ -7,8 +7,8 @@
 //
 
 #import "HTPressableButton.h"
-#import "UIImageCustom.h"
-#import "UIFlatColor.h"
+#import "UIImage+HTButton.h"
+#import "UIColor+HTColor.h"
 #import "HTPressableButtonPrefs.h"
 
 @implementation HTPressableButton
@@ -21,7 +21,6 @@
  */
 - (id)initWithFrame:(CGRect)frame
 {
-    NSLog(@"INIT");
     self = [super initWithFrame:frame];
     if (self)
     {
@@ -38,7 +37,6 @@
  */
 -(void) setButtonColor:(UIColor *)buttonColor
 {
-    NSLog(@"in COLOR");
     _buttonColor = buttonColor;
     [self createButton];
 }
@@ -162,7 +160,7 @@
  */
 -(void) createButton
 {
-    NSLog(@"in NSPRESS");
+    [self.titleLabel setFont:[UIFont fontWithName:@"Avenir" size:18]];
     
     UIImage *buttonNormal;
     UIImage *buttonHighlighted;
