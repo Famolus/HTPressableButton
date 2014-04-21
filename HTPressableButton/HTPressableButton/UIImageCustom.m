@@ -19,11 +19,14 @@
 {
     UIImage *buttonImage;
     
+    //button color
     UIImage *frontImage = [UIImage imageWithColor:buttonColor andSize:size andCornerRadius:cornerRadius];
+    //button's shadow color
     UIImage *backImage = [UIImage imageWithColor:shadowColor andSize:size andCornerRadius:cornerRadius];
 
     CGRect rect = CGRectMake(0, 0, backImage.size.width, backImage.size.height + shadowHeight);
     
+    //Draw button's shadow first (behind) a little lower
     UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
     [backImage drawAtPoint:CGPointMake(0, shadowHeight)];
     [frontImage drawAtPoint:CGPointMake(0, 0)];
@@ -43,8 +46,10 @@
     
     UIImage *frontImage = [UIImage imageWithColor:buttonColor andSize:size andCornerRadius:cornerRadius];
     UIImage *backImage = [UIImage imageWithColor:shadowColor andSize:size andCornerRadius:cornerRadius];
+    
     CGRect rect = CGRectMake(0, 0, frontImage.size.width, frontImage.size.height + shadowHeight);
     
+    //Button's shadow stays at the same place but the button is moved a little down (shadowOffsetWhenPressed) in highlighted state
     UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
     [backImage drawAtPoint:CGPointMake(0, shadowHeight)];
     [frontImage drawAtPoint:CGPointMake(0, shadowHeight * shadowOffetWhenPressed)];
@@ -67,11 +72,13 @@
     UIImage *frontImage = [UIImage imageWithColor:buttonColor andSize:size andCornerRadius:cornerRadius];
     UIImage *backImage = [UIImage imageWithColor:shadowColor andSize:size andCornerRadius:cornerRadius];
     
+    //Make the rectangle a little bigger than the button
     CGRect rect = CGRectMake(0,
                              0,
                              backImage.size.width + shadowHeight + (shadowHeight/2),
                              backImage.size.height + shadowHeight + (shadowHeight/2));
     
+    //Both images are moved away from the borders to show the circle shape (round)
     UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
     [backImage drawAtPoint:CGPointMake((shadowHeight/2) + 2.5, shadowHeight)];
     [frontImage drawAtPoint:CGPointMake((shadowHeight/2) + 2.5, shadowHeight/4)];
@@ -113,6 +120,7 @@
                      andSize: (CGSize) size
              andCornerRadius: (CGFloat) cornerRadius
 {
+    //Draw the image according to the size and color
     CGRect rect = CGRectMake(0, 0, size.width, size.height);
     UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
     CGContextRef context = UIGraphicsGetCurrentContext();
@@ -123,7 +131,7 @@
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    //Round the image
+    //Round the image above according to cornerRadius
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
     
     UIGraphicsBeginImageContextWithOptions(imageView.bounds.size, NO, 1.0);

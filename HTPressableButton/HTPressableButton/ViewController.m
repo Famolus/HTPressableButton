@@ -22,7 +22,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    self.title = @"NSPressableButtons";
+    self.title = @"HTPressableButtons";
+    self.view.backgroundColor = [UIColor cloudsColor];
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [button setTitle:@"Show View" forState:UIControlStateNormal];

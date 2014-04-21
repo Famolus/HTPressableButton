@@ -9,5 +9,6 @@
 #import "HTPressableButtonPrefs.h"
 
 const float shadowDefaultHeightPercentage = 0.17;
-const float shadowCircleDefaultHeightPercentage = shadowDefaultHeightPercentage * 0.6; //60% from default shadow height
+//60% from default shadow height
+const float shadowCircleDefaultHeightPercentage = shadowDefaultHeightPercentage * 0.6;
 const float shadowOffetWhenPressed = 0.7;
