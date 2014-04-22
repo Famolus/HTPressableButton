@@ -164,6 +164,7 @@
     
     UIImage *buttonNormal;
     UIImage *buttonHighlighted;
+    UIImage *buttonDisabled;
     bool isButtonColorSet = _buttonColor;
     bool isShadowColorSet = _shadowColor;
     bool isShadowHeightSet = _shadowHeight;
@@ -197,6 +198,7 @@
                                                       andShadowHeight:_shadowHeight
                                                        andShadowColor:_shadowColor
                                                       andCornerRadius:_cornerRadius];
+        buttonDisabled = [UIImage circleButtonWithColor:[UIColor mediumColor] andSize:self.frame.size andShadowHeight:_shadowHeight andShadowColor:[UIColor mediumDarkColor] andCornerRadius:_cornerRadius];
     }
     else
     {
@@ -213,8 +215,10 @@
                                                  andShadowColor:_shadowColor
                                                 andCornerRadius:_cornerRadius];
     }
+    
     [self setBackgroundImage:buttonNormal forState:UIControlStateNormal];
     [self setBackgroundImage:buttonHighlighted forState:UIControlStateHighlighted];
+    //[self setBackgroundImage:buttonDisabled forState:UIControlStateDisabled];
 }
 
 @end
