@@ -20,8 +20,6 @@
 		83A1F50318FB0C1E00144443 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A1F50218FB0C1E00144443 /* XCTest.framework */; };
 		83A1F50418FB0C1E00144443 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A1F4E318FB0C1E00144443 /* Foundation.framework */; };
 		83A1F50518FB0C1E00144443 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A1F4E718FB0C1E00144443 /* UIKit.framework */; };
-		83A1F50D18FB0C1E00144443 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83A1F50B18FB0C1E00144443 /* InfoPlist.strings */; };
-		83A1F50F18FB0C1E00144443 /* NSPressableButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A1F50E18FB0C1E00144443 /* NSPressableButtonTests.m */; };
 		83A1F51A18FB0C6B00144443 /* HTPressableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A1F51918FB0C6B00144443 /* HTPressableButton.m */; };
 		9069580018FEE49B00A2F4C3 /* UIColor+HTColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 906957FF18FEE49B00A2F4C3 /* UIColor+HTColor.m */; };
 		90EEC3C11904295000B8B776 /* HTPressableButtonPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EEC3C01904295000B8B776 /* HTPressableButtonPrefs.m */; };
@@ -38,8 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		837DE60618FC2BB9009574A8 /* UIImage+HTButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+HTButton.h"; sourceTree = "<group>"; };
-		837DE60718FC2BB9009574A8 /* UIImage+HTButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HTButton.m"; sourceTree = "<group>"; };
+		837DE60618FC2BB9009574A8 /* UIImage+HTButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+HTButton.h"; path = "../../Classes/UIImage+HTButton.h"; sourceTree = "<group>"; };
+		837DE60718FC2BB9009574A8 /* UIImage+HTButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+HTButton.m"; path = "../../Classes/UIImage+HTButton.m"; sourceTree = "<group>"; };
 		83A1F4E018FB0C1E00144443 /* HTPressableButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HTPressableButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A1F4E318FB0C1E00144443 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		83A1F4E518FB0C1E00144443 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,15 +54,12 @@
 		83A1F4FB18FB0C1E00144443 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		83A1F50118FB0C1E00144443 /* HTPressableButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTPressableButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A1F50218FB0C1E00144443 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		83A1F50A18FB0C1E00144443 /* HTPressableButtonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HTPressableButtonTests-Info.plist"; sourceTree = "<group>"; };
-		83A1F50C18FB0C1E00144443 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		83A1F50E18FB0C1E00144443 /* NSPressableButtonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSPressableButtonTests.m; sourceTree = "<group>"; };
-		83A1F51818FB0C6B00144443 /* HTPressableButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTPressableButton.h; sourceTree = "<group>"; };
-		83A1F51918FB0C6B00144443 /* HTPressableButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTPressableButton.m; sourceTree = "<group>"; };
-		906957FE18FEE49B00A2F4C3 /* UIColor+HTColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HTColor.h"; sourceTree = "<group>"; };
-		906957FF18FEE49B00A2F4C3 /* UIColor+HTColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HTColor.m"; sourceTree = "<group>"; };
-		90EEC3BF1904295000B8B776 /* HTPressableButtonPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTPressableButtonPrefs.h; sourceTree = "<group>"; };
-		90EEC3C01904295000B8B776 /* HTPressableButtonPrefs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTPressableButtonPrefs.m; sourceTree = "<group>"; };
+		83A1F51818FB0C6B00144443 /* HTPressableButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTPressableButton.h; path = ../../Classes/HTPressableButton.h; sourceTree = "<group>"; };
+		83A1F51918FB0C6B00144443 /* HTPressableButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTPressableButton.m; path = ../../Classes/HTPressableButton.m; sourceTree = "<group>"; };
+		906957FE18FEE49B00A2F4C3 /* UIColor+HTColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+HTColor.h"; path = "../../Classes/UIColor+HTColor.h"; sourceTree = "<group>"; };
+		906957FF18FEE49B00A2F4C3 /* UIColor+HTColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+HTColor.m"; path = "../../Classes/UIColor+HTColor.m"; sourceTree = "<group>"; };
+		90EEC3BF1904295000B8B776 /* HTPressableButtonPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTPressableButtonPrefs.h; path = ../../Classes/HTPressableButtonPrefs.h; sourceTree = "<group>"; };
+		90EEC3C01904295000B8B776 /* HTPressableButtonPrefs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTPressableButtonPrefs.m; path = ../../Classes/HTPressableButtonPrefs.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,11 +86,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83127B301909176800B29F16 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				83A1F51818FB0C6B00144443 /* HTPressableButton.h */,
+				83A1F51918FB0C6B00144443 /* HTPressableButton.m */,
+				837DE60618FC2BB9009574A8 /* UIImage+HTButton.h */,
+				837DE60718FC2BB9009574A8 /* UIImage+HTButton.m */,
+				90EEC3BF1904295000B8B776 /* HTPressableButtonPrefs.h */,
+				90EEC3C01904295000B8B776 /* HTPressableButtonPrefs.m */,
+				906957FE18FEE49B00A2F4C3 /* UIColor+HTColor.h */,
+				906957FF18FEE49B00A2F4C3 /* UIColor+HTColor.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		83A1F4D718FB0C1E00144443 = {
 			isa = PBXGroup;
 			children = (
 				83A1F4E918FB0C1E00144443 /* HTPressableButton */,
-				83A1F50818FB0C1E00144443 /* HTPressableButtonTests */,
 				83A1F4E218FB0C1E00144443 /* Frameworks */,
 				83A1F4E118FB0C1E00144443 /* Products */,
 			);
@@ -129,14 +138,7 @@
 				83A1F4F518FB0C1E00144443 /* Main.storyboard */,
 				83A1F4F818FB0C1E00144443 /* ViewController.h */,
 				83A1F4F918FB0C1E00144443 /* ViewController.m */,
-				83A1F51818FB0C6B00144443 /* HTPressableButton.h */,
-				83A1F51918FB0C6B00144443 /* HTPressableButton.m */,
-				837DE60618FC2BB9009574A8 /* UIImage+HTButton.h */,
-				837DE60718FC2BB9009574A8 /* UIImage+HTButton.m */,
-				90EEC3BF1904295000B8B776 /* HTPressableButtonPrefs.h */,
-				90EEC3C01904295000B8B776 /* HTPressableButtonPrefs.m */,
-				906957FE18FEE49B00A2F4C3 /* UIColor+HTColor.h */,
-				906957FF18FEE49B00A2F4C3 /* UIColor+HTColor.m */,
+				83127B301909176800B29F16 /* Classes */,
 				83A1F4FB18FB0C1E00144443 /* Images.xcassets */,
 				83A1F4EA18FB0C1E00144443 /* Supporting Files */,
 			);
@@ -150,24 +152,6 @@
 				83A1F4EC18FB0C1E00144443 /* InfoPlist.strings */,
 				83A1F4EF18FB0C1E00144443 /* main.m */,
 				83A1F4F118FB0C1E00144443 /* HTPressableButton-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		83A1F50818FB0C1E00144443 /* HTPressableButtonTests */ = {
-			isa = PBXGroup;
-			children = (
-				83A1F50E18FB0C1E00144443 /* NSPressableButtonTests.m */,
-				83A1F50918FB0C1E00144443 /* Supporting Files */,
-			);
-			path = HTPressableButtonTests;
-			sourceTree = "<group>";
-		};
-		83A1F50918FB0C1E00144443 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				83A1F50A18FB0C1E00144443 /* HTPressableButtonTests-Info.plist */,
-				83A1F50B18FB0C1E00144443 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -258,7 +242,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83A1F50D18FB0C1E00144443 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +266,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83A1F50F18FB0C1E00144443 /* NSPressableButtonTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,14 +294,6 @@
 				83A1F4F618FB0C1E00144443 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		83A1F50B18FB0C1E00144443 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				83A1F50C18FB0C1E00144443 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

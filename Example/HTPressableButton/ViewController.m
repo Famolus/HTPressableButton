@@ -1,6 +1,6 @@
 //
 //  ViewController.m
-//  NSPressableButton
+//  HTPressableButton
 //
 //  Created by He Rin Kim on 4/14/14.
 //  Copyright (c) 2014 He Rin Kim & Thanakron Tandavas. All rights reserved.
@@ -8,7 +8,6 @@
 
 #import "ViewController.h"
 #import "HTPressableButton.h"
-#import "UIImage+HTButton.h"
 #import "UIColor+HTColor.h"
 
 @interface ViewController ()
@@ -45,7 +44,6 @@
     roundedRectButton.frame = CGRectMake(30, 230, 260, 50);
     roundedRectButton.style = rounded;
     [roundedRectButton setTitle:@"Rounded" forState:UIControlStateNormal];
-    roundedRectButton.enabled=NO;
     [self.view addSubview:roundedRectButton];
     
     // Circle mint color button
@@ -55,7 +53,6 @@
     circleButton.buttonColor = [UIColor mintColor];
     circleButton.shadowColor = [UIColor mintDarkColor];
     [circleButton setTitle:@"Circle" forState:UIControlStateNormal];
-    circleButton.enabled =NO;
     [self.view addSubview:circleButton];
 
 }

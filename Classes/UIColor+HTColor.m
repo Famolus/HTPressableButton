@@ -1,6 +1,6 @@
 //
-//  UIFlatColor.m
-//  NSPressableButton
+//  UIColor+HTColor.m
+//  HTPressableButton
 //
 //  Created by Thanakron Tandavas on 4/16/2557 BE.
 //  Copyright (c) 2557 He Rin Kim & Thanakron Tandavas. All rights reserved.
