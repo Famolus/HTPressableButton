@@ -35,7 +35,7 @@ Components
     [self.view addSubview:rectButton];
 ```
 
-![HTPressableButton](https://github.com/herinkc/HTPressableButton/blob/master/READMEImages/RectButtonImage.gif)
+![HTPressableButton](https://raw.githubusercontent.com/herinkc/HTPressableButton/master/READMEImages/RectButtonImage.gif?token=3966522__eyJzY29wZSI6IlJhd0Jsb2I6aGVyaW5rYy9IVFByZXNzYWJsZUJ1dHRvbi9tYXN0ZXIvUkVBRE1FSW1hZ2VzL1JlY3RCdXR0b25JbWFnZS5naWYiLCJleHBpcmVzIjoxMzk4OTY0NDg0fQ%3D%3D--f8882a05961b42509cb76cadc33bff716248e584)
 
 
 ###Rounded Rectangle Button
@@ -47,7 +47,7 @@ Components
     [self.view addSubview:roundedRectButton];
 ```
 
-![HTPressableButton](https://github.com/herinkc/HTPressableButton/blob/master/READMEImages/RoundedRectButtonImage.gif)
+![HTPressableButton](https://raw.githubusercontent.com/herinkc/HTPressableButton/master/READMEImages/RoundedRectButtonImage.gif?token=3966522__eyJzY29wZSI6IlJhd0Jsb2I6aGVyaW5rYy9IVFByZXNzYWJsZUJ1dHRvbi9tYXN0ZXIvUkVBRE1FSW1hZ2VzL1JvdW5kZWRSZWN0QnV0dG9uSW1hZ2UuZ2lmIiwiZXhwaXJlcyI6MTM5ODk2NDYzMn0%3D--4049b9f971c220426b67c8e6b812d6a163a04e8a)
 
 
 ###Circle Button
@@ -61,7 +61,7 @@ Components
     [self.view addSubview:circleButton];
 ```
 
-![HTPressableButton](https://github.com/herinkc/HTPressableButton/blob/master/READMEImages/CircleButtonImage.gif)
+![HTPressableButton](https://raw.githubusercontent.com/herinkc/HTPressableButton/master/READMEImages/CircleButtonImage.gif?token=3966522__eyJzY29wZSI6IlJhd0Jsb2I6aGVyaW5rYy9IVFByZXNzYWJsZUJ1dHRvbi9tYXN0ZXIvUkVBRE1FSW1hZ2VzL0NpcmNsZUJ1dHRvbkltYWdlLmdpZiIsImV4cGlyZXMiOjEzOTg5NjQ2MTN9--c1d65c71dbeed8a9f83db8073114f06caef80e53)
 
 
 **NOTE:** If you do not choose *button.style*, the default will be a rectangle button.
