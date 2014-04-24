@@ -13,6 +13,14 @@ pod 'HTPressableButton'
 
 Another option is to use git submodules or just [download it](https://github.com/Grouper/FlatUIKit/archive/master.zip) and include it in your project manually.
 
+**NOTE:** Please be reminded to add the header file when implementing
+
+```objective-c
+#import "HTPressableButton.h"
+#import "UIColor+HTColor.h"
+```
+
+The second header file is not needed if you do not wish to use the Flat UI colors provided, but only use the default UIColors given by Apple.
 
 Components
 -------------------
@@ -26,6 +34,10 @@ Components
     [rectButton setTitle:@"Rect" forState:UIControlStateNormal];
     [self.view addSubview:rectButton];
 ```
+
+![HTPressableButton](https://github.com/herinkc/READMEImages/RectButtonImage.gif)
+
+
 ###Rounded Rectangle Button
 ```objective-c
     HTPressableButton *roundedRectButton = [HTPressableButton buttonWithType:UIButtonTypeCustom];
@@ -34,6 +46,10 @@ Components
     [roundedRectButton setTitle:@"Rounded" forState:UIControlStateNormal];
     [self.view addSubview:roundedRectButton];
 ```
+
+![HTPressableButton](https://github.com/herinkc/READMEImages/RoundedRectButtonImage.gif)
+
+
 ###Circle Button
 ```objective-c
     HTPressableButton *circleButton = [HTPressableButton buttonWithType:UIButtonTypeCustom];
@@ -45,6 +61,10 @@ Components
     [self.view addSubview:circleButton];
 ```
 
+![HTPressableButton](https://github.com/herinkc/READMEImages/CircleButtonImage.gif)
+
+
+**NOTE:** If you do not choose *button.style*, the default will be a rectangle button.
 
 
 License
