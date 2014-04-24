@@ -35,7 +35,7 @@ Components
     [self.view addSubview:rectButton];
 ```
 
-![HTPressableButton](https://github.com/herinkc/READMEImages/RectButtonImage.gif)
+![HTPressableButton](https://github.com/herinkc/HTPressableButton/READMEImages/RectButtonImage.gif)
 
 
 ###Rounded Rectangle Button
@@ -47,7 +47,7 @@ Components
     [self.view addSubview:roundedRectButton];
 ```
 
-![HTPressableButton](https://github.com/herinkc/READMEImages/RoundedRectButtonImage.gif)
+![HTPressableButton](https://github.com/herinkc/HTPressableButton/READMEImages/RoundedRectButtonImage.gif)
 
 
 ###Circle Button
@@ -61,7 +61,7 @@ Components
     [self.view addSubview:circleButton];
 ```
 
-![HTPressableButton](https://github.com/herinkc/READMEImages/CircleButtonImage.gif)
+![HTPressableButton](https://github.com/herinkc/HTPressableButton/READMEImages/CircleButtonImage.gif)
 
 
 **NOTE:** If you do not choose *button.style*, the default will be a rectangle button.
