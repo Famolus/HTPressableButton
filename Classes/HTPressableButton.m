@@ -173,17 +173,14 @@
     if(!isButtonColorSet)
     {
         [self setDefaultButtonColor];
-        NSLog(@"Set default button color");
     }
     if(!isShadowHeightSet)
     {
         [self setDefaultShadowHeight];
-        NSLog(@"Set default button shadow height");
     }
     if(!isShadowColorSet)
     {
         [self setDefaultShadowColor: _buttonColor];
-        NSLog(@"Set default button shadow height");
     }
     if (isButtonCircle)
     {

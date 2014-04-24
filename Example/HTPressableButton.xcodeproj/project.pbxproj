@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83127B3319091CC500B29F16 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A1F50218FB0C1E00144443 /* XCTest.framework */; };
 		837DE60818FC2BB9009574A8 /* UIImage+HTButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 837DE60718FC2BB9009574A8 /* UIImage+HTButton.m */; };
 		8380AF691902CAD2008E3EEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A1F4F518FB0C1E00144443 /* Main.storyboard */; };
 		83A1F4E418FB0C1E00144443 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A1F4E318FB0C1E00144443 /* Foundation.framework */; };
@@ -17,7 +18,6 @@
 		83A1F4F418FB0C1E00144443 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A1F4F318FB0C1E00144443 /* AppDelegate.m */; };
 		83A1F4FA18FB0C1E00144443 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A1F4F918FB0C1E00144443 /* ViewController.m */; };
 		83A1F4FC18FB0C1E00144443 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83A1F4FB18FB0C1E00144443 /* Images.xcassets */; };
-		83A1F50318FB0C1E00144443 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A1F50218FB0C1E00144443 /* XCTest.framework */; };
 		83A1F50418FB0C1E00144443 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A1F4E318FB0C1E00144443 /* Foundation.framework */; };
 		83A1F50518FB0C1E00144443 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A1F4E718FB0C1E00144443 /* UIKit.framework */; };
 		83A1F51A18FB0C6B00144443 /* HTPressableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A1F51918FB0C6B00144443 /* HTPressableButton.m */; };
@@ -77,8 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83A1F50318FB0C1E00144443 /* XCTest.framework in Frameworks */,
 				83A1F50518FB0C1E00144443 /* UIKit.framework in Frameworks */,
+				83127B3319091CC500B29F16 /* XCTest.framework in Frameworks */,
 				83A1F50418FB0C1E00144443 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
