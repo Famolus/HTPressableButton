@@ -72,6 +72,69 @@ Components
 	titleLabel.font = Avenir size:18
 ```
 
+###Additional UIColors
+#####A list of UIColors that can be used:
+
+[Designmodo's color schemes](http://designmodo.github.io/FlatUI/)
+
+```objective-c
+	+ (UIColor *) turquoiseColor;
+	+ (UIColor *) greenSeaColor;
+	+ (UIColor *) emelaldColor;
+	+ (UIColor *) nephritisColor;
+	+ (UIColor *) peterRiverColor;
+	+ (UIColor *) belizeHoleColor;
+	+ (UIColor *) amethystColor;
+	+ (UIColor *) wisteriaColor;
+	+ (UIColor *) wetAsphaltColor;
+	+ (UIColor *) midnightBlueColor;
+	+ (UIColor *) sunflowerColor;
+	+ (UIColor *) citrusColor;
+	+ (UIColor *) carrotColor;
+	+ (UIColor *) pumpkinColor;
+	+ (UIColor *) alizarinColor;
+	+ (UIColor *) pomegranateColor;
+	+ (UIColor *) cloudsColor;
+	+ (UIColor *) silverColor;
+	+ (UIColor *) concreteColor;
+	+ (UIColor *) asbestosColor;
+```
+
+Flat color schemes
+
+```objective-c
+	+ (UIColor *) grapeFruitColor;
+	+ (UIColor *) grapeFruitDarkColor;
+	+ (UIColor *) bitterSweetColor;
+	+ (UIColor *) bitterSweetDarkColor;
+	+ (UIColor *) lemonColor;
+	+ (UIColor *) lemonDarkColor;
+	+ (UIColor *) grassColor;
+	+ (UIColor *) grassDarkColor;
+	+ (UIColor *) mintColor;
+	+ (UIColor *) mintDarkColor;
+	+ (UIColor *) aquaColor;
+	+ (UIColor *) aquaDarkColor;
+	+ (UIColor *) blueJeansColor;
+	+ (UIColor *) blueJeansDarkColor;
+	+ (UIColor *) lavenderColor;
+	+ (UIColor *) lavenderDarkColor;
+	+ (UIColor *) pinkRoseColor;
+	+ (UIColor *) pinkRoseDarkColor;
+	+ (UIColor *) ashColor;
+	+ (UIColor *) ashDarkColor;
+	+ (UIColor *) mediumColor;
+	+ (UIColor *) mediumDarkColor;
+	+ (UIColor *) leadColor;
+	+ (UIColor *) leadDarkColor;
+```
+
+[Thanakron Tandavas](http://tandavas.com) color scheme
+
+```objective-c
+	+ (UIColor *) jayColor;
+	+ (UIColor *) jayDarkColor;
+```
 
 License
 -------------------
