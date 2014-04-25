@@ -79,7 +79,7 @@
         case rounded:
             _cornerRadius = 10.0;
             break;
-        case circle:
+        case circular:
             _cornerRadius = self.frame.size.height/2;
             self.clipsToBounds = YES;
             break;
@@ -115,10 +115,10 @@
  */
 -(void) setDefaultShadowHeight
 {
-    bool isButtonCircle = (_cornerRadius > 10);
-    if (isButtonCircle)
+    bool isButtoncircular = (_cornerRadius > 10);
+    if (isButtoncircular)
     {
-        _shadowHeight = self.frame.size.height * shadowCircleDefaultHeightPercentage;
+        _shadowHeight = self.frame.size.height * shadowcircularDefaultHeightPercentage;
     }
     else
     {
@@ -134,10 +134,10 @@
  */
 -(void) setHighlighted:(BOOL)highlighted
 {
-    bool isButtonCircle = (_cornerRadius > 10);
+    bool isButtoncircular = (_cornerRadius > 10);
     if (highlighted)
     {
-        if (isButtonCircle)
+        if (isButtoncircular)
         {
             [super setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, -((_shadowHeight/4) * shadowOffetWhenPressed), 0)];
         }
@@ -168,7 +168,7 @@
     bool isButtonColorSet = _buttonColor;
     bool isShadowColorSet = _shadowColor;
     bool isShadowHeightSet = _shadowHeight;
-    bool isButtonCircle = (_cornerRadius > 10);
+    bool isButtoncircular = (_cornerRadius > 10);
     
     if(!isButtonColorSet)
     {
@@ -182,20 +182,20 @@
     {
         [self setDefaultShadowColor: _buttonColor];
     }
-    if (isButtonCircle)
+    if (isButtoncircular)
     {
-        buttonNormal = [UIImage circleButtonWithColor:_buttonColor
+        buttonNormal = [UIImage circularButtonWithColor:_buttonColor
                                               andSize:self.frame.size
                                       andShadowHeight:_shadowHeight
                                        andShadowColor:_shadowColor
                                       andCornerRadius:_cornerRadius];
         
-        buttonHighlighted = [UIImage circleButtonWithHighlightedColor:_buttonColor
+        buttonHighlighted = [UIImage circularButtonWithHighlightedColor:_buttonColor
                                                               andSize:self.frame.size
                                                       andShadowHeight:_shadowHeight
                                                        andShadowColor:_shadowColor
                                                       andCornerRadius:_cornerRadius];
-        buttonDisabled = [UIImage circleButtonWithColor:[UIColor mediumColor] andSize:self.frame.size andShadowHeight:_shadowHeight andShadowColor:[UIColor mediumDarkColor] andCornerRadius:_cornerRadius];
+        buttonDisabled = [UIImage circularButtonWithColor:[UIColor mediumColor] andSize:self.frame.size andShadowHeight:_shadowHeight andShadowColor:[UIColor mediumDarkColor] andCornerRadius:_cornerRadius];
     }
     else
     {

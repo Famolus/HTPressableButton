@@ -22,13 +22,13 @@
                           andShadowColor: (UIColor *) shadowColor
                          andCornerRadius: (CGFloat) cornerRadius;
 
-+ (UIImage *) circleButtonWithColor: (UIColor *) buttonColor
++ (UIImage *) circularButtonWithColor: (UIColor *) buttonColor
                             andSize: (CGSize) size
                     andShadowHeight: (CGFloat) shadowHeight
                      andShadowColor: (UIColor *) shadowColor
                     andCornerRadius: (CGFloat) cornerRadius;
 
-+ (UIImage *) circleButtonWithHighlightedColor: (UIColor *) buttonColor
++ (UIImage *) circularButtonWithHighlightedColor: (UIColor *) buttonColor
                                        andSize: (CGSize) size
                                andShadowHeight: (CGFloat) shadowHeight
                                 andShadowColor: (UIColor *) shadowColor

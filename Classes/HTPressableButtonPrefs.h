@@ -12,9 +12,9 @@
 extern const float shadowDefaultHeightPercentage;
 
 /**
- * Height of the default shadow for circle button in percentage is calculated from the button height
+ * Height of the default shadow for circular button in percentage is calculated from the button height
  */
-extern const float shadowCircleDefaultHeightPercentage;
+extern const float shadowcircularDefaultHeightPercentage;
 
 /**
  * Offset of the shadow in percentage is calculated from the shadow height when the button is pressed

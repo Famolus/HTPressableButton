@@ -61,7 +61,7 @@
     
 }
 
-+ (UIImage *) circleButtonWithColor: (UIColor *) buttonColor
++ (UIImage *) circularButtonWithColor: (UIColor *) buttonColor
                             andSize: (CGSize) size
                     andShadowHeight: (CGFloat) shadowHeight
                      andShadowColor: (UIColor *) shadowColor
@@ -72,13 +72,13 @@
     UIImage *frontImage = [UIImage imageWithColor:buttonColor andSize:size andCornerRadius:cornerRadius];
     UIImage *backImage = [UIImage imageWithColor:shadowColor andSize:size andCornerRadius:cornerRadius];
     
-    //Make the rectangle a little bigger than the button
+    //Make the rectangular a little bigger than the button
     CGRect rect = CGRectMake(0,
                              0,
                              backImage.size.width + shadowHeight + (shadowHeight/2),
                              backImage.size.height + shadowHeight + (shadowHeight/2));
     
-    //Both images are moved away from the borders to show the circle shape (round)
+    //Both images are moved away from the borders to show the circular shape (round)
     UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
     [backImage drawAtPoint:CGPointMake((shadowHeight/2) + 2.5, shadowHeight)];
     [frontImage drawAtPoint:CGPointMake((shadowHeight/2) + 2.5, shadowHeight/4)];
@@ -88,7 +88,7 @@
     return buttonImage;
 }
 
-+ (UIImage *) circleButtonWithHighlightedColor: (UIColor *) buttonColor
++ (UIImage *) circularButtonWithHighlightedColor: (UIColor *) buttonColor
                                        andSize: (CGSize) size
                                andShadowHeight: (CGFloat) shadowHeight
                                 andShadowColor: (UIColor *) shadowColor

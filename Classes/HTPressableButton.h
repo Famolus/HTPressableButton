@@ -11,7 +11,7 @@
 typedef NS_ENUM(NSInteger, UIButtonStyle) {
     rect,
     rounded,
-    circle
+    circular
 };
 
 @interface HTPressableButton : UIButton
@@ -24,7 +24,7 @@ typedef NS_ENUM(NSInteger, UIButtonStyle) {
 /**
  * Button style
  *
- * @remarks Choose between: square, rounded, or circle
+ * @remarks Choose between: square, rounded, or circular
  */
 @property(nonatomic, readwrite) UIButtonStyle style;
 

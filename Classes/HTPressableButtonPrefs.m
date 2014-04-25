@@ -10,5 +10,5 @@
 
 const float shadowDefaultHeightPercentage = 0.17;
 //60% from default shadow height
-const float shadowCircleDefaultHeightPercentage = shadowDefaultHeightPercentage * 0.6;
+const float shadowcircularDefaultHeightPercentage = shadowDefaultHeightPercentage * 0.6;
 const float shadowOffetWhenPressed = 0.7;
