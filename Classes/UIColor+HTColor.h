@@ -14,7 +14,7 @@
 #pragma mark - Designmodo color schemes
 + (UIColor *) turquoiseColor;
 + (UIColor *) greenSeaColor;
-+ (UIColor *) emelaldColor;
++ (UIColor *) emeraldColor;
 + (UIColor *) nephritisColor;
 + (UIColor *) peterRiverColor;
 + (UIColor *) belizeHoleColor;

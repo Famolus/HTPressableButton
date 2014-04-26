@@ -26,7 +26,7 @@
     return UIColorFromRGB(0x16a085);
 }
 
-+ (UIColor *) emelaldColor
++ (UIColor *) emeraldColor
 {
     return UIColorFromRGB(0x2ecc71);
 }

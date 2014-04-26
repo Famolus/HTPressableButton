@@ -62,7 +62,7 @@ Components
     [self.view addSubview:circularButton];
 ```
 
-![HTPressableButton](https://raw.githubusercontent.com/herinkc/HTPressableButton/master/READMEImages/CircularButtonImage.gif?token=3966522__eyJzY29wZSI6IlJhd0Jsb2I6aGVyaW5rYy9IVFByZXNzYWJsZUJ1dHRvbi9tYXN0ZXIvUkVBRE1FSW1hZ2VzL0NpcmNsZUJ1dHRvbkltYWdlLmdpZiIsImV4cGlyZXMiOjEzOTg5NjQ2MTN9--c1d65c71dbeed8a9f83db8073114f06caef80e53)
+![HTPressableButton](https://raw.githubusercontent.com/herinkc/HTPressableButton/master/READMEImages/CircularButtonImage.gif?token=3966522__eyJzY29wZSI6IlJhd0Jsb2I6aGVyaW5rYy9IVFByZXNzYWJsZUJ1dHRvbi9tYXN0ZXIvUkVBRE1FSW1hZ2VzL0NpcmN1bGFyQnV0dG9uSW1hZ2UuZ2lmIiwiZXhwaXJlcyI6MTM5OTEzNTMxNH0%3D--048266a4af816d73390644ce8165fc981de6f18c)
 
 
 **NOTE:** We have set some default values, incase you do not wish to specify some attributes
@@ -73,68 +73,67 @@ Components
 ```
 
 ###Additional UIColors
-#####A list of UIColors that can be used:
-
-[Designmodo's color schemes](http://designmodo.github.io/FlatUI/)
-
+You can freely use the additional colors in file *UIColors+HTColor* anywhere you wish by:
 ```objective-c
-	+ (UIColor *) turquoiseColor;
-	+ (UIColor *) greenSeaColor;
-	+ (UIColor *) emelaldColor;
-	+ (UIColor *) nephritisColor;
-	+ (UIColor *) peterRiverColor;
-	+ (UIColor *) belizeHoleColor;
-	+ (UIColor *) amethystColor;
-	+ (UIColor *) wisteriaColor;
-	+ (UIColor *) wetAsphaltColor;
-	+ (UIColor *) midnightBlueColor;
-	+ (UIColor *) sunflowerColor;
-	+ (UIColor *) citrusColor;
-	+ (UIColor *) carrotColor;
-	+ (UIColor *) pumpkinColor;
-	+ (UIColor *) alizarinColor;
-	+ (UIColor *) pomegranateColor;
-	+ (UIColor *) cloudsColor;
-	+ (UIColor *) silverColor;
-	+ (UIColor *) concreteColor;
-	+ (UIColor *) asbestosColor;
+    [UIColor colorNameHere]
 ```
+ 
 
-Flat color schemes
+#####[Designmodo's color schemes](http://designmodo.github.io/FlatUI/)
 
-```objective-c
-	+ (UIColor *) grapeFruitColor;
-	+ (UIColor *) grapeFruitDarkColor;
-	+ (UIColor *) bitterSweetColor;
-	+ (UIColor *) bitterSweetDarkColor;
-	+ (UIColor *) lemonColor;
-	+ (UIColor *) lemonDarkColor;
-	+ (UIColor *) grassColor;
-	+ (UIColor *) grassDarkColor;
-	+ (UIColor *) mintColor;
-	+ (UIColor *) mintDarkColor;
-	+ (UIColor *) aquaColor;
-	+ (UIColor *) aquaDarkColor;
-	+ (UIColor *) blueJeansColor;
-	+ (UIColor *) blueJeansDarkColor;
-	+ (UIColor *) lavenderColor;
-	+ (UIColor *) lavenderDarkColor;
-	+ (UIColor *) pinkRoseColor;
-	+ (UIColor *) pinkRoseDarkColor;
-	+ (UIColor *) ashColor;
-	+ (UIColor *) ashDarkColor;
-	+ (UIColor *) mediumColor;
-	+ (UIColor *) mediumDarkColor;
-	+ (UIColor *) leadColor;
-	+ (UIColor *) leadDarkColor;
-```
+1. turquoiseColor = 
+2. greenSeaColor =
+3. emeraldColor = 
+4. nephritisColor = 
+5. peterRiverColor = 
+6. belizeHoleColor = 
+7. amethystColor = 
+8. wisteriaColor = 
+9. wetAsphaltColor = 
+10. midnightBlueColor = 
+11. sunflowerColor = 
+12. citrusColor = 
+13. carrotColor = 
+14. pumpkinColor = 
+15. alizarinColor = 
+16. pomegranateColor = 
+17. cloudsColor = 
+18. silverColor = 
+19. concreteColor = 
+20. asbestosColor = 
 
-[Thanakron Tandavas](http://tandavas.com) color scheme
+#####Flat color schemes
 
-```objective-c
-	+ (UIColor *) jayColor;
-	+ (UIColor *) jayDarkColor;
-```
+21. grapeFruitColor = 
+22. grapeFruitDarkColor = 
+23. bitterSweetColor = 
+24. bitterSweetDarkColor = 
+25. lemonColor = 
+26. lemonDarkColor = 
+27. grassColor = 
+28. grassDarkColor = 
+29. mintColor = 
+30. mintDarkColor = 
+31. aquaColor = 
+32. aquaDarkColor = 
+33. blueJeansColor = 
+34. blueJeansDarkColor = 
+35. lavenderColor = 
+36. lavenderDarkColor = 
+37. pinkRoseColor = 
+38. pinkRoseDarkColor = 
+39. ashColor = 
+40. ashDarkColor = 
+41. mediumColor = 
+42. mediumDarkColor = 
+43. leadColor = 
+44. leadDarkColor = 
+
+#####[Thanakron Tandavas](http://tandavas.com) color scheme
+
+45. jayColor = 
+46. jayDarkColor = 
+
 
 License
 -------------------
