@@ -68,8 +68,9 @@ Components
 **NOTE:** We have set some default values, incase you do not wish to specify some attributes
 ```code
 	style = rect
-	shadowHeight = buttonSize *0.17
 	titleLabel.font = Avenir size:18
+	shadowHeight = buttonSize *0.17
+	buttonColor = jayColor
 ```
 
 ###Additional UIColors
@@ -93,14 +94,15 @@ You can freely use the additional colors in file *UIColors+HTColor* anywhere you
 
 Contributors
 --------------
-We do welcome contributions, don't hesitate to make a pull request. Also, we give special credit as below if you helped us made a big impact towards the project!
+We do welcome contributions, don't hesitate to make a pull request. We also give special credit as below if you help us improve :)
 
 [Thanakron Tandavas](http://tandavas.com)
+
 [He Rin Kim](http://herinkim.com)
 
 Showcase
 --------
-Did we make it easier for you to create an app? Feel free to show us and we'll link to it below! (We might not accept all submissions though.)
+Did we make it easier for you to create an app? Feel free to show us and we'll link to it below!
 
 License
 -------------------
