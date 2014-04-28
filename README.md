@@ -80,6 +80,7 @@ You can freely use the additional colors in file *UIColors+HTColor* anywhere you
  
 
 #####[Designmodo](http://designmodo.github.io/FlatUI/)  color schemes
+![ColorScheme](https://raw.githubusercontent.com/herinkc/HTPressableButton/master/READMEImages/colorSamples/designmodoColors.png?token=3966522__eyJzY29wZSI6IlJhd0Jsb2I6aGVyaW5rYy9IVFByZXNzYWJsZUJ1dHRvbi9tYXN0ZXIvUkVBRE1FSW1hZ2VzL2NvbG9yU2FtcGxlcy9kZXNpZ25tb2RvQ29sb3JzLnBuZyIsImV4cGlyZXMiOjEzOTkzMDQzNDd9--b30eaaf4f09d44a253b02fdc4816630aba861284)
 
 
 #####Flat color schemes
