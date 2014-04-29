@@ -1,6 +1,6 @@
 HTPressableButton
 ==============
-HTPressableButton is designed for iOS developers to be able to focus more on other tasks instead of making a pretty button. It has a Flat UI design and is very easy to integrate.
+HTPressableButton is designed for iOS developers to be able to focus more on other tasks instead of prettifying buttons. Our button has a Flat UI design and we guarantee regarding easy and convenient integration.
 
 
 Installation
@@ -20,7 +20,7 @@ Another option is to use git submodules or just [download it](https://github.com
 #import "UIColor+HTColor.h"
 ```
 
-The second header file is not needed if you do not wish to use the Flat UI colors provided, but only use the default UIColors given by Apple.
+The second line is not needed if you do not wish to use the additional colors provided (below).
 
 Components
 -------------------
@@ -65,7 +65,7 @@ Components
 ![HTPressableButton](https://raw.githubusercontent.com/herinkc/HTPressableButton/master/READMEImages/CircularButtonImage.gif?token=3966522__eyJzY29wZSI6IlJhd0Jsb2I6aGVyaW5rYy9IVFByZXNzYWJsZUJ1dHRvbi9tYXN0ZXIvUkVBRE1FSW1hZ2VzL0NpcmN1bGFyQnV0dG9uSW1hZ2UuZ2lmIiwiZXhwaXJlcyI6MTM5OTEzNTMxNH0%3D--048266a4af816d73390644ce8165fc981de6f18c)
 
 
-**NOTE:** We have set some default values, incase you do not wish to specify some attributes
+**NOTE:** We have set some default values, incase you do not wish to specify some.
 ```code
 	style = rect
 	titleLabel.font = Avenir size:18
@@ -80,17 +80,6 @@ You can freely use the additional colors in file *UIColors+HTColor* anywhere you
 ```
  
 
-#####[Designmodo](http://designmodo.github.io/FlatUI/)  color schemes
-![ColorScheme](https://raw.githubusercontent.com/herinkc/HTPressableButton/master/READMEImages/colorSamples/designmodoColors.png?token=3966522__eyJzY29wZSI6IlJhd0Jsb2I6aGVyaW5rYy9IVFByZXNzYWJsZUJ1dHRvbi9tYXN0ZXIvUkVBRE1FSW1hZ2VzL2NvbG9yU2FtcGxlcy9kZXNpZ25tb2RvQ29sb3JzLnBuZyIsImV4cGlyZXMiOjEzOTkzMDQzNDd9--b30eaaf4f09d44a253b02fdc4816630aba861284)
-
-
-#####Flat color schemes
-
-
-
-#####[Thanakron Tandavas](http://tandavas.com) color scheme
-
-
 
 Contributors
 --------------
@@ -102,12 +91,15 @@ We do welcome contributions, don't hesitate to make a pull request. We also give
 
 Showcase
 --------
-Did we make it easier for you to create an app? Feel free to show us and we'll link to it below!
+We would love to see how we were able to help you. Show your app!
+
 
 License
 -------------------
 This projected is licensed under the terms of the [MIT license](https://github.com/herinkc/HTPressableButton/blob/master/LICENSE).
 
+
 Credits
 --------
 Inspired by:
+
