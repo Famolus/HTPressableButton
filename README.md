@@ -20,7 +20,7 @@ Another option is to use git submodules or just [download it](https://github.com
 #import "UIColor+HTColor.h"
 ```
 
-The second line is not needed if you do not wish to use the additional colors provided (below).
+The second line is not needed if you don't want to use the additional colors provided (below).
 
 Components
 -------------------
@@ -74,7 +74,7 @@ Components
 ```
 
 ###Additional UIColors
-You can freely use the additional colors in file *UIColors+HTColor* anywhere you wish by:
+You can freely use the additional colors in file *UIColors+HTColor* anywhere in your project by:
 ```objective-c
     [UIColor colorNameHere]
 ```
@@ -83,7 +83,7 @@ You can freely use the additional colors in file *UIColors+HTColor* anywhere you
 
 Contributors
 --------------
-We do welcome contributions, don't hesitate to make a pull request. We also give special credit as below if you help us improve :)
+We do welcome contributions, don't hesitate to make a pull request. We also give special credit as below if you help contribute :)
 
 [Thanakron Tandavas](http://tandavas.com)
 
@@ -91,7 +91,7 @@ We do welcome contributions, don't hesitate to make a pull request. We also give
 
 Showcase
 --------
-We would love to see how we were able to help you. Show your app!
+We would love to see how we became a part of your project. Show your app!
 
 
 License
