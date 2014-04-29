@@ -1,6 +1,6 @@
 HTPressableButton
 ==============
-HTPressableButton is designed for iOS developers to be able to focus more on other tasks instead of prettifying buttons. Our button has a Flat UI design and we guarantee regarding easy and convenient integration.
+HTPressableButton is designed for iOS developers to be able to focus more on other tasks instead of prettifying buttons. Our button has a Flat UI design and we guarantee easy and convenient integration.
 
 
 Installation
@@ -20,7 +20,7 @@ Another option is to use git submodules or just [download it](https://github.com
 #import "UIColor+HTColor.h"
 ```
 
-The second line is not needed if you don't want to use the additional colors provided (below).
+The second line is not needed if you don't intend to use the additional colors provided (below).
 
 Components
 -------------------
@@ -65,7 +65,7 @@ Components
 ![HTPressableButton](https://raw.githubusercontent.com/herinkc/HTPressableButton/master/READMEImages/CircularButtonImage.gif?token=3966522__eyJzY29wZSI6IlJhd0Jsb2I6aGVyaW5rYy9IVFByZXNzYWJsZUJ1dHRvbi9tYXN0ZXIvUkVBRE1FSW1hZ2VzL0NpcmN1bGFyQnV0dG9uSW1hZ2UuZ2lmIiwiZXhwaXJlcyI6MTM5OTEzNTMxNH0%3D--048266a4af816d73390644ce8165fc981de6f18c)
 
 
-**NOTE:** We have set some default values, incase you do not wish to specify some.
+**NOTE:** Some default values have been set, incase you do not wish to specify some.
 ```code
 	style = rect
 	titleLabel.font = Avenir size:18
@@ -74,7 +74,7 @@ Components
 ```
 
 ###Additional UIColors
-You can freely use the additional colors in file *UIColors+HTColor* anywhere in your project by:
+You can freely use the additional colors in the file *UIColors+HTColor* anywhere in your project by:
 ```objective-c
     [UIColor colorNameHere]
 ```
@@ -83,7 +83,7 @@ You can freely use the additional colors in file *UIColors+HTColor* anywhere in 
 
 Contributors
 --------------
-We do welcome contributions, don't hesitate to make a pull request. We also give special credit as below if you help contribute :)
+Welcome contributors! Don't hesitate to make a pull request. We also give special credit as below if you help contribute :)
 
 [Thanakron Tandavas](http://tandavas.com)
 
