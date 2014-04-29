@@ -103,3 +103,7 @@ Credits
 --------
 Inspired by:
 
+[Designmodo](http://designmodo.com/)
+
+[FlatUIKit](https://github.com/Grouper/FlatUIKit)
+
