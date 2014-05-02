@@ -76,7 +76,9 @@ Components
 You can freely use the additional colors in the file *UIColors+HTColor* anywhere in your project by:
 ```objective-c
     [UIColor colorNameHere]
+    
     [UIColor jayColor]
+    [UIColor pinkRoseDarkColor]
 ```
 ![HTPressableButton](https://raw.github.com/herinkc/HTPressableButton/master/READMEImages/HTPressableButtonColorScheme.png)
 
