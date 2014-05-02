@@ -22,7 +22,7 @@ Another option is to use git submodules or just [download it](https://github.com
 
 The second line is not needed if you don't intend to use the additional colors provided (below).
 
-Components
+Button Types
 -------------------
 ###Rectangular Button
 ```objective-c
@@ -36,6 +36,7 @@ Components
 ```
 
 ![HTPressableButton](https://raw.github.com/herinkc/HTPressableButton/master/READMEImages/RectButtonImage.gif)
+
 
 ###Rounded Rectangular Button
 ```objective-c
@@ -68,7 +69,7 @@ Components
 ```code
 	style = rect
 	titleLabel.font = Avenir size:18
-	shadowHeight = buttonSize *0.17
+	shadowHeight = buttonSize *0.17 //17% of the button height
 	buttonColor = jayColor
 ```
 
@@ -87,9 +88,8 @@ Contributors
 --------------
 Welcome contributors! Don't hesitate to make a pull request. We also give special credit as below if you help contribute :)
 
-[Thanakron Tandavas](http://tandavas.com)
-
-[He Rin Kim](http://herinkim.com)
+*[He Rin Kim](http://github.com/herinkc)
+*[Thanakron Tandavas](http://github.com/tandavas)
 
 Showcase
 --------
@@ -105,7 +105,6 @@ Credits
 --------
 Inspired by:
 
-[Designmodo](http://designmodo.com/)
-
-[FlatUIKit](https://github.com/Grouper/FlatUIKit)
+*[Designmodo](http://designmodo.com/)
+*[FlatUIKit](https://github.com/Grouper/FlatUIKit)
 
