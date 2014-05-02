@@ -77,7 +77,7 @@ You can freely use the additional colors in the file *UIColors+HTColor* anywhere
 ```objective-c
     [UIColor colorNameHere]
 ```
- 
+![HTPressableButton](https://raw.github.com/herinkc/HTPressableButton/master/READMEImages/HTPressableButtonColorScheme.png)
 
 
 Contributors
