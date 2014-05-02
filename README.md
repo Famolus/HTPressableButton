@@ -88,9 +88,9 @@ Contributors
 --------------
 Welcome contributors! Don't hesitate to make a pull request. We also give special credit as below if you help contribute :)
 
-*[He Rin Kim](http://github.com/herinkc)
+* [He Rin Kim](http://github.com/herinkc)
 
-*[Thanakron Tandavas](http://github.com/tandavas)
+* [Thanakron Tandavas](http://github.com/tandavas)
 
 Showcase
 --------
@@ -106,7 +106,7 @@ Credits
 --------
 Inspired by:
 
-*[Designmodo](http://designmodo.com/)
+* [Designmodo](http://designmodo.com/)
 
-*[FlatUIKit](https://github.com/Grouper/FlatUIKit)
+* [FlatUIKit](https://github.com/Grouper/FlatUIKit)
 
