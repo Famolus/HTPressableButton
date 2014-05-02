@@ -35,7 +35,7 @@ Components
     [self.view addSubview:rectButton];
 ```
 
-![HTPressableButton](https://raw.github.com/herinkc/htpressablebutton/master/READMEImages/RectButtonImage.gif)
+![HTPressableButton](https://raw.github.com/herinkc/HTPressableButton/master/READMEImages/RectButtonImage.gif)
 
 ###Rounded Rectangular Button
 ```objective-c
@@ -46,7 +46,7 @@ Components
     [self.view addSubview:roundedRectButton];
 ```
 
-![HTPressableButton](https://raw.github.com/herinkc/htpressablebutton/master/READMEImages/RoundedRectButtonImage.gif)
+![HTPressableButton](https://raw.github.com/herinkc/HTPressableButton/master/READMEImages/RoundedRectButtonImage.gif)
 
 
 ###Circular Button
@@ -61,7 +61,7 @@ Components
     [self.view addSubview:circularButton];
 ```
 
-![HTPressableButton](https://raw.github.com/herinkc/htpressablebutton/master/READMEImages/CircularButtonImage.gif)
+![HTPressableButton](https://raw.github.com/herinkc/HTPressableButton/master/READMEImages/CircularButtonImage.gif)
 
 
 **NOTE:** Some default values have been set, incase you do not wish to specify some.
