@@ -22,7 +22,7 @@ Another option is to use git submodules or just [download it](https://github.com
 
 The second line is not needed if you don't intend to use the additional colors provided (below).
 
-<br><br> 
+<br>
 
 Button Types
 -------------------
@@ -39,7 +39,7 @@ Button Types
 
 ![HTPressableButton](https://raw.github.com/herinkc/HTPressableButton/master/READMEImages/RectButtonImage.gif)
 
-<br><br> 
+<br>
 
 ###Rounded Rectangular Button
 ```objective-c
@@ -52,7 +52,7 @@ Button Types
 
 ![HTPressableButton](https://raw.github.com/herinkc/HTPressableButton/master/READMEImages/RoundedRectButtonImage.gif)
 
-<br><br> 
+<br>
 
 ###Circular Button
 ```objective-c
@@ -77,7 +77,7 @@ Button Types
 	buttonColor = jayColor
 ```
 
-<br><br> 
+<br>
 
 ###Additional Colors
 You can freely use the additional colors in the file *UIColors+HTColor* anywhere in your project by:
