@@ -54,9 +54,9 @@
 
 
 /**
- * Set the shape of the button
+ * Set the shadow height of the button
  *
- * @param style UIButtonStyle of the button
+ * @param shadowHeight height of the shadow
  */
 -(void) setShadowHeight:(CGFloat)shadowHeight
 {
