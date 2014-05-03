@@ -27,8 +27,7 @@ Another option is to use git submodules or just [download it](https://github.com
 Button Types
 -------------------
 
-###**IMPORTANT** 
-#####You must specify the style of the button you wish to add to your app.
+**IMPORTANT**: You must specify the style of the button you wish to add to your app.
 
 ###Rectangular Button
 ```objective-c
