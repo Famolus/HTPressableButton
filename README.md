@@ -1,6 +1,6 @@
 HTPressableButton
 ==============
-HTPressableButton is designed for iOS developers to be able to focus more on other tasks instead of prettifying buttons. Our button has a Flat UI design and we guarantee easy and convenient integration.
+HTPressableButton is designed for iOS developers to be able to spend time developing ideas, not building basic buttons. These stylish and flat-designed buttons can easily be modified and are perfect for almost any project. With no worry over color choice, HTPressableButton also includes beautiful color schemes that perfectly suit with your app.
 
 
 Installation
@@ -20,7 +20,7 @@ Another option is to use git submodules or just [download it](https://github.com
 #import "UIColor+HTColor.h"
 ```
 
-The second line is not needed if you don't intend to use the additional colors provided (below).
+`UIColor+HTColor.h` is not needed if you don't intend to use the color scheme provided (below).
 
 <br>
 
@@ -69,13 +69,16 @@ Button Types
 ![HTPressableButton](https://raw.github.com/herinkc/HTPressableButton/master/READMEImages/CircularButtonImage.gif)
 
 
-**NOTE:** Some default values have been set, incase you do not wish to specify some.
-```code
-	style = rect
-	titleLabel.font = Avenir size:18
-	shadowHeight = buttonSize *0.17 //17% of the button height
-	buttonColor = jayColor
-```
+**NOTE:** The default values of the buttons are:
+
+| Attribute             | Values                                           |
+| --------------------- |:------------------------------------------------:|
+| Button Style          | rounded                                          |
+| Font                  | Avenir                                           |
+| Font Size             | 18                                               |
+| Shadow Height         | buttonSize * 0.17 `//17% of the button height`   |
+| Button Color          | jayColor                                         |
+| Button Shadow Color   | jayDarkColor                                     |
 
 <br>
 
