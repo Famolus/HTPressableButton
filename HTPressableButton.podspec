@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   s.name         = "HTPressableButton"
   s.version      = "1.0.0"
-  s.summary      = "Flat UI designed pressable button with ease of use for iOS developers."
+  s.summary      = "Pressable button with ease of use for iOS developers."
   s.homepage     = "http://github.com/herinkc/HTPressableButton"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.authors            = { "He Rin Kim" => "me@herinkim.com", "Thanakron Tandavas" => "thanakron@tandavas.com" }
