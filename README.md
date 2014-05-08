@@ -36,7 +36,7 @@ Button Types
     rectButton.frame = CGRectMake(30, 150, 260, 50);
     rectButton.buttonColor = [UIColor grapeFruitColor];
     rectButton.shadowColor = [UIColor grapeFruitDarkColor];
-    rectButton.style = rect;
+    rectButton.style = HTPressableButtonStyleRect;
     [rectButton setTitle:@"Rect" forState:UIControlStateNormal];
     [self.view addSubview:rectButton];
 ```
@@ -49,7 +49,7 @@ Button Types
 ```objective-c
     HTPressableButton *roundedRectButton = [HTPressableButton buttonWithType:UIButtonTypeCustom];
     roundedRectButton.frame = CGRectMake(30, 230, 260, 50);
-    roundedRectButton.style = rounded;
+    roundedRectButton.style = HTPressableButtonStyleRounded;
     [roundedRectButton setTitle:@"Rounded" forState:UIControlStateNormal];
     [self.view addSubview:roundedRectButton];
 ```
@@ -63,7 +63,7 @@ Button Types
     //Circular mint color button
     HTPressableButton *circularButton = [HTPressableButton buttonWithType:UIButtonTypeCustom];
     circularButton.frame = CGRectMake(110, 300, 100, 100);
-    circularButton.style = circular;
+    circularButton.style = HTPressableButtonStyleCircular;
     circularButton.buttonColor = [UIColor mintColor];
     circularButton.shadowColor = [UIColor mintDarkColor];
     [circularButton setTitle:@"Circular" forState:UIControlStateNormal];
