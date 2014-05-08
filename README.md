@@ -12,6 +12,12 @@ HTPressableButton can be installed via [Cocoapods](http://cocoapods.org/)
 pod 'HTPressableButton'
 ```
 
+You may also quickly try the HTPressableButton example project with
+
+```ruby
+pod try 'HTPressableButton'
+```
+
 Another option is to use git submodules or just [download it](https://github.com/Grouper/FlatUIKit/archive/master.zip) and include it in your project manually.
 
 **NOTE:** Please be reminded to add the header file when implementing
