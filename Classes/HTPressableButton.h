@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-typedef NS_ENUM(NSInteger, UIButtonStyle) {
-    rect,
-    rounded,
-    circular
+typedef NS_ENUM(NSInteger, HTPressableButtonStyle) {
+    HTPressableButtonStyleRect,
+    HTPressableButtonStyleRounded,
+    HTPressableButtonStyleCircular
 };
 
 @interface HTPressableButton : UIButton
@@ -26,7 +26,7 @@ typedef NS_ENUM(NSInteger, UIButtonStyle) {
  *
  * @remarks Choose between: square, rounded, or circular
  */
-@property(nonatomic, readwrite) UIButtonStyle style;
+@property(nonatomic, readwrite) HTPressableButtonStyle style;
 
 #pragma mark - Init
 - (id)initWithFrame:(CGRect)frame;
@@ -35,7 +35,7 @@ typedef NS_ENUM(NSInteger, UIButtonStyle) {
 -(void) setButtonColor:(UIColor *)buttonColor;
 -(void) setShadowColor:(UIColor *)shadowColor;
 -(void) setShadowHeight:(CGFloat)shadowHeight;
--(void) setStyle:(UIButtonStyle) style;
+-(void) setStyle:(HTPressableButtonStyle) style;
 
 #pragma mark - Set Button Default Style
 -(void) setDefaultButtonColor;

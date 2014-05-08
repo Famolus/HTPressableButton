@@ -68,18 +68,18 @@
 /**
  * Set the shape of the button
  *
- * @param style UIButtonStyle of the button
+ * @param style HTPressableButtonStyle of the button
  */
--(void) setStyle:(UIButtonStyle) style
+-(void) setStyle:(HTPressableButtonStyle) style
 {
     switch (style) {
-        case rect:
+        case HTPressableButtonStyleRect:
             _cornerRadius = 0.0;
             break;
-        case rounded:
+        case HTPressableButtonStyleRounded:
             _cornerRadius = 10.0;
             break;
-        case circular:
+        case HTPressableButtonStyleCircular:
             _cornerRadius = self.frame.size.height/2;
             self.clipsToBounds = YES;
             break;
