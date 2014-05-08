@@ -134,7 +134,7 @@
     //Round the image above according to cornerRadius
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
     
-    UIGraphicsBeginImageContextWithOptions(imageView.bounds.size, NO, 1.0);
+    UIGraphicsBeginImageContextWithOptions(imageView.bounds.size, NO, 0);
     [[UIBezierPath bezierPathWithRoundedRect:imageView.bounds
                                 cornerRadius:cornerRadius] addClip];
     [image drawInRect:imageView.bounds];
