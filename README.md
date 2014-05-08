@@ -111,6 +111,8 @@ Welcome contributors! Don't hesitate to make a pull request. We also give specia
 
 * [Thanakron Tandavas](http://github.com/tandavas)
 
+* [Paul Williamson](https://github.com/squarefrog)
+
 Showcase
 --------
 We would love to see how we became a part of your project. Show your app!
