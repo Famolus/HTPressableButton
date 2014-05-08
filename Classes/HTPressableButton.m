@@ -29,6 +29,90 @@
     return self;
 }
 
+- (instancetype)initWithFrame:(CGRect)frame
+                        style:(HTPressableButtonStyle)style
+                        title:(NSString *)title
+                  buttonColor:(UIColor *)color
+               andShadowColor:(UIColor *)shadowColor {
+    
+    self = [HTPressableButton buttonWithType:UIButtonTypeCustom];
+    self.frame = frame;
+    [self.titleLabel setFont:[UIFont fontWithName:@"Avenir" size:18]];
+    
+    UIImage *buttonNormal;
+    UIImage *buttonHighlighted;
+    UIImage *buttonDisabled;
+    bool isButtonColorSet = color;
+    bool isShadowColorSet = shadowColor;
+    bool isShadowHeightSet = _shadowHeight;
+    bool isButtoncircular = (_cornerRadius > 10);
+    
+    [self setStyle:style];
+    
+    if(!isButtonColorSet) {
+        [self setDefaultButtonColor];
+    } else {
+        [self setButtonColor:color];
+    }
+    
+    if(!isShadowHeightSet) {
+        [self setDefaultShadowHeight];
+    }
+    
+    if(!isShadowColorSet) {
+        [self setDefaultShadowColor: _buttonColor];
+    } else {
+        [self setShadowColor:shadowColor];
+    }
+    
+    if (isButtoncircular) {
+        buttonNormal = [UIImage circularButtonWithColor:_buttonColor
+                                                andSize:self.frame.size
+                                        andShadowHeight:_shadowHeight
+                                         andShadowColor:_shadowColor
+                                        andCornerRadius:_cornerRadius];
+        
+        buttonHighlighted = [UIImage circularButtonWithHighlightedColor:_buttonColor
+                                                                andSize:self.frame.size
+                                                        andShadowHeight:_shadowHeight
+                                                         andShadowColor:_shadowColor
+                                                        andCornerRadius:_cornerRadius];
+        buttonDisabled = [UIImage circularButtonWithColor:[UIColor mediumColor] andSize:self.frame.size andShadowHeight:_shadowHeight andShadowColor:[UIColor mediumDarkColor] andCornerRadius:_cornerRadius];
+    } else {
+        // Rectangular or rounded-corner buttons
+        buttonNormal = [UIImage buttonWithColor:_buttonColor
+                                        andSize:self.frame.size
+                                andShadowHeight:_shadowHeight
+                                 andShadowColor:_shadowColor
+                                andCornerRadius:_cornerRadius];
+        
+        buttonHighlighted = [UIImage buttonWithHighlightedColor:_buttonColor
+                                                        andSize:self.frame.size
+                                                andShadowHeight:_shadowHeight
+                                                 andShadowColor:_shadowColor
+                                                andCornerRadius:_cornerRadius];
+    }
+    
+    [self setBackgroundImage:buttonNormal forState:UIControlStateNormal];
+    [self setBackgroundImage:buttonHighlighted forState:UIControlStateHighlighted];
+    [self setTitle:title forState:UIControlStateNormal];
+    
+    return self;
+}
+
++ (instancetype)buttonWithFrame:(CGRect)frame
+                          style:(HTPressableButtonStyle)style
+                          title:(NSString *)title
+                    buttonColor:(UIColor *)color
+                 andShadowColor:(UIColor *)shadowColor {
+    
+    return [[HTPressableButton alloc] initWithFrame:frame
+                                              style:style
+                                              title:title
+                                        buttonColor:color
+                                     andShadowColor:shadowColor];
+}
+
 #pragma mark - Set Button Style
 /**
  * Set button color
