@@ -30,6 +30,11 @@ typedef NS_ENUM(NSInteger, HTPressableButtonStyle) {
 
 #pragma mark - Init
 - (id)initWithFrame:(CGRect)frame;
++ (instancetype)buttonWithFrame:(CGRect)frame
+                          style:(HTPressableButtonStyle)style
+                          title:(NSString *)title
+                    buttonColor:(UIColor *)color
+                 andShadowColor:(UIColor *)shadowColor;
 
 #pragma mark - Set Button Style
 -(void) setButtonColor:(UIColor *)buttonColor;
