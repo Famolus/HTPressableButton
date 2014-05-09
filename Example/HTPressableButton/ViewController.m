@@ -25,7 +25,7 @@
     self.view.backgroundColor = [UIColor cloudsColor];
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [button setTitle:@"Show View" forState:UIControlStateNormal];
+    [button setTitle:@"Typical Button" forState:UIControlStateNormal];
     button.frame = CGRectMake(80.0, 80.0, 160.0, 40.0);
     button.layer.borderWidth = 1;
     [self.view addSubview:button];
