@@ -8,9 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ A category on `UIColor` which expands the default `UIColor` with modern flat pastel colors.
+ 
+ There are three main color styles included: [Designmodo Flat-UI](http://designmodo.github.io/Flat-UI/) style, general flat style and [tandavas](https://github.com/tandavas) style.
+ **/
+
 @interface UIColor (HTColor)
 
-// FLAT UI colors by Designmodo. Thanks to http://designmodo.github.io/Flat-UI/
 #pragma mark - Designmodo color schemes
 + (UIColor *) turquoiseColor;
 + (UIColor *) greenSeaColor;

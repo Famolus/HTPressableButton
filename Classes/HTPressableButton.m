@@ -14,11 +14,7 @@
 @implementation HTPressableButton
 
 #pragma mark - Init
-/**
- * Initialize a button
- *
- * @param frame Position and size of the button
- */
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -30,34 +26,19 @@
 }
 
 #pragma mark - Set Button Style
-/**
- * Set button color
- *
- * @param buttonColor color of the button
- */
+
 -(void) setButtonColor:(UIColor *)buttonColor
 {
     _buttonColor = buttonColor;
     [self createButton];
 }
 
-/**
- * Set button shadow color
- *
- * @param shadowColor color of the shadow
- */
 -(void) setShadowColor:(UIColor *)shadowColor
 {
     _shadowColor = shadowColor;
     [self createButton];
 }
 
-
-/**
- * Set the shadow height of the button
- *
- * @param shadowHeight height of the shadow
- */
 -(void) setShadowHeight:(CGFloat)shadowHeight
 {
     _shadowHeight = shadowHeight;
@@ -65,11 +46,6 @@
     [self createButton];
 }
 
-/**
- * Set the shape of the button
- *
- * @param style HTPressableButtonStyle of the button
- */
 -(void) setStyle:(HTPressableButtonStyle) style
 {
     switch (style) {
@@ -92,27 +68,17 @@
 }
 
 #pragma mark - Set Button Default Style
-/**
- * Set default button color
- */
+
 -(void) setDefaultButtonColor
 {
     _buttonColor = [UIColor jayColor];
 }
 
-/**
- * Set default shadow color
- *
- * @param shadowColor color of the shadow
- */
 -(void) setDefaultShadowColor:(UIColor *)shadowColor
 {
     _shadowColor = [UIColor jayDarkColor];
 }
 
-/**
- * Set default shadow height
- */
 -(void) setDefaultShadowHeight
 {
     bool isButtoncircular = (_cornerRadius > 10);
@@ -127,11 +93,6 @@
     [super setTitleEdgeInsets:UIEdgeInsetsMake(0.0f, 0.0f, _shadowHeight, 0.0f)];
 }
 
-/**
- * Override setHighlighted to move text down when pressed
- *
- * @param highlighted state of the button
- */
 -(void) setHighlighted:(BOOL)highlighted
 {
     bool isButtoncircular = (_cornerRadius > 10);
@@ -155,9 +116,7 @@
 }
 
 #pragma mark - Create Button
-/**
- * Create button
- */
+
 -(void) createButton
 {
     [self.titleLabel setFont:[UIFont fontWithName:@"Avenir" size:18]];
