@@ -10,7 +10,7 @@
 
 /**
  A category on `UIImage` which provides helpers for generating images to be used as button backgrounds.
- **/
+ */
 
 @interface UIImage (HTButton)
 
@@ -21,7 +21,7 @@
  @param shadowHeight the height of the shadow
  @param shadowColor The background color of the shadow
  @param cornerRadius The corner radius of the button
- **/
+ */
 + (UIImage *) buttonWithColor: (UIColor *) buttonColor
                       andSize: (CGSize) size
               andShadowHeight: (CGFloat) shadowHeight
@@ -35,7 +35,7 @@
  @param shadowHeight the height of the shadow
  @param shadowColor The background color of the shadow
  @param cornerRadius The corner radius of the button
- **/
+ */
 + (UIImage *) buttonWithHighlightedColor: (UIColor *) buttonColor
                                  andSize: (CGSize) size
                          andShadowHeight: (CGFloat) shadowHeight
@@ -49,7 +49,7 @@
  @param shadowHeight the height of the shadow
  @param shadowColor The background color of the shadow
  @param cornerRadius The corner radius of the button
- **/
+ */
 + (UIImage *) circularButtonWithColor: (UIColor *) buttonColor
                             andSize: (CGSize) size
                     andShadowHeight: (CGFloat) shadowHeight
@@ -63,7 +63,7 @@
  @param shadowHeight the height of the shadow
  @param shadowColor The background color of the shadow
  @param cornerRadius The corner radius of the button
- **/
+ */
 + (UIImage *) circularButtonWithHighlightedColor: (UIColor *) buttonColor
                                        andSize: (CGSize) size
                                andShadowHeight: (CGFloat) shadowHeight
@@ -75,7 +75,7 @@
  @param color The fill color of the image
  @param size The size of the image
  @param cornerRadius The corner radius of the image
- **/
+ */
 + (UIImage *) imageWithColor: (UIColor *) color
                      andSize: (CGSize) size
              andCornerRadius: (CGFloat) cornerRadius;
