@@ -143,33 +143,33 @@
     }
     if (isButtoncircular)
     {
-        buttonNormal = [UIImage circularButtonWithColor:_buttonColor
-                                              andSize:self.frame.size
-                                      andShadowHeight:_shadowHeight
-                                       andShadowColor:_shadowColor
-                                      andCornerRadius:_cornerRadius];
+        buttonNormal = [UIImage ht_circularButtonWithColor:_buttonColor
+                                              size:self.frame.size
+                                      shadowHeight:_shadowHeight
+                                       shadowColor:_shadowColor
+                                      cornerRadius:_cornerRadius];
         
-        buttonHighlighted = [UIImage circularButtonWithHighlightedColor:_buttonColor
-                                                              andSize:self.frame.size
-                                                      andShadowHeight:_shadowHeight
-                                                       andShadowColor:_shadowColor
-                                                      andCornerRadius:_cornerRadius];
-        buttonDisabled = [UIImage circularButtonWithColor:[UIColor mediumColor] andSize:self.frame.size andShadowHeight:_shadowHeight andShadowColor:[UIColor mediumDarkColor] andCornerRadius:_cornerRadius];
+        buttonHighlighted = [UIImage ht_circularButtonWithHighlightedColor:_buttonColor
+                                                              size:self.frame.size
+                                                      shadowHeight:_shadowHeight
+                                                       shadowColor:_shadowColor
+                                                      cornerRadius:_cornerRadius];
+        buttonDisabled = [UIImage ht_circularButtonWithColor:[UIColor mediumColor] size:self.frame.size shadowHeight:_shadowHeight shadowColor:[UIColor mediumDarkColor] cornerRadius:_cornerRadius];
     }
     else
     {
         // Rectangular or rounded-corner buttons
-        buttonNormal = [UIImage buttonWithColor:_buttonColor
-                                        andSize:self.frame.size
-                                andShadowHeight:_shadowHeight
-                                 andShadowColor:_shadowColor
-                                andCornerRadius:_cornerRadius];
+        buttonNormal = [UIImage ht_buttonWithColor:_buttonColor
+                                        size:self.frame.size
+                                shadowHeight:_shadowHeight
+                                 shadowColor:_shadowColor
+                                cornerRadius:_cornerRadius];
         
-        buttonHighlighted = [UIImage buttonWithHighlightedColor:_buttonColor
-                                                        andSize:self.frame.size
-                                                andShadowHeight:_shadowHeight
-                                                 andShadowColor:_shadowColor
-                                                andCornerRadius:_cornerRadius];
+        buttonHighlighted = [UIImage ht_buttonWithHighlightedColor:_buttonColor
+                                                        size:self.frame.size
+                                                shadowHeight:_shadowHeight
+                                                 chadowColor:_shadowColor
+                                                cornerRadius:_cornerRadius];
     }
     
     [self setBackgroundImage:buttonNormal forState:UIControlStateNormal];

@@ -11,18 +11,18 @@
 
 @implementation UIImage (HTButton)
 
-+ (UIImage *) buttonWithColor: (UIColor *) buttonColor
-                      andSize: (CGSize) size
-              andShadowHeight: (CGFloat) shadowHeight
-               andShadowColor: (UIColor *) shadowColor
-              andCornerRadius: (CGFloat) cornerRadius
++ (UIImage *) ht_buttonWithColor: (UIColor *) buttonColor
+                            size: (CGSize) size
+                    shadowHeight: (CGFloat) shadowHeight
+                     shadowColor: (UIColor *) shadowColor
+                    cornerRadius: (CGFloat) cornerRadius
 {
     UIImage *buttonImage;
     
     //button color
-    UIImage *frontImage = [UIImage imageWithColor:buttonColor andSize:size andCornerRadius:cornerRadius];
+    UIImage *frontImage = [UIImage ht_imageWithColor:buttonColor size:size cornerRadius:cornerRadius];
     //button's shadow color
-    UIImage *backImage = [UIImage imageWithColor:shadowColor andSize:size andCornerRadius:cornerRadius];
+    UIImage *backImage = [UIImage ht_imageWithColor:shadowColor size:size cornerRadius:cornerRadius];
 
     CGRect rect = CGRectMake(0, 0, backImage.size.width, backImage.size.height + shadowHeight);
     
@@ -36,16 +36,16 @@
     return buttonImage;
 }
 
-+ (UIImage *) buttonWithHighlightedColor: (UIColor *) buttonColor
-                                 andSize: (CGSize) size
-                         andShadowHeight: (CGFloat) shadowHeight
-                          andShadowColor: (UIColor *) shadowColor
-                         andCornerRadius: (CGFloat) cornerRadius
++ (UIImage *) ht_buttonWithHighlightedColor: (UIColor *) buttonColor
+                                       size: (CGSize) size
+                               shadowHeight: (CGFloat) shadowHeight
+                                chadowColor: (UIColor *) shadowColor
+                               cornerRadius: (CGFloat) cornerRadius
 {
     UIImage *buttonHighlightedImage;
     
-    UIImage *frontImage = [UIImage imageWithColor:buttonColor andSize:size andCornerRadius:cornerRadius];
-    UIImage *backImage = [UIImage imageWithColor:shadowColor andSize:size andCornerRadius:cornerRadius];
+    UIImage *frontImage = [UIImage ht_imageWithColor:buttonColor size:size cornerRadius:cornerRadius];
+    UIImage *backImage = [UIImage ht_imageWithColor:shadowColor size:size cornerRadius:cornerRadius];
     
     CGRect rect = CGRectMake(0, 0, frontImage.size.width, frontImage.size.height + shadowHeight);
     
@@ -61,16 +61,16 @@
     
 }
 
-+ (UIImage *) circularButtonWithColor: (UIColor *) buttonColor
-                            andSize: (CGSize) size
-                    andShadowHeight: (CGFloat) shadowHeight
-                     andShadowColor: (UIColor *) shadowColor
-                    andCornerRadius: (CGFloat) cornerRadius
++ (UIImage *) ht_circularButtonWithColor: (UIColor *) buttonColor
+                                    size: (CGSize) size
+                            shadowHeight: (CGFloat) shadowHeight
+                             shadowColor: (UIColor *) shadowColor
+                            cornerRadius: (CGFloat) cornerRadius
 {
     UIImage *buttonImage;
     
-    UIImage *frontImage = [UIImage imageWithColor:buttonColor andSize:size andCornerRadius:cornerRadius];
-    UIImage *backImage = [UIImage imageWithColor:shadowColor andSize:size andCornerRadius:cornerRadius];
+    UIImage *frontImage = [UIImage ht_imageWithColor:buttonColor size:size cornerRadius:cornerRadius];
+    UIImage *backImage = [UIImage ht_imageWithColor:shadowColor size:size cornerRadius:cornerRadius];
     
     //Make the rectangular a little bigger than the button
     CGRect rect = CGRectMake(0,
@@ -88,16 +88,16 @@
     return buttonImage;
 }
 
-+ (UIImage *) circularButtonWithHighlightedColor: (UIColor *) buttonColor
-                                       andSize: (CGSize) size
-                               andShadowHeight: (CGFloat) shadowHeight
-                                andShadowColor: (UIColor *) shadowColor
-                               andCornerRadius: (CGFloat) cornerRadius
++ (UIImage *) ht_circularButtonWithHighlightedColor: (UIColor *) buttonColor
+                                               size: (CGSize) size
+                                       shadowHeight: (CGFloat) shadowHeight
+                                        shadowColor: (UIColor *) shadowColor
+                                       cornerRadius: (CGFloat) cornerRadius
 {
     UIImage *buttonHighlightedImage;
     
-    UIImage *frontImage = [UIImage imageWithColor:buttonColor andSize:size andCornerRadius:cornerRadius];
-    UIImage *backImage = [UIImage imageWithColor:shadowColor andSize:size andCornerRadius:cornerRadius];
+    UIImage *frontImage = [UIImage ht_imageWithColor:buttonColor size:size cornerRadius:cornerRadius];
+    UIImage *backImage = [UIImage ht_imageWithColor:shadowColor size:size cornerRadius:cornerRadius];
     
     CGRect rect = CGRectMake(0,
                              0,
@@ -116,9 +116,9 @@
 }
 
 
-+ (UIImage *) imageWithColor: (UIColor *) color
-                     andSize: (CGSize) size
-             andCornerRadius: (CGFloat) cornerRadius
++ (UIImage *) ht_imageWithColor: (UIColor *) color
+                           size: (CGSize) size
+                   cornerRadius: (CGFloat) cornerRadius
 {
     //Draw the image according to the size and color
     CGRect rect = CGRectMake(0, 0, size.width, size.height);
