@@ -11,6 +11,12 @@
 #import "UIColor+HTColor.h"
 #import "HTPressableButtonPrefs.h"
 
+@interface HTPressableButton ()
+
+@property (readonly, nonatomic, assign) CGFloat calculatedShadowHeight;
+
+@end
+
 @implementation HTPressableButton
 
 #pragma mark - Init
@@ -20,9 +26,25 @@
     self = [super initWithFrame:frame];
     if (self)
     {
-        // Initialization code
+        _buttonColor = [UIColor jayColor];
+        _shadowColor = [UIColor jayDarkColor];
     }
     return self;
+}
+
+- (void)setFrame:(CGRect)frame {
+    [super setFrame:frame];
+    [self createButton];
+}
+
+- (CGFloat)calculatedShadowHeight {
+    if (fabs(_shadowHeight - 0.0) > 0.000001) {
+        return _shadowHeight;
+    }
+    
+    bool isButtoncircular = (_cornerRadius > 10);
+    return CGRectGetHeight(self.frame) *
+    (isButtoncircular ? shadowcircularDefaultHeightPercentage : shadowDefaultHeightPercentage);
 }
 
 #pragma mark - Set Button Style
@@ -48,6 +70,7 @@
 
 -(void) setStyle:(HTPressableButtonStyle) style
 {
+    _style = style;
     switch (style) {
         case HTPressableButtonStyleRect:
             _cornerRadius = 0.0;
@@ -56,7 +79,7 @@
             _cornerRadius = 10.0;
             break;
         case HTPressableButtonStyleCircular:
-            _cornerRadius = self.frame.size.height/2;
+            _cornerRadius = CGRectGetHeight(self.frame) / 2.0;
             self.clipsToBounds = YES;
             break;
 
@@ -69,30 +92,6 @@
 
 #pragma mark - Set Button Default Style
 
--(void) setDefaultButtonColor
-{
-    _buttonColor = [UIColor jayColor];
-}
-
--(void) setDefaultShadowColor:(UIColor *)shadowColor
-{
-    _shadowColor = [UIColor jayDarkColor];
-}
-
--(void) setDefaultShadowHeight
-{
-    bool isButtoncircular = (_cornerRadius > 10);
-    if (isButtoncircular)
-    {
-        _shadowHeight = self.frame.size.height * shadowcircularDefaultHeightPercentage;
-    }
-    else
-    {
-        _shadowHeight = self.frame.size.height * shadowDefaultHeightPercentage;
-    }
-    [super setTitleEdgeInsets:UIEdgeInsetsMake(0.0f, 0.0f, _shadowHeight, 0.0f)];
-}
-
 -(void) setHighlighted:(BOOL)highlighted
 {
     bool isButtoncircular = (_cornerRadius > 10);
@@ -100,17 +99,17 @@
     {
         if (isButtoncircular)
         {
-            [super setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, -((_shadowHeight/4) * shadowOffetWhenPressed), 0)];
+            [super setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, -((self.calculatedShadowHeight/4) * shadowOffetWhenPressed), 0)];
         }
         else
         {
-            [super setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, -(_shadowHeight * shadowOffetWhenPressed), 0)];
+            [super setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, -(self.calculatedShadowHeight * shadowOffetWhenPressed), 0)];
         }
         
     }
     else
     {
-        [super setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, _shadowHeight, 0)];
+        [super setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, self.calculatedShadowHeight, 0)];
     }
     [super setHighlighted:highlighted];
 }
@@ -121,60 +120,47 @@
 {
     [self.titleLabel setFont:[UIFont fontWithName:@"Avenir" size:18]];
     
-    UIImage *buttonNormal;
-    UIImage *buttonHighlighted;
-    UIImage *buttonDisabled;
-    bool isButtonColorSet = _buttonColor;
-    bool isShadowColorSet = _shadowColor;
-    bool isShadowHeightSet = _shadowHeight;
+    UIImage *buttonNormal = nil;
+    UIImage *buttonHighlighted = nil;
+    UIImage *buttonDisabled = nil;
     bool isButtoncircular = (_cornerRadius > 10);
     
-    if(!isButtonColorSet)
-    {
-        [self setDefaultButtonColor];
-    }
-    if(!isShadowHeightSet)
-    {
-        [self setDefaultShadowHeight];
-    }
-    if(!isShadowColorSet)
-    {
-        [self setDefaultShadowColor: _buttonColor];
-    }
+    CGFloat shadowHeight = self.calculatedShadowHeight;
+    
     if (isButtoncircular)
     {
         buttonNormal = [UIImage circularButtonWithColor:_buttonColor
                                               andSize:self.frame.size
-                                      andShadowHeight:_shadowHeight
+                                      andShadowHeight:shadowHeight
                                        andShadowColor:_shadowColor
                                       andCornerRadius:_cornerRadius];
         
         buttonHighlighted = [UIImage circularButtonWithHighlightedColor:_buttonColor
                                                               andSize:self.frame.size
-                                                      andShadowHeight:_shadowHeight
+                                                      andShadowHeight:shadowHeight
                                                        andShadowColor:_shadowColor
                                                       andCornerRadius:_cornerRadius];
-        buttonDisabled = [UIImage circularButtonWithColor:[UIColor mediumColor] andSize:self.frame.size andShadowHeight:_shadowHeight andShadowColor:[UIColor mediumDarkColor] andCornerRadius:_cornerRadius];
+        buttonDisabled = [UIImage circularButtonWithColor:[UIColor mediumColor] andSize:self.frame.size andShadowHeight:shadowHeight andShadowColor:[UIColor mediumDarkColor] andCornerRadius:_cornerRadius];
     }
     else
     {
         // Rectangular or rounded-corner buttons
         buttonNormal = [UIImage buttonWithColor:_buttonColor
                                         andSize:self.frame.size
-                                andShadowHeight:_shadowHeight
+                                andShadowHeight:shadowHeight
                                  andShadowColor:_shadowColor
                                 andCornerRadius:_cornerRadius];
         
         buttonHighlighted = [UIImage buttonWithHighlightedColor:_buttonColor
                                                         andSize:self.frame.size
-                                                andShadowHeight:_shadowHeight
+                                                andShadowHeight:shadowHeight
                                                  andShadowColor:_shadowColor
                                                 andCornerRadius:_cornerRadius];
     }
     
     [self setBackgroundImage:buttonNormal forState:UIControlStateNormal];
     [self setBackgroundImage:buttonHighlighted forState:UIControlStateHighlighted];
-    //[self setBackgroundImage:buttonDisabled forState:UIControlStateDisabled];
+    [self setBackgroundImage:buttonDisabled forState:UIControlStateDisabled];
 }
 
 @end

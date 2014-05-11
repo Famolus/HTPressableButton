@@ -25,22 +25,22 @@ typedef NS_ENUM(NSInteger, HTPressableButtonStyle) {
 @interface HTPressableButton : UIButton
 
 /**
- The color of the button
+ The color of the button. Default color is `jayColor`.
  */
 @property(nonatomic, strong, readwrite) UIColor *buttonColor UI_APPEARANCE_SELECTOR;
 
 /**
- The color of the shadow
+ The color of the shadow. Default color is `darkJayColor`.
  */
 @property(nonatomic, strong, readwrite) UIColor *shadowColor UI_APPEARANCE_SELECTOR;
 
 /**
- The shadow height as a CGFloat
+ The shadow height as a CGFloat. Default value is `17% of button's height`.
  */
 @property(nonatomic, readwrite) CGFloat shadowHeight UI_APPEARANCE_SELECTOR;
 
 /**
- The corner radius of the button
+ The corner radius of the button. Default value is `0.0`.
  */
 @property(nonatomic, readwrite) CGFloat cornerRadius UI_APPEARANCE_SELECTOR;
 
@@ -60,56 +60,6 @@ typedef NS_ENUM(NSInteger, HTPressableButtonStyle) {
  */
 - (id)initWithFrame:(CGRect)frame;
 
-#pragma mark - Set Button Style
-
-/**
- Set the button's main color
- @param buttonColor The fill color to be used by the button
- */
--(void) setButtonColor:(UIColor *)buttonColor;
-
-/**
- Set the button's shadow color
- @param shadowColor The fill color to be used by the shadow
- */
--(void) setShadowColor:(UIColor *)shadowColor;
-
-/**
- Set the shadow height
- @param shadowHeight A float value which sets the height of the shadow
- */
--(void) setShadowHeight:(CGFloat)shadowHeight;
-
-/**
- Set the button style
- 
- Can be HTPressableButtonStyleRect, HTPressableButtonStyleRounded or 
- HTPressableButtonStyleCircular
- @param style The display style of the button
- */
--(void) setStyle:(HTPressableButtonStyle) style;
-
-#pragma mark - Set Button Default Style
-
-/**
- Applies the default `jayColor` to the button
- */
--(void) setDefaultButtonColor;
-
-/**
- Applies the default `darkJayColor` color to the shadow
- */
--(void) setDefaultShadowColor:(UIColor *)buttonColor;
-
-/**
- Applies the default shadow height; 17% of the overall button size.
- */
--(void) setDefaultShadowHeight;
-
-/**
- Override the current highlighted state
- */
--(void) setHighlighted:(BOOL)highlighted;
 
 #pragma mark - Create Button
 
