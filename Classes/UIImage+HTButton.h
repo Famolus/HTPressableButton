@@ -22,11 +22,11 @@
  @param shadowColor The background color of the shadow
  @param cornerRadius The corner radius of the button
  */
-+ (UIImage *) buttonWithColor: (UIColor *) buttonColor
-                      andSize: (CGSize) size
-              andShadowHeight: (CGFloat) shadowHeight
-               andShadowColor: (UIColor *) shadowColor
-              andCornerRadius: (CGFloat) cornerRadius;
++ (UIImage *) ht_buttonWithColor: (UIColor *) buttonColor
+                            size: (CGSize) size
+                    shadowHeight: (CGFloat) shadowHeight
+                     shadowColor: (UIColor *) shadowColor
+                    cornerRadius: (CGFloat) cornerRadius;
 
 /**
  Create a composite image to be used as the highlighted state of a button
@@ -36,11 +36,11 @@
  @param shadowColor The background color of the shadow
  @param cornerRadius The corner radius of the button
  */
-+ (UIImage *) buttonWithHighlightedColor: (UIColor *) buttonColor
-                                 andSize: (CGSize) size
-                         andShadowHeight: (CGFloat) shadowHeight
-                          andShadowColor: (UIColor *) shadowColor
-                         andCornerRadius: (CGFloat) cornerRadius;
++ (UIImage *) ht_buttonWithHighlightedColor: (UIColor *) buttonColor
+                                       size: (CGSize) size
+                               shadowHeight: (CGFloat) shadowHeight
+                                chadowColor: (UIColor *) shadowColor
+                               cornerRadius: (CGFloat) cornerRadius;
 
 /**
  Create a composite circular image to be used as the button background
@@ -50,11 +50,11 @@
  @param shadowColor The background color of the shadow
  @param cornerRadius The corner radius of the button
  */
-+ (UIImage *) circularButtonWithColor: (UIColor *) buttonColor
-                            andSize: (CGSize) size
-                    andShadowHeight: (CGFloat) shadowHeight
-                     andShadowColor: (UIColor *) shadowColor
-                    andCornerRadius: (CGFloat) cornerRadius;
++ (UIImage *) ht_circularButtonWithColor: (UIColor *) buttonColor
+                                    size: (CGSize) size
+                            shadowHeight: (CGFloat) shadowHeight
+                             shadowColor: (UIColor *) shadowColor
+                            cornerRadius: (CGFloat) cornerRadius;
 
 /**
  Create a composite circular image to be used as the highlighted state of a button
@@ -64,11 +64,11 @@
  @param shadowColor The background color of the shadow
  @param cornerRadius The corner radius of the button
  */
-+ (UIImage *) circularButtonWithHighlightedColor: (UIColor *) buttonColor
-                                       andSize: (CGSize) size
-                               andShadowHeight: (CGFloat) shadowHeight
-                                andShadowColor: (UIColor *) shadowColor
-                               andCornerRadius:(CGFloat) cornerRadius;
++ (UIImage *) ht_circularButtonWithHighlightedColor: (UIColor *) buttonColor
+                                               size: (CGSize) size
+                                       shadowHeight: (CGFloat) shadowHeight
+                                        shadowColor: (UIColor *) shadowColor
+                                       cornerRadius: (CGFloat) cornerRadius;
 
 /**
  Create a new image filled with a color
@@ -76,8 +76,8 @@
  @param size The size of the image
  @param cornerRadius The corner radius of the image
  */
-+ (UIImage *) imageWithColor: (UIColor *) color
-                     andSize: (CGSize) size
-             andCornerRadius: (CGFloat) cornerRadius;
++ (UIImage *) ht_imageWithColor: (UIColor *) color
+                           size: (CGSize) size
+                   cornerRadius: (CGFloat) cornerRadius;
 
 @end
