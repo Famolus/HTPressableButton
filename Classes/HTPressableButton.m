@@ -67,6 +67,18 @@
     [self createButton];
 }
 
+-(void) setDisabledButtonColor:(UIColor *)disabledButtonColor
+{
+    _disabledButtonColor = disabledButtonColor;
+    [self createButton];
+}
+
+- (void) setDisabledShadowColor:(UIColor *)disabledShadowColor
+{
+    _disabledShadowColor = disabledShadowColor;
+    [self createButton];
+}
+
 #pragma mark - Set Button Default Style
 
 -(void) setDefaultButtonColor
@@ -74,9 +86,19 @@
     _buttonColor = [UIColor jayColor];
 }
 
--(void) setDefaultShadowColor:(UIColor *)shadowColor
+-(void) setDefaultShadowColor
 {
     _shadowColor = [UIColor jayDarkColor];
+}
+
+-(void) setDefaultDisabledButtonColor
+{
+    _disabledButtonColor = [UIColor mediumColor];
+}
+
+- (void) setDefaultDisabledShadowColor
+{
+    _disabledShadowColor = [UIColor mediumDarkColor];
 }
 
 -(void) setDefaultShadowHeight
@@ -92,6 +114,8 @@
     }
     [super setTitleEdgeInsets:UIEdgeInsetsMake(0.0f, 0.0f, _shadowHeight, 0.0f)];
 }
+
+#pragma mark - Set according to button state
 
 -(void) setHighlighted:(BOOL)highlighted
 {
@@ -115,6 +139,35 @@
     [super setHighlighted:highlighted];
 }
 
+-(void) setEnabled:(BOOL)enabled
+{
+    //The button image when disabled is only created when user disables the button it, this is to avoid wasting space.
+    if (!enabled) {
+        bool isButtoncircular = (_cornerRadius > 10);
+        UIImage *buttonDisabled;
+        if (isButtoncircular)
+        {
+            buttonDisabled = [UIImage ht_circularButtonWithColor:_disabledButtonColor
+                                                            size:self.frame.size
+                                                    shadowHeight:_shadowHeight
+                                                     shadowColor:_disabledShadowColor
+                                                    cornerRadius:_cornerRadius];
+        }
+        else
+        {
+            buttonDisabled = [UIImage ht_buttonWithColor:_disabledButtonColor
+                                                    size:self.frame.size
+                                            shadowHeight:_shadowHeight
+                                             shadowColor:_disabledShadowColor
+                                            cornerRadius:_cornerRadius];
+        }
+
+        [self setBackgroundImage:buttonDisabled forState:UIControlStateDisabled];
+
+    }
+    [super setEnabled:enabled];
+}
+
 #pragma mark - Create Button
 
 -(void) createButton
@@ -123,12 +176,14 @@
     
     UIImage *buttonNormal;
     UIImage *buttonHighlighted;
-    UIImage *buttonDisabled;
     bool isButtonColorSet = _buttonColor;
     bool isShadowColorSet = _shadowColor;
     bool isShadowHeightSet = _shadowHeight;
     bool isButtoncircular = (_cornerRadius > 10);
-    
+    bool isButtonDisabledColorSet = _disabledButtonColor;
+    bool isShadowDisabledColorSet = _disabledShadowColor;
+
+    //To check if user did not set any of these, get the default values.
     if(!isButtonColorSet)
     {
         [self setDefaultButtonColor];
@@ -139,8 +194,17 @@
     }
     if(!isShadowColorSet)
     {
-        [self setDefaultShadowColor: _buttonColor];
+        [self setDefaultShadowColor];
     }
+    if (!isButtonDisabledColorSet)
+    {
+        [self setDefaultDisabledButtonColor];
+    }
+    if(!isShadowDisabledColorSet)
+    {
+        [self setDefaultDisabledShadowColor];
+    }
+    
     if (isButtoncircular)
     {
         buttonNormal = [UIImage ht_circularButtonWithColor:_buttonColor
@@ -154,7 +218,6 @@
                                                       shadowHeight:_shadowHeight
                                                        shadowColor:_shadowColor
                                                       cornerRadius:_cornerRadius];
-        buttonDisabled = [UIImage ht_circularButtonWithColor:[UIColor mediumColor] size:self.frame.size shadowHeight:_shadowHeight shadowColor:[UIColor mediumDarkColor] cornerRadius:_cornerRadius];
     }
     else
     {
@@ -170,11 +233,11 @@
                                                 shadowHeight:_shadowHeight
                                                  chadowColor:_shadowColor
                                                 cornerRadius:_cornerRadius];
+        
     }
     
     [self setBackgroundImage:buttonNormal forState:UIControlStateNormal];
     [self setBackgroundImage:buttonHighlighted forState:UIControlStateHighlighted];
-    //[self setBackgroundImage:buttonDisabled forState:UIControlStateDisabled];
 }
 
 @end

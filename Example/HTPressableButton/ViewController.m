@@ -52,8 +52,21 @@
     circularButton.style = HTPressableButtonStyleCircular;
     circularButton.buttonColor = [UIColor mintColor];
     circularButton.shadowColor = [UIColor mintDarkColor];
+    [circularButton setDisabledButtonColor:[UIColor sunflowerColor]];
     [circularButton setTitle:@"Circular" forState:UIControlStateNormal];
     [self.view addSubview:circularButton];
+    
+    //Disabled rounded rectangular button
+    HTPressableButton *disabledRoundedRectButton = [HTPressableButton buttonWithType:UIButtonTypeCustom];
+    disabledRoundedRectButton.frame = CGRectMake(30, 420, 260, 50);
+    disabledRoundedRectButton.style = HTPressableButtonStyleRounded;
+    disabledRoundedRectButton.disabledButtonColor = [UIColor pinkRoseColor];
+    disabledRoundedRectButton.disabledShadowColor = [UIColor pinkRoseDarkColor];
+    disabledRoundedRectButton.alpha = 0.5;
+    disabledRoundedRectButton.enabled = NO;
+    [disabledRoundedRectButton setTitle:@"DisabledButton" forState:UIControlStateNormal];
+    [self.view addSubview:disabledRoundedRectButton];
+
 
 }
 

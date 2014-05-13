@@ -45,6 +45,17 @@ typedef NS_ENUM(NSInteger, HTPressableButtonStyle) {
 @property(nonatomic, readwrite) CGFloat cornerRadius UI_APPEARANCE_SELECTOR;
 
 /**
+ The color of the button when disabled
+ */
+@property(nonatomic, strong, readwrite) UIColor *disabledButtonColor UI_APPEARANCE_SELECTOR;
+
+/**
+ The color of the shadow when disabled
+ */
+@property(nonatomic, strong, readwrite) UIColor *disabledShadowColor UI_APPEARANCE_SELECTOR;
+
+
+/**
  Button style
  
  Choose between: square, rounded, or circular
@@ -81,6 +92,19 @@ typedef NS_ENUM(NSInteger, HTPressableButtonStyle) {
 -(void) setShadowHeight:(CGFloat)shadowHeight;
 
 /**
+ Set the button's color when disabled
+ @param buttonColor The fill color to be used by the button
+ */
+-(void) setDisabledButtonColor:(UIColor *)disabledButtonColor;
+
+/**
+ Set the button's shadow color when disabled
+ @param shadowDColor The fill color to be used by the shadow
+ */
+-(void) setDisabledShadowColor:(UIColor *)disabledShadowColor;
+
+
+/**
  Set the button style
  
  Can be HTPressableButtonStyleRect, HTPressableButtonStyleRounded or 
@@ -99,7 +123,7 @@ typedef NS_ENUM(NSInteger, HTPressableButtonStyle) {
 /**
  Applies the default `darkJayColor` color to the shadow
  */
--(void) setDefaultShadowColor:(UIColor *)buttonColor;
+-(void) setDefaultShadowColor;
 
 /**
  Applies the default shadow height; 17% of the overall button size.
@@ -110,6 +134,12 @@ typedef NS_ENUM(NSInteger, HTPressableButtonStyle) {
  Override the current highlighted state
  */
 -(void) setHighlighted:(BOOL)highlighted;
+
+/**
+ Override the current enabled state
+ */
+-(void) setEnabled:(BOOL)enabled;
+
 
 #pragma mark - Create Button
 
