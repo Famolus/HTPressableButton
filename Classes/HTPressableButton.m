@@ -15,10 +15,9 @@
 
 #pragma mark - Init
 
-- (id)initWithFrame:(CGRect)frame
+- (instancetype) initWithFrame:(CGRect)frame
 {
-    self = [super initWithFrame:frame];
-    if (self)
+    if (self = [super initWithFrame:frame])
     {
         // Initialization code
     }
@@ -27,26 +26,26 @@
 
 #pragma mark - Set Button Style
 
--(void) setButtonColor:(UIColor *)buttonColor
+- (void) setButtonColor:(UIColor *)buttonColor
 {
     _buttonColor = buttonColor;
     [self createButton];
 }
 
--(void) setShadowColor:(UIColor *)shadowColor
+- (void) setShadowColor:(UIColor *)shadowColor
 {
     _shadowColor = shadowColor;
     [self createButton];
 }
 
--(void) setShadowHeight:(CGFloat)shadowHeight
+- (void) setShadowHeight:(CGFloat)shadowHeight
 {
     _shadowHeight = shadowHeight;
     [super setTitleEdgeInsets:UIEdgeInsetsMake(0.0f, 0.0f, shadowHeight, 0.0f)];
     [self createButton];
 }
 
--(void) setStyle:(HTPressableButtonStyle) style
+- (void) setStyle:(HTPressableButtonStyle) style
 {
     switch (style) {
         case HTPressableButtonStyleRect:
@@ -67,7 +66,7 @@
     [self createButton];
 }
 
--(void) setDisabledButtonColor:(UIColor *)disabledButtonColor
+- (void) setDisabledButtonColor:(UIColor *)disabledButtonColor
 {
     _disabledButtonColor = disabledButtonColor;
     [self createButton];
@@ -81,17 +80,17 @@
 
 #pragma mark - Set Button Default Style
 
--(void) setDefaultButtonColor
+- (void) setDefaultButtonColor
 {
     _buttonColor = [UIColor jayColor];
 }
 
--(void) setDefaultShadowColor
+- (void) setDefaultShadowColor
 {
     _shadowColor = [UIColor jayDarkColor];
 }
 
--(void) setDefaultDisabledButtonColor
+- (void) setDefaultDisabledButtonColor
 {
     _disabledButtonColor = [UIColor mediumColor];
 }
@@ -101,7 +100,7 @@
     _disabledShadowColor = [UIColor mediumDarkColor];
 }
 
--(void) setDefaultShadowHeight
+- (void) setDefaultShadowHeight
 {
     bool isButtoncircular = (_cornerRadius > 10);
     if (isButtoncircular)
@@ -117,7 +116,7 @@
 
 #pragma mark - Set according to button state
 
--(void) setHighlighted:(BOOL)highlighted
+- (void) setHighlighted:(BOOL)highlighted
 {
     bool isButtoncircular = (_cornerRadius > 10);
     if (highlighted)
@@ -139,8 +138,10 @@
     [super setHighlighted:highlighted];
 }
 
--(void) setEnabled:(BOOL)enabled
+- (void) setEnabled:(BOOL)enabled
 {
+    [super setEnabled:enabled];
+    
     //The button image when disabled is only created when user disables the button it, this is to avoid wasting space.
     if (!enabled) {
         bool isButtoncircular = (_cornerRadius > 10);
@@ -165,12 +166,11 @@
         [self setBackgroundImage:buttonDisabled forState:UIControlStateDisabled];
 
     }
-    [super setEnabled:enabled];
 }
 
 #pragma mark - Create Button
 
--(void) createButton
+- (void) createButton
 {
     [self.titleLabel setFont:[UIFont fontWithName:@"Avenir" size:18]];
     
