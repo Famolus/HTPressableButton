@@ -1,0 +1,3 @@
+language: objective-c
+xcode_scheme: HTPressableButton
+xcode_sdk: iphonesimulatorlanguage: objective-c
