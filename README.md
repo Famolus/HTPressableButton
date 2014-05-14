@@ -4,7 +4,7 @@ HTPressableButton is designed for iOS developers to be able to spend time develo
 
 **Compatible with:**  iOS 6.0 and above
 
-**Current Version:** 1.1.0
+**Current Version:** 1.1.1
 
 You can check out our documentation [here](http://cocoadocs.org/docsets/HTPressableButton/). 
 Installation
@@ -21,16 +21,20 @@ You may also quickly try the HTPressableButton example project with
 pod try 'HTPressableButton'
 ```
 
+However, if you are only interested to use the color scheme provided (shown below) then
+
+```ruby
+pod 'HTPressableButton/HTColor`
+```
+
 Another option is to use git submodules or just [download it](https://github.com/Grouper/FlatUIKit/archive/master.zip) and include it in your project manually.
 
-**NOTE:** Please be reminded to add the header file when implementing
+**NOTE:** Please be reminded to add the header files to your project. You may add only the one that you wish to use. 
 
 ```objective-c
 #import "HTPressableButton.h"
 #import "UIColor+HTColor.h"
 ```
-
-`UIColor+HTColor.h` is not needed if you don't intend to use the color scheme provided (below).
 
 <br>
 
