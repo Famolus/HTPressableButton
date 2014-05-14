@@ -1,5 +1,8 @@
 HTPressableButton
 ==============
+
+[![Build Status](https://travis-ci.org/herinkc/HTPressableButton.svg?branch=master)](https://travis-ci.org/herinkc/HTPressableButton)
+
 HTPressableButton is designed for iOS developers to be able to spend time developing ideas, not building basic buttons. These stylish and flat-designed buttons can easily be modified and are perfect for almost any project. With no worry over color choice, HTPressableButton also includes beautiful color schemes that perfectly suit with your app.
 
 **Compatible with:**  iOS 6.0 and above

@@ -1,3 +1,3 @@
 language: objective-c
-xcode_scheme: HTPressableButton
-xcode_sdk: iphonesimulator
+before_script: cd Example
+script: "xctool -project HTPressableButton.xcodeproj -scheme HTPressableButton -sdk iphonesimulator build"
