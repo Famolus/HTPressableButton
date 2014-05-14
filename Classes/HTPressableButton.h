@@ -93,13 +93,13 @@ typedef NS_ENUM(NSInteger, HTPressableButtonStyle) {
 
 /**
  Set the button's color when disabled
- @param buttonColor The fill color to be used by the button
+ @param disabledButtonColor The fill color to be used by the button
  */
 - (void) setDisabledButtonColor:(UIColor *)disabledButtonColor;
 
 /**
  Set the button's shadow color when disabled
- @param shadowDColor The fill color to be used by the shadow
+ @param disabledShadowColor The fill color to be used by the shadow
  */
 - (void) setDisabledShadowColor:(UIColor *)disabledShadowColor;
 
