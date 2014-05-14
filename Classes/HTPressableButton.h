@@ -103,7 +103,6 @@ typedef NS_ENUM(NSInteger, HTPressableButtonStyle) {
  */
 - (void) setDisabledShadowColor:(UIColor *)disabledShadowColor;
 
-
 /**
  Set the button style
  
@@ -112,34 +111,6 @@ typedef NS_ENUM(NSInteger, HTPressableButtonStyle) {
  @param style The display style of the button
  */
 - (void) setStyle:(HTPressableButtonStyle) style;
-
-#pragma mark - Set Button Default Style
-
-/**
- Applies the default `jayColor` to the button
- */
-- (void) setDefaultButtonColor;
-
-/**
- Applies the default `darkJayColor` color to the shadow
- */
-- (void) setDefaultShadowColor;
-
-/**
- Applies the default shadow height; 17% of the overall button size.
- */
-- (void) setDefaultShadowHeight;
-
-/**
- Override the current highlighted state
- */
-- (void) setHighlighted:(BOOL)highlighted;
-
-/**
- Override the current enabled state
- */
-- (void) setEnabled:(BOOL)enabled;
-
 
 #pragma mark - Create Button
 

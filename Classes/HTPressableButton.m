@@ -80,24 +80,24 @@
 
 #pragma mark - Set Button Default Style
 
-- (void) setDefaultButtonColor
+- (UIColor *) buttonColorOrDefault
 {
-    _buttonColor = [UIColor jayColor];
+    return _buttonColor ?: [UIColor jayColor];
 }
 
-- (void) setDefaultShadowColor
+- (UIColor *) shadowColorOrDefault
 {
-    _shadowColor = [UIColor jayDarkColor];
+    return _shadowColor ?: [UIColor jayDarkColor];
 }
 
-- (void) setDefaultDisabledButtonColor
+- (UIColor *) disabledButtonColorOrDefault
 {
-    _disabledButtonColor = [UIColor mediumColor];
+    return _disabledButtonColor ?: [UIColor mediumColor];
 }
 
-- (void) setDefaultDisabledShadowColor
+- (UIColor *) disabledShadowColorOrDefault
 {
-    _disabledShadowColor = [UIColor mediumDarkColor];
+    return _disabledShadowColor ?: [UIColor mediumDarkColor];
 }
 
 - (void) setDefaultShadowHeight
@@ -113,6 +113,7 @@
     }
     [super setTitleEdgeInsets:UIEdgeInsetsMake(0.0f, 0.0f, _shadowHeight, 0.0f)];
 }
+
 
 #pragma mark - Set according to button state
 
@@ -148,18 +149,18 @@
         UIImage *buttonDisabled;
         if (isButtoncircular)
         {
-            buttonDisabled = [UIImage ht_circularButtonWithColor:_disabledButtonColor
+            buttonDisabled = [UIImage ht_circularButtonWithColor:[self disabledButtonColorOrDefault]
                                                             size:self.frame.size
                                                     shadowHeight:_shadowHeight
-                                                     shadowColor:_disabledShadowColor
+                                                     shadowColor:[self disabledShadowColorOrDefault]
                                                     cornerRadius:_cornerRadius];
         }
         else
         {
-            buttonDisabled = [UIImage ht_buttonWithColor:_disabledButtonColor
+            buttonDisabled = [UIImage ht_buttonWithColor:[self disabledButtonColorOrDefault]
                                                     size:self.frame.size
                                             shadowHeight:_shadowHeight
-                                             shadowColor:_disabledShadowColor
+                                             shadowColor:[self disabledShadowColorOrDefault]
                                             cornerRadius:_cornerRadius];
         }
 
@@ -176,63 +177,43 @@
     
     UIImage *buttonNormal;
     UIImage *buttonHighlighted;
-    bool isButtonColorSet = _buttonColor;
-    bool isShadowColorSet = _shadowColor;
     bool isShadowHeightSet = _shadowHeight;
     bool isButtoncircular = (_cornerRadius > 10);
-    bool isButtonDisabledColorSet = _disabledButtonColor;
-    bool isShadowDisabledColorSet = _disabledShadowColor;
 
     //To check if user did not set any of these, get the default values.
-    if(!isButtonColorSet)
-    {
-        [self setDefaultButtonColor];
-    }
     if(!isShadowHeightSet)
     {
         [self setDefaultShadowHeight];
     }
-    if(!isShadowColorSet)
-    {
-        [self setDefaultShadowColor];
-    }
-    if (!isButtonDisabledColorSet)
-    {
-        [self setDefaultDisabledButtonColor];
-    }
-    if(!isShadowDisabledColorSet)
-    {
-        [self setDefaultDisabledShadowColor];
-    }
     
     if (isButtoncircular)
     {
-        buttonNormal = [UIImage ht_circularButtonWithColor:_buttonColor
-                                              size:self.frame.size
-                                      shadowHeight:_shadowHeight
-                                       shadowColor:_shadowColor
-                                      cornerRadius:_cornerRadius];
+        buttonNormal = [UIImage ht_circularButtonWithColor:[self buttonColorOrDefault]
+                                                      size:self.frame.size
+                                              shadowHeight:_shadowHeight
+                                               shadowColor:[self shadowColorOrDefault]
+                                              cornerRadius:_cornerRadius];
         
-        buttonHighlighted = [UIImage ht_circularButtonWithHighlightedColor:_buttonColor
-                                                              size:self.frame.size
-                                                      shadowHeight:_shadowHeight
-                                                       shadowColor:_shadowColor
-                                                      cornerRadius:_cornerRadius];
+        buttonHighlighted = [UIImage ht_circularButtonWithHighlightedColor:[self buttonColorOrDefault]
+                                                                      size:self.frame.size
+                                                              shadowHeight:_shadowHeight
+                                                               shadowColor:[self shadowColorOrDefault]
+                                                              cornerRadius:_cornerRadius];
     }
     else
     {
         // Rectangular or rounded-corner buttons
-        buttonNormal = [UIImage ht_buttonWithColor:_buttonColor
-                                        size:self.frame.size
-                                shadowHeight:_shadowHeight
-                                 shadowColor:_shadowColor
-                                cornerRadius:_cornerRadius];
+        buttonNormal = [UIImage ht_buttonWithColor:[self buttonColorOrDefault]
+                                              size:self.frame.size
+                                      shadowHeight:_shadowHeight
+                                       shadowColor:[self shadowColorOrDefault]
+                                      cornerRadius:_cornerRadius];
         
-        buttonHighlighted = [UIImage ht_buttonWithHighlightedColor:_buttonColor
-                                                        size:self.frame.size
-                                                shadowHeight:_shadowHeight
-                                                 chadowColor:_shadowColor
-                                                cornerRadius:_cornerRadius];
+        buttonHighlighted = [UIImage ht_buttonWithHighlightedColor:[self buttonColorOrDefault]
+                                                              size:self.frame.size
+                                                      shadowHeight:_shadowHeight
+                                                       chadowColor:[self shadowColorOrDefault]
+                                                      cornerRadius:_cornerRadius];
         
     }
     
