@@ -147,6 +147,15 @@ Contributors
 --------------
 Welcome contributors! Please don't hesitate to make a pull request :)
 
+####Maintainers
+[![He Rin Kim](https://avatars1.githubusercontent.com/u/3966522?s=80)](https://github.com/herinkc)
+[![Thanakron Tandavas](https://avatars1.githubusercontent.com/u/3419259?s=80)](https://github.com/tandavas)
+
+####Contributors
+[![Paul Williamson](https://avatars0.githubusercontent.com/u/343450?s=80)](https://github.com/squarefrog)
+[![Ben](https://avatars1.githubusercontent.com/u/2032500?s=80)](https://github.com/bcylin)
+[![Manoj Mahapatra](https://avatars3.githubusercontent.com/u/2066984?s=80)](https://github.com/indideveloper)
+[![Pitiphong Phongpattranont](https://avatars2.githubusercontent.com/u/426153?s=80)](https://github.com/pitiphong-p)
 
 Showcase
 --------
