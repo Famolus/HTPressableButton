@@ -231,7 +231,7 @@
         buttonHighlighted = [UIImage ht_buttonWithHighlightedColor:_buttonColor
                                                         size:self.frame.size
                                                 shadowHeight:_shadowHeight
-                                                 chadowColor:_shadowColor
+                                                 shadowColor:_shadowColor
                                                 cornerRadius:_cornerRadius];
         
     }

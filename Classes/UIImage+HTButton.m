@@ -39,7 +39,7 @@
 + (UIImage *) ht_buttonWithHighlightedColor: (UIColor *) buttonColor
                                        size: (CGSize) size
                                shadowHeight: (CGFloat) shadowHeight
-                                chadowColor: (UIColor *) shadowColor
+                                shadowColor: (UIColor *) shadowColor
                                cornerRadius: (CGFloat) cornerRadius
 {
     UIImage *buttonHighlightedImage;
