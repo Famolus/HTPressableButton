@@ -119,6 +119,23 @@ typedef NS_ENUM(NSInteger, HTPressableButtonStyle) {
  */
 - (void) setStyle:(HTPressableButtonStyle) style;
 
+#pragma mark - Set Button Default Style
+
+/**
+ @deprecated This method has been deprecated. The default button color is now applied during -initWithFrame:
+ */
+- (void) setDefaultButtonColor DEPRECATED_ATTRIBUTE;
+
+/**
+ @deprecated This method has been deprecated. The default shadow color is now applied during -initWithFrame:
+ */
+- (void) setDefaultShadowColor DEPRECATED_ATTRIBUTE;
+
+/**
+ @deprecated This method has been deprecated. Default shadow height is now applied during -initWithFrame:
+ */
+- (void) setDefaultShadowHeight DEPRECATED_ATTRIBUTE;
+
 #pragma mark - Create Button
 
 /**
