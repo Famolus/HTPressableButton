@@ -208,9 +208,8 @@
         buttonHighlighted = [UIImage ht_buttonWithHighlightedColor:[self buttonColorOrDefault]
                                                               size:self.frame.size
                                                       shadowHeight:_shadowHeight
-                                                       chadowColor:[self shadowColorOrDefault]
+                                                       shadowColor:[self shadowColorOrDefault]
                                                       cornerRadius:_cornerRadius];
-        
     }
     
     [self setBackgroundImage:buttonNormal forState:UIControlStateNormal];
