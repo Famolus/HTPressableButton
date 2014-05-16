@@ -24,7 +24,7 @@
 {
     if (self = [super initWithFrame:frame])
     {
-        [self setDefaultShadowHeight];
+        [self setDefaultShadowHeightForStyle:style];
         [self setStyle:style];
     }
     return self;
@@ -53,6 +53,8 @@
 
 - (void) setStyle:(HTPressableButtonStyle) style
 {
+    _style = style;
+    
     switch (style) {
         case HTPressableButtonStyleRect:
             _cornerRadius = 0.0;
@@ -106,9 +108,9 @@
     return _disabledShadowColor ?: [UIColor mediumDarkColor];
 }
 
-- (void) setDefaultShadowHeight
+- (void) setDefaultShadowHeightForStyle:(HTPressableButtonStyle)style
 {
-    if (self.style == HTPressableButtonStyleCircular)
+    if (style == HTPressableButtonStyleCircular)
     {
         _shadowHeight = self.frame.size.height * shadowcircularDefaultHeightPercentage;
     }
@@ -214,6 +216,23 @@
     
     [self setBackgroundImage:buttonNormal forState:UIControlStateNormal];
     [self setBackgroundImage:buttonHighlighted forState:UIControlStateHighlighted];
+}
+
+#pragma mark - Deprecated Methods
+
+- (void)setDefaultButtonColor
+{
+    [self setButtonColor:nil];
+}
+
+- (void)setDefaultShadowColor
+{
+    [self setShadowColor:nil];
+}
+
+- (void)setDefaultShadowHeight
+{
+    [self setDefaultShadowHeightForStyle:self.style];
 }
 
 @end
