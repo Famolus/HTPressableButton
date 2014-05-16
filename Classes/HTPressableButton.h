@@ -66,10 +66,17 @@ typedef NS_ENUM(NSInteger, HTPressableButtonStyle) {
 #pragma mark - Init
 
 /**
- Initializes and returns a newly allocated button object with the specified frame rectangle.
+ Initializes and returns a newly allocated rounded button object with the specified frame rectangle.
  @param frame The frame rectangle for the view, measured in points.
  */
 - (instancetype) initWithFrame:(CGRect)frame;
+
+/**
+ Initializes and returns a newly allocated button object with the specified frame rectangle.
+ @param frame The frame rectangle for the view, measured in points.
+ @param style The style of the button; rectangle, rounded rectangle or circle.
+ */
+- (instancetype) initWithFrame:(CGRect)frame buttonStyle:(HTPressableButtonStyle)style;
 
 #pragma mark - Set Button Style
 

@@ -17,9 +17,15 @@
 
 - (instancetype) initWithFrame:(CGRect)frame
 {
+    return [self initWithFrame:frame buttonStyle:HTPressableButtonStyleRounded];
+}
+
+- (instancetype) initWithFrame:(CGRect)frame buttonStyle:(HTPressableButtonStyle)style
+{
     if (self = [super initWithFrame:frame])
     {
-        // Initialization code
+        [self setDefaultShadowHeight];
+        [self setStyle:style];
     }
     return self;
 }
@@ -102,8 +108,7 @@
 
 - (void) setDefaultShadowHeight
 {
-    bool isButtoncircular = (_cornerRadius > 10);
-    if (isButtoncircular)
+    if (self.style == HTPressableButtonStyleCircular)
     {
         _shadowHeight = self.frame.size.height * shadowcircularDefaultHeightPercentage;
     }
@@ -119,10 +124,9 @@
 
 - (void) setHighlighted:(BOOL)highlighted
 {
-    bool isButtoncircular = (_cornerRadius > 10);
     if (highlighted)
     {
-        if (isButtoncircular)
+        if (self.style == HTPressableButtonStyleCircular)
         {
             [super setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, -((_shadowHeight/4) * shadowOffetWhenPressed), 0)];
         }
@@ -145,9 +149,8 @@
     
     //The button image when disabled is only created when user disables the button it, this is to avoid wasting space.
     if (!enabled) {
-        bool isButtoncircular = (_cornerRadius > 10);
         UIImage *buttonDisabled;
-        if (isButtoncircular)
+        if (self.style == HTPressableButtonStyleCircular)
         {
             buttonDisabled = [UIImage ht_circularButtonWithColor:[self disabledButtonColorOrDefault]
                                                             size:self.frame.size
@@ -169,6 +172,7 @@
     }
 }
 
+
 #pragma mark - Create Button
 
 - (void) createButton
@@ -177,16 +181,8 @@
     
     UIImage *buttonNormal;
     UIImage *buttonHighlighted;
-    bool isShadowHeightSet = _shadowHeight;
-    bool isButtoncircular = (_cornerRadius > 10);
 
-    //To check if user did not set any of these, get the default values.
-    if(!isShadowHeightSet)
-    {
-        [self setDefaultShadowHeight];
-    }
-    
-    if (isButtoncircular)
+    if (self.style == HTPressableButtonStyleCircular)
     {
         buttonNormal = [UIImage ht_circularButtonWithColor:[self buttonColorOrDefault]
                                                       size:self.frame.size
