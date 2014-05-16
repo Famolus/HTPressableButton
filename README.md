@@ -176,4 +176,4 @@ Inspired by:
 
 * [FlatUIKit](https://github.com/Grouper/FlatUIKit)
 
-* [Color Palette](https://dribbble.com/shots/1186718-Flattastic-Pro-Color-Palette?list=searches&tag=flat&offset=466)
+* [Erigon](https://dribbble.com/erigon)

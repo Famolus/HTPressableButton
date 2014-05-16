@@ -11,7 +11,7 @@
 /**
  A category on `UIColor` which expands the default `UIColor` with modern flat pastel colors.
  
- There are three main color styles included: [Designmodo Flat-UI](http://designmodo.github.io/Flat-UI/) style, general flat style and [tandavas](https://github.com/tandavas) style.
+ There are three main color styles included: [Designmodo Flat-UI](http://designmodo.github.io/Flat-UI/) style, [Erigon](https://dribbble.com/erigon) style and [Tandavas](https://github.com/tandavas) style.
  */
 
 @interface UIColor (HTColor)
@@ -38,7 +38,7 @@
 + (UIColor *) concreteColor;
 + (UIColor *) asbestosColor;
 
-#pragma mark - Flat color schemes
+#pragma mark - Erigon color schemes
 + (UIColor *) grapeFruitColor;
 + (UIColor *) grapeFruitDarkColor;
 + (UIColor *) bitterSweetColor;
