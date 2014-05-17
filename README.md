@@ -122,14 +122,22 @@ The default *alpha* value is 1.0 for all type of buttons. The value can be chang
 
 | Property                     | Values                                           |
 | ---------------------------- |:------------------------------------------------:|
-| Button Type				   | HTPressableButtonStyleRounded
+| Button Type				   | HTPressableButtonStyleRounded					  |
 | Font                         | Avenir                                           |
 | Font Size                    | 18                                               |
-| Shadow Height                | buttonSize * 0.17 `//17% of the button height`   |
+| Shadow Height                | 17% of the button's height					      |
 | Button Color                 | jayColor                                         |
 | Button Shadow Color          | jayDarkColor                                     |
 | Disabled Button Color        | mediumColor                                      |
 | Disabled Button Shadow Color | mediumDarkColor                                  |
+
+
+If you wish to set your own shadow height instead of using our default value, add:
+
+```objective-c	
+	//Set shadow height of size 10
+	buttonNameHere.shadowHeight = 10;
+```
 
 <br>
 
@@ -138,6 +146,7 @@ You can freely use the additional colors in the file *UIColors+HTColor* anywhere
 ```objective-c
     [UIColor colorNameHere]
     
+    //Examples
     [UIColor jayColor]
     [UIColor pinkRoseDarkColor]
 ```
