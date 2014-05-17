@@ -1,3 +1,5 @@
 language: objective-c
-before_script: cd Example
-script: "xctool -project HTPressableButton.xcodeproj -scheme HTPressableButton -sdk iphonesimulator build"
+before_script: 
+  - cd Example
+  - pod install
+script: "xctool -workspace HTPressableButton.workspace -scheme HTPressableButtonTests -sdk iphonesimulator build test"
