@@ -31,25 +31,22 @@
     [self.view addSubview:button];
     
     //rectangular grape fruit color button
-    HTPressableButton *rectButton = [HTPressableButton buttonWithType:UIButtonTypeCustom];
-    rectButton.frame = CGRectMake(30, 150, 260, 50);
+    CGRect frame = CGRectMake(30, 150, 260, 50);
+    HTPressableButton *rectButton = [[HTPressableButton alloc] initWithFrame:frame buttonStyle:HTPressableButtonStyleRect];
     rectButton.buttonColor = [UIColor grapeFruitColor];
     rectButton.shadowColor = [UIColor grapeFruitDarkColor];
-    rectButton.style = HTPressableButtonStyleRect;
     [rectButton setTitle:@"Rect" forState:UIControlStateNormal];
     [self.view addSubview:rectButton];
     
     // Rounded rectangular default color button
-    HTPressableButton *roundedRectButton = [HTPressableButton buttonWithType:UIButtonTypeCustom];
-    roundedRectButton.frame = CGRectMake(30, 230, 260, 50);
-    roundedRectButton.style = HTPressableButtonStyleRounded;
+    frame = CGRectMake(30, 230, 260, 50);
+    HTPressableButton *roundedRectButton = [[HTPressableButton alloc] initWithFrame:frame buttonStyle:HTPressableButtonStyleRounded];
     [roundedRectButton setTitle:@"Rounded" forState:UIControlStateNormal];
     [self.view addSubview:roundedRectButton];
     
     //Circular mint color button
-    HTPressableButton *circularButton = [HTPressableButton buttonWithType:UIButtonTypeCustom];
-    circularButton.frame = CGRectMake(110, 300, 100, 100);
-    circularButton.style = HTPressableButtonStyleCircular;
+    frame = CGRectMake(110, 300, 100, 100);
+    HTPressableButton *circularButton = [[HTPressableButton alloc] initWithFrame:frame buttonStyle:HTPressableButtonStyleCircular];
     circularButton.buttonColor = [UIColor mintColor];
     circularButton.shadowColor = [UIColor mintDarkColor];
     [circularButton setDisabledButtonColor:[UIColor sunflowerColor]];
@@ -57,9 +54,8 @@
     [self.view addSubview:circularButton];
     
     //Disabled rounded rectangular button
-    HTPressableButton *disabledRoundedRectButton = [HTPressableButton buttonWithType:UIButtonTypeCustom];
-    disabledRoundedRectButton.frame = CGRectMake(30, 420, 260, 50);
-    disabledRoundedRectButton.style = HTPressableButtonStyleRounded;
+    frame = CGRectMake(30, 420, 260, 50);
+    HTPressableButton *disabledRoundedRectButton = [[HTPressableButton alloc] initWithFrame:frame buttonStyle:HTPressableButtonStyleRounded];
     disabledRoundedRectButton.disabledButtonColor = [UIColor pinkRoseColor];
     disabledRoundedRectButton.disabledShadowColor = [UIColor pinkRoseDarkColor];
     disabledRoundedRectButton.alpha = 0.5;

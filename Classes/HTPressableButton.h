@@ -66,10 +66,17 @@ typedef NS_ENUM(NSInteger, HTPressableButtonStyle) {
 #pragma mark - Init
 
 /**
- Initializes and returns a newly allocated button object with the specified frame rectangle.
+ Initializes and returns a newly allocated rounded button object with the specified frame rectangle.
  @param frame The frame rectangle for the view, measured in points.
  */
 - (instancetype) initWithFrame:(CGRect)frame;
+
+/**
+ Initializes and returns a newly allocated button object with the specified frame rectangle.
+ @param frame The frame rectangle for the view, measured in points.
+ @param style The style of the button; rectangle, rounded rectangle or circle.
+ */
+- (instancetype) initWithFrame:(CGRect)frame buttonStyle:(HTPressableButtonStyle)style;
 
 #pragma mark - Set Button Style
 
@@ -93,16 +100,15 @@ typedef NS_ENUM(NSInteger, HTPressableButtonStyle) {
 
 /**
  Set the button's color when disabled
- @param buttonColor The fill color to be used by the button
+ @param disabledButtonColor The fill color to be used by the button
  */
 - (void) setDisabledButtonColor:(UIColor *)disabledButtonColor;
 
 /**
  Set the button's shadow color when disabled
- @param shadowDColor The fill color to be used by the shadow
+ @param disabledShadowColor The fill color to be used by the shadow
  */
 - (void) setDisabledShadowColor:(UIColor *)disabledShadowColor;
-
 
 /**
  Set the button style
@@ -116,30 +122,19 @@ typedef NS_ENUM(NSInteger, HTPressableButtonStyle) {
 #pragma mark - Set Button Default Style
 
 /**
- Applies the default `jayColor` to the button
+ @deprecated This method has been deprecated. The default button color is now applied during -initWithFrame:
  */
-- (void) setDefaultButtonColor;
+- (void) setDefaultButtonColor DEPRECATED_ATTRIBUTE;
 
 /**
- Applies the default `darkJayColor` color to the shadow
+ @deprecated This method has been deprecated. The default shadow color is now applied during -initWithFrame:
  */
-- (void) setDefaultShadowColor;
+- (void) setDefaultShadowColor DEPRECATED_ATTRIBUTE;
 
 /**
- Applies the default shadow height; 17% of the overall button size.
+ @deprecated This method has been deprecated. Default shadow height is now applied during -initWithFrame:
  */
-- (void) setDefaultShadowHeight;
-
-/**
- Override the current highlighted state
- */
-- (void) setHighlighted:(BOOL)highlighted;
-
-/**
- Override the current enabled state
- */
-- (void) setEnabled:(BOOL)enabled;
-
+- (void) setDefaultShadowHeight DEPRECATED_ATTRIBUTE;
 
 #pragma mark - Create Button
 
