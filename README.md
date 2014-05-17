@@ -7,7 +7,7 @@ HTPressableButton is designed for iOS developers to be able to spend time develo
 
 **Compatible with:**  iOS 6.0 and above
 
-**Current Version:** 1.1.1
+**Current Version:** 1.2.0
 
 You can check out our documentation [here](http://cocoadocs.org/docsets/HTPressableButton/). 
 Installation
@@ -44,17 +44,18 @@ Another option is to use git submodules or just [download it](https://github.com
 Button Types
 -------------------
 
-**IMPORTANT:** You must specify the *frame* first. Also, do not forget to choose the *style* of the button you wish to add to your app.
+**IMPORTANT:** You must specify the *frame* first. We'd like to know the size of your button first.
 
 ###Rectangular Button
 ```objective-c
-    HTPressableButton *rectButton = [HTPressableButton buttonWithType:UIButtonTypeCustom];
-    rectButton.frame = CGRectMake(30, 150, 260, 50);
+    //Rectangular grape fruit color button
+    CGRect frame = CGRectMake(30, 150, 260, 50);
+    HTPressableButton *rectButton = [[HTPressableButton alloc] initWithFrame:frame buttonStyle:HTPressableButtonStyleRect];
     rectButton.buttonColor = [UIColor grapeFruitColor];
     rectButton.shadowColor = [UIColor grapeFruitDarkColor];
-    rectButton.style = HTPressableButtonStyleRect;
     [rectButton setTitle:@"Rect" forState:UIControlStateNormal];
     [self.view addSubview:rectButton];
+
 ```
 
 ![HTPressableButton](https://raw.github.com/herinkc/HTPressableButton/master/READMEImages/RectButtonImage.gif)
@@ -63,11 +64,12 @@ Button Types
 
 ###Rounded Rectangular Button
 ```objective-c
-    HTPressableButton *roundedRectButton = [HTPressableButton buttonWithType:UIButtonTypeCustom];
-    roundedRectButton.frame = CGRectMake(30, 230, 260, 50);
-    roundedRectButton.style = HTPressableButtonStyleRounded;
+    // Rounded rectangular default color button
+	frame = CGRectMake(30, 230, 260, 50);
+    HTPressableButton *roundedRectButton = [[HTPressableButton alloc] initWithFrame:frame buttonStyle:HTPressableButtonStyleRounded];
     [roundedRectButton setTitle:@"Rounded" forState:UIControlStateNormal];
     [self.view addSubview:roundedRectButton];
+
 ```
 
 ![HTPressableButton](https://raw.github.com/herinkc/HTPressableButton/master/READMEImages/RoundedRectButtonImage.gif)
@@ -76,12 +78,12 @@ Button Types
 
 ###Circular Button
 ```objective-c
-    //Circular mint color button
-    HTPressableButton *circularButton = [HTPressableButton buttonWithType:UIButtonTypeCustom];
-    circularButton.frame = CGRectMake(110, 300, 100, 100);
-    circularButton.style = HTPressableButtonStyleCircular;
+	//Circular mint color button
+    frame = CGRectMake(110, 300, 100, 100);
+    HTPressableButton *circularButton = [[HTPressableButton alloc] initWithFrame:frame buttonStyle:HTPressableButtonStyleCircular];
     circularButton.buttonColor = [UIColor mintColor];
     circularButton.shadowColor = [UIColor mintDarkColor];
+    [circularButton setDisabledButtonColor:[UIColor sunflowerColor]];
     [circularButton setTitle:@"Circular" forState:UIControlStateNormal];
     [self.view addSubview:circularButton];
 ```
@@ -97,14 +99,14 @@ If you wish to create a disabled button, add:
 ```
 Example:
 ```objective-c
-    HTPressableButton *disabledRoundedRectButton = [HTPressableButton buttonWithType:UIButtonTypeCustom];
-    disabledRoundedRectButton.frame = CGRectMake(30, 420, 260, 50);
-    disabledRoundedRectButton.style = HTPressableButtonStyleRounded;
+    //Disabled rounded rectangular button
+    frame = CGRectMake(30, 420, 260, 50);
+    HTPressableButton *disabledRoundedRectButton = [[HTPressableButton alloc] initWithFrame:frame buttonStyle:HTPressableButtonStyleRounded];
     disabledRoundedRectButton.disabledButtonColor = [UIColor pinkRoseColor];
     disabledRoundedRectButton.disabledShadowColor = [UIColor pinkRoseDarkColor];
     disabledRoundedRectButton.alpha = 0.5;
     disabledRoundedRectButton.enabled = NO;
-	[disabledRoundedRectButton setTitle:@"DisabledButton" forState:UIControlStateNormal];
+    [disabledRoundedRectButton setTitle:@"DisabledButton" forState:UIControlStateNormal];
     [self.view addSubview:disabledRoundedRectButton];
 ```
 
@@ -114,13 +116,13 @@ The default *alpha* value is 1.0 for all type of buttons. The value can be chang
 ```objective-c
 	buttonNameHere.alpha = 0.5;
 ```
-
 <br>
 
-**NOTE:** The default values of the buttons are:
+**NOTE:** We have set some *default* properties for you. 
 
-| Attribute                    | Values                                           |
+| Property                     | Values                                           |
 | ---------------------------- |:------------------------------------------------:|
+| Button Type				   | HTPressableButtonStyleRounded
 | Font                         | Avenir                                           |
 | Font Size                    | 18                                               |
 | Shadow Height                | buttonSize * 0.17 `//17% of the button height`   |
@@ -145,7 +147,7 @@ You can freely use the additional colors in the file *UIColors+HTColor* anywhere
 
 Contributors
 --------------
-Welcome contributors! Please don't hesitate to make a pull request :)
+Welcome contributors! Please don't hesitate to make an issue or pull request :)
 
 ####Maintainers
 [![He Rin Kim](https://avatars1.githubusercontent.com/u/3966522?s=80)](https://github.com/herinkc)
