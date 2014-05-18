@@ -3,4 +3,4 @@ before_script:
   - export LANG=en_US.UTF-8
   - gem install cocoapods --no-rdoc --no-ri --no-document --quiet
   - cd Example && pod install
-script: "xctool -workspace HTPressableButton.workspace -scheme HTPressableButtonTests -sdk iphonesimulator build test"
+script: "xctool -workspace HTPressableButton.xcworkspace -scheme HTPressableButtonTests -sdk iphonesimulator build test"
