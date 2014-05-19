@@ -1,7 +1,4 @@
 language: objective-c
 before_install:
-  - export LANG=en_US.UTF-8
-  - gem install cocoapods --no-rdoc --no-ri --no-document --quiet
-  - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
-  - cd Example && pod install
-script: "xcodebuild -workspace HTPressableButton.xcworkspace -scheme HTPressableButton -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO clean test | xcpretty -c && exit ${PIPESTATUS[0]}"
+  - cd Example
+script: "xcodebuild -workspace HTPressableButton.xcworkspace -scheme HTPressableButton -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO clean test"
