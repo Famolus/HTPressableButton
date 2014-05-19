@@ -20,6 +20,20 @@
                ReferencedContainer = "container:HTPressableButton.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0E90812B1927EDC1008A0F73"
+               BuildableName = "HTPressableButtonTests.xctest"
+               BlueprintName = "HTPressableButtonTests"
+               ReferencedContainer = "container:HTPressableButton.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -32,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "83A1F50018FB0C1E00144443"
+               BlueprintIdentifier = "0E90812B1927EDC1008A0F73"
                BuildableName = "HTPressableButtonTests.xctest"
                BlueprintName = "HTPressableButtonTests"
                ReferencedContainer = "container:HTPressableButton.xcodeproj">

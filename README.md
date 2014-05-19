@@ -41,6 +41,21 @@ Another option is to use git submodules or just [download it](https://github.com
 
 <br>
 
+Tests
+-------------------
+
+The example project contains a small suite of tests. If contributing to HTPressableButton, you should ensure you run these tests before submitting a pull request. To run the tests, first install the pod dependencies, then open the created workspace file.
+
+```
+cd Example
+pod install
+open Example.xcworkspace
+```
+
+Now run the tests by clicking Product > Test (⌘ U).
+
+<br>
+
 Button Types
 -------------------
 
