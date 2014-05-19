@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		05E2370CD1B84B01B32D0AB7 /* libPods-HTPressableButtonTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2214C1788F1C4CC39481C273 /* libPods-HTPressableButtonTests.a */; };
+		0E6781AA192A82AF00FDE8BB /* XCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E6781A9192A82AF00FDE8BB /* XCTests.m */; };
 		0E90812D1927EDC1008A0F73 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A1F50218FB0C1E00144443 /* XCTest.framework */; };
 		0E90812E1927EDC1008A0F73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A1F4E318FB0C1E00144443 /* Foundation.framework */; };
 		0E90812F1927EDC1008A0F73 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A1F4E718FB0C1E00144443 /* UIKit.framework */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E6781A9192A82AF00FDE8BB /* XCTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCTests.m; sourceTree = "<group>"; };
 		0E90812C1927EDC1008A0F73 /* HTPressableButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTPressableButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E9081321927EDC1008A0F73 /* HTPressableButtonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HTPressableButtonTests-Info.plist"; sourceTree = "<group>"; };
 		0E9081341927EDC1008A0F73 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				0E9081311927EDC1008A0F73 /* Supporting Files */,
 				0E90813F1927EE46008A0F73 /* SnapshotTests.m */,
+				0E6781A9192A82AF00FDE8BB /* XCTests.m */,
 			);
 			path = HTPressableButtonTests;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E6781AA192A82AF00FDE8BB /* XCTests.m in Sources */,
 				0E9081401927EE46008A0F73 /* SnapshotTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
