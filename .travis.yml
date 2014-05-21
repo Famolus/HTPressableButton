@@ -1,3 +1,7 @@
 language: objective-c
-before_script: cd Example
-script: "xctool -project HTPressableButton.xcodeproj -scheme HTPressableButton -sdk iphonesimulator build"
+before_install:
+  - export LANG=en_US.UTF-8
+  - gem install cocoapods --no-rdoc --no-ri --no-document --quiet
+  - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+  - cd Example && pod install
+script: "xcodebuild -workspace HTPressableButton.xcworkspace -scheme HTPressableButton -destination 'platform=iOS Simulator,name=iPhone Retina (4-inch),OS=7.0' clean test | xcpretty -c && exit ${PIPESTATUS[0]}"

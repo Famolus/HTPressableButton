@@ -1,0 +1,3 @@
+target "HTPressableButtonTests" do
+  pod 'FBSnapshotTestCase'
+end
