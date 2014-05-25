@@ -9,14 +9,14 @@
 /**
  * Height of the default shadow in percentage is calculated from the button height
  */
-extern const float shadowDefaultHeightPercentage;
+extern const CGFloat HTShadowDefaultHeightPercentage;
 
 /**
  * Height of the default shadow for circular button in percentage is calculated from the button height
  */
-extern const float shadowcircularDefaultHeightPercentage;
+extern const CGFloat HTShadowCircularDefaultHeightPercentage;
 
 /**
  * Offset of the shadow in percentage is calculated from the shadow height when the button is pressed
  */
-extern const float shadowOffetWhenPressed;
+extern const CGFloat HTShadowOffsetWhenPressed;

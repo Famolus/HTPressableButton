@@ -16,234 +16,234 @@
 
 // FLAT UI colors by Designmodo. Thanks to http://designmodo.github.io/Flat-UI/
 #pragma mark - Designmodo color schemes
-+ (UIColor *) turquoiseColor
++ (UIColor *) ht_turquoiseColor
 {
     return UIColorFromRGB(0x1abc9c);
 }
 
-+ (UIColor *) greenSeaColor
++ (UIColor *) ht_greenSeaColor
 {
     return UIColorFromRGB(0x16a085);
 }
 
-+ (UIColor *) emeraldColor
++ (UIColor *) ht_emeraldColor
 {
     return UIColorFromRGB(0x2ecc71);
 }
-+ (UIColor *) nephritisColor
++ (UIColor *) ht_nephritisColor
 {
     return UIColorFromRGB(0x27ae60);
 }
 
-+ (UIColor *) peterRiverColor
++ (UIColor *) ht_peterRiverColor
 {
     return UIColorFromRGB(0x3498db);
 }
 
-+ (UIColor *) belizeHoleColor
-{
-    return UIColorFromRGB(0x2980b9);
-}
-
-+ (UIColor *) amethystColor
-{
-    return UIColorFromRGB(0x9b59b6);
-}
-
-+ (UIColor *) wisteriaColor
++ (UIColor *) ht_belizeHoleColor
 {
     return UIColorFromRGB(0x8e44ad);
 }
 
-+ (UIColor *) wetAsphaltColor
++ (UIColor *) ht_amethystColor
+{
+    return UIColorFromRGB(0x9b59b6);
+}
+
++ (UIColor *) ht_wisteriaColor
+{
+    return UIColorFromRGB(0x8e44ad);
+}
+
++ (UIColor *) ht_wetAsphaltColor
 {
     return UIColorFromRGB(0x34495e);
 }
 
-+ (UIColor *) midnightBlueColor
++ (UIColor *) ht_midnightBlueColor
 {
     return UIColorFromRGB(0x2c3e50);
 }
 
-+ (UIColor *) sunflowerColor
++ (UIColor *) ht_sunflowerColor
 {
     return UIColorFromRGB(0xf1c40f);
 }
 
 // Original name: orangeColor
-+ (UIColor *) citrusColor
++ (UIColor *) ht_citrusColor
 {
     return UIColorFromRGB(0xf39c12);
 }
 
-+ (UIColor *) carrotColor
++ (UIColor *) ht_carrotColor
 {
     return UIColorFromRGB(0xe67e22);
 }
 
-+ (UIColor *) pumpkinColor
++ (UIColor *) ht_pumpkinColor
 {
     return UIColorFromRGB(0xd35400);
 }
 
-+ (UIColor *) alizarinColor
++ (UIColor *) ht_alizarinColor
 {
     return UIColorFromRGB(0xe74c3c);
 }
 
-+ (UIColor *) pomegranateColor
++ (UIColor *) ht_pomegranateColor
 {
     return UIColorFromRGB(0xc0392b);
 }
 
-+ (UIColor *) cloudsColor
++ (UIColor *) ht_cloudsColor
 {
     return UIColorFromRGB(0xecf0f1);
 }
 
-+ (UIColor *) silverColor
++ (UIColor *) ht_silverColor
 {
     return UIColorFromRGB(0xbdc3c7);
 }
 
-+ (UIColor *) concreteColor
++ (UIColor *) ht_concreteColor
 {
     return UIColorFromRGB(0x95a5a6);
 }
 
-+ (UIColor *) asbestosColor
++ (UIColor *) ht_asbestosColor
 {
     return UIColorFromRGB(0x7f8c8d);
 }
 
 #pragma mark - Flat color schemes
-+ (UIColor *) grapeFruitColor
++ (UIColor *) ht_grapeFruitColor
 {
     return UIColorFromRGB(0xed5565);
 }
 
-+ (UIColor *) grapeFruitDarkColor
++ (UIColor *) ht_grapeFruitDarkColor
 {
     return UIColorFromRGB(0xda4453);
 }
 
-+ (UIColor *) bitterSweetColor
++ (UIColor *) ht_bitterSweetColor
 {
     return UIColorFromRGB(0xfc6e51);
 }
 
-+ (UIColor *) bitterSweetDarkColor
++ (UIColor *) ht_bitterSweetDarkColor
 {
     return UIColorFromRGB(0xe9573f);
 }
 
-+ (UIColor *) lemonColor
++ (UIColor *) ht_lemonColor
 {
     return UIColorFromRGB(0xffce54);
 }
 
-+ (UIColor *) lemonDarkColor
++ (UIColor *) ht_lemonDarkColor
 {
     return UIColorFromRGB(0xf6bb42);
 }
 
-+ (UIColor *) grassColor
++ (UIColor *) ht_grassColor
 {
     return UIColorFromRGB(0xa0d468);
 }
 
-+ (UIColor *) grassDarkColor
++ (UIColor *) ht_grassDarkColor
 {
     return UIColorFromRGB(0x8cc152);
 }
 
-+ (UIColor *) mintColor
++ (UIColor *) ht_mintColor
 {
     return UIColorFromRGB(0x48cfad);
 }
 
-+ (UIColor *) mintDarkColor
++ (UIColor *) ht_mintDarkColor
 {
     return UIColorFromRGB(0x37bc98);
 }
 
-+ (UIColor *) aquaColor
++ (UIColor *) ht_aquaColor
 {
     return UIColorFromRGB(0x4fc1e9);
 }
 
-+ (UIColor *) aquaDarkColor
++ (UIColor *) ht_aquaDarkColor
 {
     return UIColorFromRGB(0x3bafda);
 }
 
-+ (UIColor *) blueJeansColor
++ (UIColor *) ht_blueJeansColor
 {
     return UIColorFromRGB(0x5d9cec);
 }
 
-+ (UIColor *) blueJeansDarkColor
++ (UIColor *) ht_blueJeansDarkColor
 {
     return UIColorFromRGB(0x4a89dc);
 }
 
-+ (UIColor *) lavenderColor
++ (UIColor *) ht_lavenderColor
 {
     return UIColorFromRGB(0xac92ec);
 }
 
-+ (UIColor *) lavenderDarkColor
++ (UIColor *) ht_lavenderDarkColor
 {
     return UIColorFromRGB(0x967adc);
 }
 
-+ (UIColor *) pinkRoseColor
++ (UIColor *) ht_pinkRoseColor
 {
     return UIColorFromRGB(0xec87c0);
 }
 
-+ (UIColor *) pinkRoseDarkColor
++ (UIColor *) ht_pinkRoseDarkColor
 {
     return UIColorFromRGB(0xd770ad);
 }
 
-+ (UIColor *) ashColor
++ (UIColor *) ht_ashColor
 {
     return UIColorFromRGB(0xf5f7fa);
 }
 
-+ (UIColor *) ashDarkColor
++ (UIColor *) ht_ashDarkColor
 {
     return UIColorFromRGB(0xe6e9ed);
 }
 
-+ (UIColor *) mediumColor
++ (UIColor *) ht_mediumColor
 {
     return UIColorFromRGB(0xccd1d9);
 }
 
-+ (UIColor *) mediumDarkColor
++ (UIColor *) ht_mediumDarkColor
 {
     return UIColorFromRGB(0xaab2bd);
 }
 
-+ (UIColor *) leadColor
++ (UIColor *) ht_leadColor
 {
     return UIColorFromRGB(0x656d78);
 }
 
-+ (UIColor *) leadDarkColor
++ (UIColor *) ht_leadDarkColor
 {
     return UIColorFromRGB(0x434a54);
 }
 
 #pragma mark - Tandavas color schemes
-+ (UIColor *) jayColor
++ (UIColor *) ht_jayColor
 {
     return UIColorFromRGB(0x00d2ff);
 }
 
-+ (UIColor *) jayDarkColor
++ (UIColor *) ht_jayDarkColor
 {
     return UIColorFromRGB(0x00b0d6);
 }

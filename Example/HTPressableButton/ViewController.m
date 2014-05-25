@@ -22,7 +22,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     self.title = @"HTPressableButtons";
-    self.view.backgroundColor = [UIColor cloudsColor];
+    self.view.backgroundColor = [UIColor ht_cloudsColor];
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [button setTitle:@"Typical Button" forState:UIControlStateNormal];
@@ -33,8 +33,8 @@
     //rectangular grape fruit color button
     CGRect frame = CGRectMake(30, 150, 260, 50);
     HTPressableButton *rectButton = [[HTPressableButton alloc] initWithFrame:frame buttonStyle:HTPressableButtonStyleRect];
-    rectButton.buttonColor = [UIColor grapeFruitColor];
-    rectButton.shadowColor = [UIColor grapeFruitDarkColor];
+    rectButton.buttonColor = [UIColor ht_grapeFruitColor];
+    rectButton.shadowColor = [UIColor ht_grapeFruitDarkColor];
     [rectButton setTitle:@"Rect" forState:UIControlStateNormal];
     [self.view addSubview:rectButton];
     
@@ -47,17 +47,17 @@
     //Circular mint color button
     frame = CGRectMake(110, 300, 100, 100);
     HTPressableButton *circularButton = [[HTPressableButton alloc] initWithFrame:frame buttonStyle:HTPressableButtonStyleCircular];
-    circularButton.buttonColor = [UIColor mintColor];
-    circularButton.shadowColor = [UIColor mintDarkColor];
-    [circularButton setDisabledButtonColor:[UIColor sunflowerColor]];
+    circularButton.buttonColor = [UIColor ht_mintColor];
+    circularButton.shadowColor = [UIColor ht_mintDarkColor];
+    [circularButton setDisabledButtonColor:[UIColor ht_sunflowerColor]];
     [circularButton setTitle:@"Circular" forState:UIControlStateNormal];
     [self.view addSubview:circularButton];
     
     //Disabled rounded rectangular button
     frame = CGRectMake(30, 420, 260, 50);
     HTPressableButton *disabledRoundedRectButton = [[HTPressableButton alloc] initWithFrame:frame buttonStyle:HTPressableButtonStyleRounded];
-    disabledRoundedRectButton.disabledButtonColor = [UIColor pinkRoseColor];
-    disabledRoundedRectButton.disabledShadowColor = [UIColor pinkRoseDarkColor];
+    disabledRoundedRectButton.disabledButtonColor = [UIColor ht_pinkRoseColor];
+    disabledRoundedRectButton.disabledShadowColor = [UIColor ht_pinkRoseDarkColor];
     disabledRoundedRectButton.alpha = 0.5;
     disabledRoundedRectButton.enabled = NO;
     [disabledRoundedRectButton setTitle:@"DisabledButton" forState:UIControlStateNormal];
