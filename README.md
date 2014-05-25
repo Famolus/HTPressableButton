@@ -7,7 +7,7 @@ HTPressableButton is designed for iOS developers to be able to spend time develo
 
 **Compatible with:**  iOS 6.0 and above
 
-**Current Version:** 1.2.0
+**Current Version:** 1.2.1
 
 You can check out our documentation [here](http://cocoadocs.org/docsets/HTPressableButton/). 
 Installation
@@ -144,7 +144,7 @@ If you wish to set your own shadow height instead of using our default value, ad
 ###Additional Colors
 You can freely use the additional colors in the file *UIColors+HTColor* anywhere in your project by:
 ```objective-c
-    [UIColor colorNameHere]
+    [UIColor ht_colorNameHere]
     
     //Examples
     [UIColor ht_jayColor]
