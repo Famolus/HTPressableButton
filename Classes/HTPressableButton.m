@@ -112,11 +112,11 @@
 {
     if (style == HTPressableButtonStyleCircular)
     {
-        _shadowHeight = self.frame.size.height * shadowcircularDefaultHeightPercentage;
+        _shadowHeight = self.frame.size.height * HTShadowCircularDefaultHeightPercentage;
     }
     else
     {
-        _shadowHeight = self.frame.size.height * shadowDefaultHeightPercentage;
+        _shadowHeight = self.frame.size.height * HTShadowDefaultHeightPercentage;
     }
     [super setTitleEdgeInsets:UIEdgeInsetsMake(0.0f, 0.0f, _shadowHeight, 0.0f)];
 }
@@ -130,11 +130,11 @@
     {
         if (self.style == HTPressableButtonStyleCircular)
         {
-            [super setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, -((_shadowHeight/4) * shadowOffetWhenPressed), 0)];
+            [super setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, -((_shadowHeight/4) * HTShadowOffsetWhenPressed), 0)];
         }
         else
         {
-            [super setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, -(_shadowHeight * shadowOffetWhenPressed), 0)];
+            [super setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, -(_shadowHeight * HTShadowOffsetWhenPressed), 0)];
         }
         
     }

@@ -52,7 +52,7 @@
     //Button's shadow stays at the same place but the button is moved a little down (shadowOffsetWhenPressed) in highlighted state
     UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
     [backImage drawAtPoint:CGPointMake(0, shadowHeight)];
-    [frontImage drawAtPoint:CGPointMake(0, shadowHeight * shadowOffetWhenPressed)];
+    [frontImage drawAtPoint:CGPointMake(0, shadowHeight * HTShadowOffsetWhenPressed)];
     buttonHighlightedImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
@@ -106,7 +106,7 @@
     
     UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
     [backImage drawAtPoint:CGPointMake((shadowHeight/2) + 2.5, shadowHeight)];
-    [frontImage drawAtPoint:CGPointMake((shadowHeight/2) + 2.5, shadowHeight * shadowOffetWhenPressed)];
+    [frontImage drawAtPoint:CGPointMake((shadowHeight/2) + 2.5, shadowHeight * HTShadowOffsetWhenPressed)];
     buttonHighlightedImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
