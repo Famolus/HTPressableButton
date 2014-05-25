@@ -51,8 +51,8 @@ Button Types
     //Rectangular grape fruit color button
     CGRect frame = CGRectMake(30, 150, 260, 50);
     HTPressableButton *rectButton = [[HTPressableButton alloc] initWithFrame:frame buttonStyle:HTPressableButtonStyleRect];
-    rectButton.buttonColor = [UIColor grapeFruitColor];
-    rectButton.shadowColor = [UIColor grapeFruitDarkColor];
+    rectButton.buttonColor = [UIColor ht_grapeFruitColor];
+    rectButton.shadowColor = [UIColor ht_grapeFruitDarkColor];
     [rectButton setTitle:@"Rect" forState:UIControlStateNormal];
     [self.view addSubview:rectButton];
 
@@ -81,9 +81,9 @@ Button Types
 	//Circular mint color button
     frame = CGRectMake(110, 300, 100, 100);
     HTPressableButton *circularButton = [[HTPressableButton alloc] initWithFrame:frame buttonStyle:HTPressableButtonStyleCircular];
-    circularButton.buttonColor = [UIColor mintColor];
-    circularButton.shadowColor = [UIColor mintDarkColor];
-    [circularButton setDisabledButtonColor:[UIColor sunflowerColor]];
+    circularButton.buttonColor = [UIColor ht_mintColor];
+    circularButton.shadowColor = [UIColor ht_mintDarkColor];
+    [circularButton setDisabledButtonColor:[UIColor ht_sunflowerColor]];
     [circularButton setTitle:@"Circular" forState:UIControlStateNormal];
     [self.view addSubview:circularButton];
 ```
@@ -102,8 +102,8 @@ Example:
     //Disabled rounded rectangular button
     frame = CGRectMake(30, 420, 260, 50);
     HTPressableButton *disabledRoundedRectButton = [[HTPressableButton alloc] initWithFrame:frame buttonStyle:HTPressableButtonStyleRounded];
-    disabledRoundedRectButton.disabledButtonColor = [UIColor pinkRoseColor];
-    disabledRoundedRectButton.disabledShadowColor = [UIColor pinkRoseDarkColor];
+    disabledRoundedRectButton.disabledButtonColor = [UIColor ht_pinkRoseColor];
+    disabledRoundedRectButton.disabledShadowColor = [UIColor ht_pinkRoseDarkColor];
     disabledRoundedRectButton.alpha = 0.5;
     disabledRoundedRectButton.enabled = NO;
     [disabledRoundedRectButton setTitle:@"DisabledButton" forState:UIControlStateNormal];
@@ -122,14 +122,14 @@ The default *alpha* value is 1.0 for all type of buttons. The value can be chang
 
 | Property                     | Values                                           |
 | ---------------------------- |:------------------------------------------------:|
-| Button Type				   | HTPressableButtonStyleRounded					  |
+| Button Type		       | HTPressableButtonStyleRounded	                  |
 | Font                         | Avenir                                           |
 | Font Size                    | 18                                               |
-| Shadow Height                | 17% of the button's height					      |
-| Button Color                 | jayColor                                         |
-| Button Shadow Color          | jayDarkColor                                     |
-| Disabled Button Color        | mediumColor                                      |
-| Disabled Button Shadow Color | mediumDarkColor                                  |
+| Shadow Height                | 17% of the button's height			  |
+| Button Color                 | ht_jayColor                                      |
+| Button Shadow Color          | ht_jayDarkColor                                  |
+| Disabled Button Color        | ht_mediumColor                                   |
+| Disabled Button Shadow Color | ht_mediumDarkColor                               |
 
 
 If you wish to set your own shadow height instead of using our default value, add:
@@ -147,8 +147,8 @@ You can freely use the additional colors in the file *UIColors+HTColor* anywhere
     [UIColor colorNameHere]
     
     //Examples
-    [UIColor jayColor]
-    [UIColor pinkRoseDarkColor]
+    [UIColor ht_jayColor]
+    [UIColor ht_pinkRoseColor]
 ```
 ![HTPressableButton](https://raw.github.com/herinkc/HTPressableButton/master/READMEImages/HTPressableButtonColorScheme.png)
 
