@@ -90,22 +90,22 @@
 
 - (UIColor *) buttonColorOrDefault
 {
-    return _buttonColor ?: [UIColor jayColor];
+    return _buttonColor ?: [UIColor ht_jayColor];
 }
 
 - (UIColor *) shadowColorOrDefault
 {
-    return _shadowColor ?: [UIColor jayDarkColor];
+    return _shadowColor ?: [UIColor ht_jayDarkColor];
 }
 
 - (UIColor *) disabledButtonColorOrDefault
 {
-    return _disabledButtonColor ?: [UIColor mediumColor];
+    return _disabledButtonColor ?: [UIColor ht_mediumColor];
 }
 
 - (UIColor *) disabledShadowColorOrDefault
 {
-    return _disabledShadowColor ?: [UIColor mediumDarkColor];
+    return _disabledShadowColor ?: [UIColor ht_mediumDarkColor];
 }
 
 - (void) setDefaultShadowHeightForStyle:(HTPressableButtonStyle)style

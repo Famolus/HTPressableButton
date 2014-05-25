@@ -96,8 +96,8 @@
 {
     HTPressableButton *button = [[HTPressableButton alloc] initWithFrame:self.frame buttonStyle:HTPressableButtonStyleRect];
     [button setTitle:@"Button" forState:UIControlStateNormal];
-    [button setDisabledButtonColor:[UIColor lemonColor]];
-    [button setDisabledShadowColor:[UIColor lemonDarkColor]];
+    [button setDisabledButtonColor:[UIColor ht_lemonColor]];
+    [button setDisabledShadowColor:[UIColor ht_lemonDarkColor]];
     [button setEnabled:NO];
     FBSnapshotVerifyView(button, nil);
 }
