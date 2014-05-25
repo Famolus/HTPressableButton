@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		83127B3319091CC500B29F16 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A1F50218FB0C1E00144443 /* XCTest.framework */; };
+		05E2370CD1B84B01B32D0AB7 /* libPods-HTPressableButtonTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2214C1788F1C4CC39481C273 /* libPods-HTPressableButtonTests.a */; };
+		0E90812D1927EDC1008A0F73 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A1F50218FB0C1E00144443 /* XCTest.framework */; };
+		0E90812E1927EDC1008A0F73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A1F4E318FB0C1E00144443 /* Foundation.framework */; };
+		0E90812F1927EDC1008A0F73 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A1F4E718FB0C1E00144443 /* UIKit.framework */; };
+		0E9081351927EDC1008A0F73 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0E9081331927EDC1008A0F73 /* InfoPlist.strings */; };
+		0E9081401927EE46008A0F73 /* FBSnapshotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E90813F1927EE46008A0F73 /* FBSnapshotTests.m */; };
 		837DE60818FC2BB9009574A8 /* UIImage+HTButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 837DE60718FC2BB9009574A8 /* UIImage+HTButton.m */; };
 		8380AF691902CAD2008E3EEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A1F4F518FB0C1E00144443 /* Main.storyboard */; };
 		83A1F4E418FB0C1E00144443 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A1F4E318FB0C1E00144443 /* Foundation.framework */; };
@@ -18,24 +23,29 @@
 		83A1F4F418FB0C1E00144443 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A1F4F318FB0C1E00144443 /* AppDelegate.m */; };
 		83A1F4FA18FB0C1E00144443 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A1F4F918FB0C1E00144443 /* ViewController.m */; };
 		83A1F4FC18FB0C1E00144443 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83A1F4FB18FB0C1E00144443 /* Images.xcassets */; };
-		83A1F50418FB0C1E00144443 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A1F4E318FB0C1E00144443 /* Foundation.framework */; };
-		83A1F50518FB0C1E00144443 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A1F4E718FB0C1E00144443 /* UIKit.framework */; };
 		83A1F51A18FB0C6B00144443 /* HTPressableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A1F51918FB0C6B00144443 /* HTPressableButton.m */; };
 		9069580018FEE49B00A2F4C3 /* UIColor+HTColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 906957FF18FEE49B00A2F4C3 /* UIColor+HTColor.m */; };
 		90EEC3C11904295000B8B776 /* HTPressableButtonPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EEC3C01904295000B8B776 /* HTPressableButtonPrefs.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		83A1F50618FB0C1E00144443 /* PBXContainerItemProxy */ = {
+		0E9081391927EDC1008A0F73 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83A1F4D818FB0C1E00144443 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 83A1F4DF18FB0C1E00144443;
-			remoteInfo = NSPressableButton;
+			remoteInfo = HTPressableButton;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E90812C1927EDC1008A0F73 /* HTPressableButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTPressableButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E9081321927EDC1008A0F73 /* HTPressableButtonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HTPressableButtonTests-Info.plist"; sourceTree = "<group>"; };
+		0E9081341927EDC1008A0F73 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0E9081381927EDC1008A0F73 /* HTPressableButtonTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HTPressableButtonTests-Prefix.pch"; sourceTree = "<group>"; };
+		0E90813F1927EE46008A0F73 /* FBSnapshotTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBSnapshotTests.m; sourceTree = "<group>"; };
+		2214C1788F1C4CC39481C273 /* libPods-HTPressableButtonTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HTPressableButtonTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		354A4E5556FC48508644A683 /* Pods-HTPressableButtonTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTPressableButtonTests.xcconfig"; path = "Pods/Pods-HTPressableButtonTests.xcconfig"; sourceTree = "<group>"; };
 		837DE60618FC2BB9009574A8 /* UIImage+HTButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+HTButton.h"; path = "../../Classes/UIImage+HTButton.h"; sourceTree = "<group>"; };
 		837DE60718FC2BB9009574A8 /* UIImage+HTButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+HTButton.m"; path = "../../Classes/UIImage+HTButton.m"; sourceTree = "<group>"; };
 		83A1F4E018FB0C1E00144443 /* HTPressableButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HTPressableButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,7 +62,6 @@
 		83A1F4F818FB0C1E00144443 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		83A1F4F918FB0C1E00144443 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		83A1F4FB18FB0C1E00144443 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		83A1F50118FB0C1E00144443 /* HTPressableButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTPressableButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A1F50218FB0C1E00144443 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		83A1F51818FB0C6B00144443 /* HTPressableButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTPressableButton.h; path = ../../Classes/HTPressableButton.h; sourceTree = "<group>"; };
 		83A1F51918FB0C6B00144443 /* HTPressableButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTPressableButton.m; path = ../../Classes/HTPressableButton.m; sourceTree = "<group>"; };
@@ -63,6 +72,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0E9081291927EDC1008A0F73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E90812D1927EDC1008A0F73 /* XCTest.framework in Frameworks */,
+				0E90812F1927EDC1008A0F73 /* UIKit.framework in Frameworks */,
+				0E90812E1927EDC1008A0F73 /* Foundation.framework in Frameworks */,
+				05E2370CD1B84B01B32D0AB7 /* libPods-HTPressableButtonTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		83A1F4DD18FB0C1E00144443 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -73,19 +93,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		83A1F4FE18FB0C1E00144443 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				83A1F50518FB0C1E00144443 /* UIKit.framework in Frameworks */,
-				83127B3319091CC500B29F16 /* XCTest.framework in Frameworks */,
-				83A1F50418FB0C1E00144443 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E9081301927EDC1008A0F73 /* HTPressableButtonTests */ = {
+			isa = PBXGroup;
+			children = (
+				0E9081311927EDC1008A0F73 /* Supporting Files */,
+				0E90813F1927EE46008A0F73 /* FBSnapshotTests.m */,
+			);
+			path = HTPressableButtonTests;
+			sourceTree = "<group>";
+		};
+		0E9081311927EDC1008A0F73 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E9081321927EDC1008A0F73 /* HTPressableButtonTests-Info.plist */,
+				0E9081331927EDC1008A0F73 /* InfoPlist.strings */,
+				0E9081381927EDC1008A0F73 /* HTPressableButtonTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		83127B301909176800B29F16 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,8 +134,10 @@
 			isa = PBXGroup;
 			children = (
 				83A1F4E918FB0C1E00144443 /* HTPressableButton */,
+				0E9081301927EDC1008A0F73 /* HTPressableButtonTests */,
 				83A1F4E218FB0C1E00144443 /* Frameworks */,
 				83A1F4E118FB0C1E00144443 /* Products */,
+				354A4E5556FC48508644A683 /* Pods-HTPressableButtonTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,7 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				83A1F4E018FB0C1E00144443 /* HTPressableButton.app */,
-				83A1F50118FB0C1E00144443 /* HTPressableButtonTests.xctest */,
+				0E90812C1927EDC1008A0F73 /* HTPressableButtonTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,6 +157,7 @@
 				83A1F4E518FB0C1E00144443 /* CoreGraphics.framework */,
 				83A1F4E718FB0C1E00144443 /* UIKit.framework */,
 				83A1F50218FB0C1E00144443 /* XCTest.framework */,
+				2214C1788F1C4CC39481C273 /* libPods-HTPressableButtonTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -159,6 +191,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0E90812B1927EDC1008A0F73 /* HTPressableButtonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E90813B1927EDC1008A0F73 /* Build configuration list for PBXNativeTarget "HTPressableButtonTests" */;
+			buildPhases = (
+				85FCD7776B124C78A08F5ECF /* Check Pods Manifest.lock */,
+				0E9081281927EDC1008A0F73 /* Sources */,
+				0E9081291927EDC1008A0F73 /* Frameworks */,
+				0E90812A1927EDC1008A0F73 /* Resources */,
+				050577797A0A46ACB27BD4C2 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E90813A1927EDC1008A0F73 /* PBXTargetDependency */,
+			);
+			name = HTPressableButtonTests;
+			productName = HTPressableButtonTests;
+			productReference = 0E90812C1927EDC1008A0F73 /* HTPressableButtonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		83A1F4DF18FB0C1E00144443 /* HTPressableButton */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83A1F51218FB0C1E00144443 /* Build configuration list for PBXNativeTarget "HTPressableButton" */;
@@ -176,24 +228,6 @@
 			productReference = 83A1F4E018FB0C1E00144443 /* HTPressableButton.app */;
 			productType = "com.apple.product-type.application";
 		};
-		83A1F50018FB0C1E00144443 /* HTPressableButtonTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 83A1F51518FB0C1E00144443 /* Build configuration list for PBXNativeTarget "HTPressableButtonTests" */;
-			buildPhases = (
-				83A1F4FD18FB0C1E00144443 /* Sources */,
-				83A1F4FE18FB0C1E00144443 /* Frameworks */,
-				83A1F4FF18FB0C1E00144443 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				83A1F50718FB0C1E00144443 /* PBXTargetDependency */,
-			);
-			name = HTPressableButtonTests;
-			productName = NSPressableButtonTests;
-			productReference = 83A1F50118FB0C1E00144443 /* HTPressableButtonTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -203,7 +237,7 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "He Rin Kim & Thanakron Tandavas";
 				TargetAttributes = {
-					83A1F50018FB0C1E00144443 = {
+					0E90812B1927EDC1008A0F73 = {
 						TestTargetID = 83A1F4DF18FB0C1E00144443;
 					};
 				};
@@ -222,12 +256,20 @@
 			projectRoot = "";
 			targets = (
 				83A1F4DF18FB0C1E00144443 /* HTPressableButton */,
-				83A1F50018FB0C1E00144443 /* HTPressableButtonTests */,
+				0E90812B1927EDC1008A0F73 /* HTPressableButtonTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0E90812A1927EDC1008A0F73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E9081351927EDC1008A0F73 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		83A1F4DE18FB0C1E00144443 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -238,16 +280,50 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		83A1F4FF18FB0C1E00144443 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		050577797A0A46ACB27BD4C2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-HTPressableButtonTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
-/* End PBXResourcesBuildPhase section */
+		85FCD7776B124C78A08F5ECF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0E9081281927EDC1008A0F73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E9081401927EE46008A0F73 /* FBSnapshotTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		83A1F4DC18FB0C1E00144443 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -262,24 +338,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		83A1F4FD18FB0C1E00144443 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		83A1F50718FB0C1E00144443 /* PBXTargetDependency */ = {
+		0E90813A1927EDC1008A0F73 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 83A1F4DF18FB0C1E00144443 /* HTPressableButton */;
-			targetProxy = 83A1F50618FB0C1E00144443 /* PBXContainerItemProxy */;
+			targetProxy = 0E9081391927EDC1008A0F73 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		0E9081331927EDC1008A0F73 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E9081341927EDC1008A0F73 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		83A1F4EC18FB0C1E00144443 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -299,6 +376,51 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0E90813C1927EDC1008A0F73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 354A4E5556FC48508644A683 /* Pods-HTPressableButtonTests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HTPressableButton.app/HTPressableButton";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HTPressableButtonTests/HTPressableButtonTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"FB_REFERENCE_IMAGE_DIR=\"\\\"$(SOURCE_ROOT)/$(PROJECT_NAME)Tests/ReferenceImages\\\"\"",
+				);
+				INFOPLIST_FILE = "HTPressableButtonTests/HTPressableButtonTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0E90813D1927EDC1008A0F73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 354A4E5556FC48508644A683 /* Pods-HTPressableButtonTests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HTPressableButton.app/HTPressableButton";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HTPressableButtonTests/HTPressableButtonTests-Prefix.pch";
+				INFOPLIST_FILE = "HTPressableButtonTests/HTPressableButtonTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		83A1F51018FB0C1E00144443 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -376,6 +498,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HTPressableButton/HTPressableButton-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = "HTPressableButton/HTPressableButton-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = HTPressableButton;
@@ -397,49 +523,18 @@
 			};
 			name = Release;
 		};
-		83A1F51618FB0C1E00144443 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NSPressableButton.app/NSPressableButton";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NSPressableButton/NSPressableButton-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "NSPressableButtonTests/HTPressableButtonTests-Info.plist";
-				PRODUCT_NAME = HTPressableButtonTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		83A1F51718FB0C1E00144443 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NSPressableButton.app/NSPressableButton";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NSPressableButton/NSPressableButton-Prefix.pch";
-				INFOPLIST_FILE = "NSPressableButtonTests/HTPressableButtonTests-Info.plist";
-				PRODUCT_NAME = HTPressableButtonTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0E90813B1927EDC1008A0F73 /* Build configuration list for PBXNativeTarget "HTPressableButtonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E90813C1927EDC1008A0F73 /* Debug */,
+				0E90813D1927EDC1008A0F73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		83A1F4DB18FB0C1E00144443 /* Build configuration list for PBXProject "HTPressableButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -454,15 +549,6 @@
 			buildConfigurations = (
 				83A1F51318FB0C1E00144443 /* Debug */,
 				83A1F51418FB0C1E00144443 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		83A1F51518FB0C1E00144443 /* Build configuration list for PBXNativeTarget "HTPressableButtonTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				83A1F51618FB0C1E00144443 /* Debug */,
-				83A1F51718FB0C1E00144443 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
