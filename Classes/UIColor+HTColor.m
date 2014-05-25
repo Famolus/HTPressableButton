@@ -42,7 +42,7 @@
 
 + (UIColor *) ht_belizeHoleColor
 {
-    return UIColorFromRGB(0x2980b9);
+    return UIColorFromRGB(0x8d48ab);
 }
 
 + (UIColor *) ht_amethystColor
