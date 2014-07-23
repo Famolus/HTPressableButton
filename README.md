@@ -30,7 +30,7 @@ However, if you are only interested to use the color scheme provided (shown belo
 pod 'HTPressableButton/HTColor'
 ```
 
-Another option is to use git submodules or just [download it](https://github.com/Grouper/FlatUIKit/archive/master.zip) and include it in your project manually.
+Another option is to use git submodules or just [download it](https://github.com/herinkc/HTPressableButton/archive/master.zip) and include it in your project manually.
 
 **NOTE:** Please be reminded to add the header files to your project. You may add only the one that you'll use. 
 
