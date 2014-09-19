@@ -112,7 +112,7 @@ Example:
 
 ![HTPressableButton](https://raw.github.com/herinkc/HTPressableButton/master/READMEImages/DisabledButtonImage.png)
 
-The default *alpha* value is 1.0 for all type of buttons. The value can be changed (like the above button) by:
+The default *alpha* value is 1.0 for all type of buttons. The value can be changed (like the above disabled button) by:
 ```objective-c
 	buttonNameHere.alpha = 0.5;
 ```
@@ -172,7 +172,7 @@ Welcome contributors! Please don't hesitate to make an issue or pull request :)
 
 Showcase
 --------
-We would love to see how we became a part of your project. Show us your app!
+We would love to see how we became a part of your project. Send us an email, issue, tweet, or etc. and we'll update it here!
 
 
 License
