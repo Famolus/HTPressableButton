@@ -1,507 +1,1136 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		07FD154AB9D1452A8B8E2C9F /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 25E187F1C42B4BA093E8CCE2 /* UIImage+Compare.h */; };
-		3CBF4675B84944AFA6AAF5E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE40506FF29845AAA70172BE /* Foundation.framework */; };
-		4A563C32C93D4435852E6DFC /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5E56FDBC3C4A0CA4CA9778 /* FBSnapshotTestCase.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		50324DD66D2A4E6BABBDCBF8 /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = DADC76144215471383FDB1F8 /* FBSnapshotTestCase.h */; };
-		53489006710740BDA93D00D6 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = B5ED231ACD8746448AE4D128 /* UIImage+Diff.h */; };
-		5C974D16028C42F5A023CFB1 /* Pods-HTPressableButtonTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C321FEA3CD4647929AA42C6F /* Pods-HTPressableButtonTests-dummy.m */; };
-		5CD9AF9551224C37A840D03D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AEB0F193A9F403CAD4AD194 /* XCTest.framework */; };
-		5D06D2C8FC76402AAAC1AC66 /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 70D19FF6387A4771A23DE6E7 /* FBSnapshotTestController.h */; };
-		7AF8979BD59B47F1BE43B94B /* libPods-HTPressableButtonTests-FBSnapshotTestCase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 606183A27F2F46938F1CB38B /* libPods-HTPressableButtonTests-FBSnapshotTestCase.a */; };
-		7D5D5551FE3C499A8F5D60A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE40506FF29845AAA70172BE /* Foundation.framework */; };
-		A4B3D7604DAC45F094DD1933 /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 19647E256B2743759E37BBAA /* UIImage+Diff.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		C93E2B7C413D4850894B4512 /* Pods-HTPressableButtonTests-FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D6EDE5D44A41E29EF47806 /* Pods-HTPressableButtonTests-FBSnapshotTestCase-dummy.m */; };
-		DA432D6329EB49DE9B265DB0 /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A89DD269A1461791586103 /* UIImage+Compare.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		E181C0514F6B42DEA4464388 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 854530A8E8FB4BA3AE8BF54C /* FBSnapshotTestController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		4BE7AE016CBE4557A0D31D70 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3E84C5B6D5B843FEA86C93B3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A2FF292B4EA94F409FF6090A;
-			remoteInfo = "Pods-HTPressableButtonTests-FBSnapshotTestCase";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		00B5EE40183242FD8B66CE9C /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		1803372763A241738E08D613 /* Pods-HTPressableButtonTests-FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HTPressableButtonTests-FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
-		19647E256B2743759E37BBAA /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Diff.m"; sourceTree = "<group>"; };
-		25E187F1C42B4BA093E8CCE2 /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+Compare.h"; sourceTree = "<group>"; };
-		606183A27F2F46938F1CB38B /* libPods-HTPressableButtonTests-FBSnapshotTestCase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HTPressableButtonTests-FBSnapshotTestCase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		69FC7F531A4A4BAB9C4DCAE6 /* Pods-HTPressableButtonTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HTPressableButtonTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		70D19FF6387A4771A23DE6E7 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FBSnapshotTestController.h; sourceTree = "<group>"; };
-		757C53BA89AC49AC8310DF98 /* Pods-HTPressableButtonTests-FBSnapshotTestCase-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HTPressableButtonTests-FBSnapshotTestCase-Private.xcconfig"; sourceTree = "<group>"; };
-		854530A8E8FB4BA3AE8BF54C /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FBSnapshotTestController.m; sourceTree = "<group>"; };
-		92A89DD269A1461791586103 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Compare.m"; sourceTree = "<group>"; };
-		9766328AD13440D68A6A13D2 /* Pods-HTPressableButtonTests-FBSnapshotTestCase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HTPressableButtonTests-FBSnapshotTestCase.xcconfig"; sourceTree = "<group>"; };
-		9AEB0F193A9F403CAD4AD194 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		AEB906D5B72F474E89534572 /* libPods-HTPressableButtonTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HTPressableButtonTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5ED231ACD8746448AE4D128 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+Diff.h"; sourceTree = "<group>"; };
-		BC2A1B1038A54D72BBCB2FD4 /* Pods-HTPressableButtonTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HTPressableButtonTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		C0D6EDE5D44A41E29EF47806 /* Pods-HTPressableButtonTests-FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HTPressableButtonTests-FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
-		C321FEA3CD4647929AA42C6F /* Pods-HTPressableButtonTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HTPressableButtonTests-dummy.m"; sourceTree = "<group>"; };
-		C68E773F62BE49A6AC24AD23 /* Pods-HTPressableButtonTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HTPressableButtonTests-resources.sh"; sourceTree = "<group>"; };
-		DADC76144215471383FDB1F8 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FBSnapshotTestCase.h; sourceTree = "<group>"; };
-		DD93B88EE27541F78AB38A9B /* Pods-HTPressableButtonTests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HTPressableButtonTests-environment.h"; sourceTree = "<group>"; };
-		DEB57A6B3E174E949CF0EE1B /* Pods-HTPressableButtonTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HTPressableButtonTests.xcconfig"; sourceTree = "<group>"; };
-		FE40506FF29845AAA70172BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		FF5E56FDBC3C4A0CA4CA9778 /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FBSnapshotTestCase.m; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		1C9D81FBC5D44C5485BD6BB1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D5D5551FE3C499A8F5D60A8 /* Foundation.framework in Frameworks */,
-				5CD9AF9551224C37A840D03D /* XCTest.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3FAA16022A3F4C45AF0C773C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3CBF4675B84944AFA6AAF5E9 /* Foundation.framework in Frameworks */,
-				7AF8979BD59B47F1BE43B94B /* libPods-HTPressableButtonTests-FBSnapshotTestCase.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		21275201C96E421994FA2658 /* FBSnapshotTestCase */ = {
-			isa = PBXGroup;
-			children = (
-				DADC76144215471383FDB1F8 /* FBSnapshotTestCase.h */,
-				FF5E56FDBC3C4A0CA4CA9778 /* FBSnapshotTestCase.m */,
-				70D19FF6387A4771A23DE6E7 /* FBSnapshotTestController.h */,
-				854530A8E8FB4BA3AE8BF54C /* FBSnapshotTestController.m */,
-				25E187F1C42B4BA093E8CCE2 /* UIImage+Compare.h */,
-				92A89DD269A1461791586103 /* UIImage+Compare.m */,
-				B5ED231ACD8746448AE4D128 /* UIImage+Diff.h */,
-				19647E256B2743759E37BBAA /* UIImage+Diff.m */,
-				9BF86F0E99B8432482E2C82A /* Support Files */,
-			);
-			path = FBSnapshotTestCase;
-			sourceTree = "<group>";
-		};
-		495BA9FAEB09430EA7DBCCC6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5E7C50A594BA46E1AF9601C5 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		5E7C50A594BA46E1AF9601C5 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				FE40506FF29845AAA70172BE /* Foundation.framework */,
-				9AEB0F193A9F403CAD4AD194 /* XCTest.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		6C52EDE1320F47458E631072 /* Pods-HTPressableButtonTests */ = {
-			isa = PBXGroup;
-			children = (
-				DEB57A6B3E174E949CF0EE1B /* Pods-HTPressableButtonTests.xcconfig */,
-				69FC7F531A4A4BAB9C4DCAE6 /* Pods-HTPressableButtonTests-acknowledgements.markdown */,
-				BC2A1B1038A54D72BBCB2FD4 /* Pods-HTPressableButtonTests-acknowledgements.plist */,
-				C321FEA3CD4647929AA42C6F /* Pods-HTPressableButtonTests-dummy.m */,
-				DD93B88EE27541F78AB38A9B /* Pods-HTPressableButtonTests-environment.h */,
-				C68E773F62BE49A6AC24AD23 /* Pods-HTPressableButtonTests-resources.sh */,
-			);
-			name = "Pods-HTPressableButtonTests";
-			sourceTree = "<group>";
-		};
-		86C8C79F58DF41649A6F282C /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				6C52EDE1320F47458E631072 /* Pods-HTPressableButtonTests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		9BF86F0E99B8432482E2C82A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9766328AD13440D68A6A13D2 /* Pods-HTPressableButtonTests-FBSnapshotTestCase.xcconfig */,
-				757C53BA89AC49AC8310DF98 /* Pods-HTPressableButtonTests-FBSnapshotTestCase-Private.xcconfig */,
-				C0D6EDE5D44A41E29EF47806 /* Pods-HTPressableButtonTests-FBSnapshotTestCase-dummy.m */,
-				1803372763A241738E08D613 /* Pods-HTPressableButtonTests-FBSnapshotTestCase-prefix.pch */,
-			);
-			name = "Support Files";
-			sourceTree = SOURCE_ROOT;
-		};
-		AF6654DC5071430A84B9ABD3 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				21275201C96E421994FA2658 /* FBSnapshotTestCase */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		C554CB329F554DB48F628BFF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AEB906D5B72F474E89534572 /* libPods-HTPressableButtonTests.a */,
-				606183A27F2F46938F1CB38B /* libPods-HTPressableButtonTests-FBSnapshotTestCase.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		F89141225B6447E680DA814F = {
-			isa = PBXGroup;
-			children = (
-				00B5EE40183242FD8B66CE9C /* Podfile */,
-				495BA9FAEB09430EA7DBCCC6 /* Frameworks */,
-				AF6654DC5071430A84B9ABD3 /* Pods */,
-				C554CB329F554DB48F628BFF /* Products */,
-				86C8C79F58DF41649A6F282C /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		BFB0D15AC791415790B07A3A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				50324DD66D2A4E6BABBDCBF8 /* FBSnapshotTestCase.h in Headers */,
-				5D06D2C8FC76402AAAC1AC66 /* FBSnapshotTestController.h in Headers */,
-				07FD154AB9D1452A8B8E2C9F /* UIImage+Compare.h in Headers */,
-				53489006710740BDA93D00D6 /* UIImage+Diff.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		1DA1017E7DB34001B823ED4F /* Pods-HTPressableButtonTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8981688E522A4B8B8B8DEE3C /* Build configuration list for PBXNativeTarget "Pods-HTPressableButtonTests" */;
-			buildPhases = (
-				F9F3BFF9BDC843F8ACAE27BC /* Sources */,
-				3FAA16022A3F4C45AF0C773C /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DE890774C6064160A1F5FEAA /* PBXTargetDependency */,
-			);
-			name = "Pods-HTPressableButtonTests";
-			productName = "Pods-HTPressableButtonTests";
-			productReference = AEB906D5B72F474E89534572 /* libPods-HTPressableButtonTests.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		A2FF292B4EA94F409FF6090A /* Pods-HTPressableButtonTests-FBSnapshotTestCase */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7D4D3B8494AB46469AFA445F /* Build configuration list for PBXNativeTarget "Pods-HTPressableButtonTests-FBSnapshotTestCase" */;
-			buildPhases = (
-				7330BF95410F427F9B7A7398 /* Sources */,
-				1C9D81FBC5D44C5485BD6BB1 /* Frameworks */,
-				BFB0D15AC791415790B07A3A /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-HTPressableButtonTests-FBSnapshotTestCase";
-			productName = "Pods-HTPressableButtonTests-FBSnapshotTestCase";
-			productReference = 606183A27F2F46938F1CB38B /* libPods-HTPressableButtonTests-FBSnapshotTestCase.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		3E84C5B6D5B843FEA86C93B3 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0510;
-			};
-			buildConfigurationList = 19956AB0DF7D4BABADE9A6CD /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = F89141225B6447E680DA814F;
-			productRefGroup = C554CB329F554DB48F628BFF /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				1DA1017E7DB34001B823ED4F /* Pods-HTPressableButtonTests */,
-				A2FF292B4EA94F409FF6090A /* Pods-HTPressableButtonTests-FBSnapshotTestCase */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXSourcesBuildPhase section */
-		7330BF95410F427F9B7A7398 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4A563C32C93D4435852E6DFC /* FBSnapshotTestCase.m in Sources */,
-				E181C0514F6B42DEA4464388 /* FBSnapshotTestController.m in Sources */,
-				C93E2B7C413D4850894B4512 /* Pods-HTPressableButtonTests-FBSnapshotTestCase-dummy.m in Sources */,
-				DA432D6329EB49DE9B265DB0 /* UIImage+Compare.m in Sources */,
-				A4B3D7604DAC45F094DD1933 /* UIImage+Diff.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F9F3BFF9BDC843F8ACAE27BC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5C974D16028C42F5A023CFB1 /* Pods-HTPressableButtonTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		DE890774C6064160A1F5FEAA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A2FF292B4EA94F409FF6090A /* Pods-HTPressableButtonTests-FBSnapshotTestCase */;
-			targetProxy = 4BE7AE016CBE4557A0D31D70 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		3D91C8A100544E3DAF0259E4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DEB57A6B3E174E949CF0EE1B /* Pods-HTPressableButtonTests.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		83C5E18124A948AAB2AF8407 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 757C53BA89AC49AC8310DF98 /* Pods-HTPressableButtonTests-FBSnapshotTestCase-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/xcodeproj.dst;
-				FRAMEWORK_SEARCH_PATHS = (
-					"${PODS_HTPRESSABLEBUTTONTESTS_FBSNAPSHOTTESTCASE_FRAMEWORK_SEARCH_PATHS}",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-HTPressableButtonTests-FBSnapshotTestCase-prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		AEF07EB60B0C4A9E8F32AFCF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 757C53BA89AC49AC8310DF98 /* Pods-HTPressableButtonTests-FBSnapshotTestCase-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				FRAMEWORK_SEARCH_PATHS = (
-					"${PODS_HTPRESSABLEBUTTONTESTS_FBSNAPSHOTTESTCASE_FRAMEWORK_SEARCH_PATHS}",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-HTPressableButtonTests-FBSnapshotTestCase-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		C728F6682B964BDC9549C13E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = NO;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				COPY_PHASE_STRIP = NO;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				STRIP_INSTALLED_PRODUCT = NO;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		CEA340087B084D4CBF3F2A2C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DEB57A6B3E174E949CF0EE1B /* Pods-HTPressableButtonTests.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		F77C815CDC554124BD101D1E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = NO;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				COPY_PHASE_STRIP = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				ONLY_ACTIVE_ARCH = YES;
-				STRIP_INSTALLED_PRODUCT = NO;
-			};
-			name = Debug;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		19956AB0DF7D4BABADE9A6CD /* Build configuration list for PBXProject "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F77C815CDC554124BD101D1E /* Debug */,
-				C728F6682B964BDC9549C13E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7D4D3B8494AB46469AFA445F /* Build configuration list for PBXNativeTarget "Pods-HTPressableButtonTests-FBSnapshotTestCase" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AEF07EB60B0C4A9E8F32AFCF /* Debug */,
-				83C5E18124A948AAB2AF8407 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8981688E522A4B8B8B8DEE3C /* Build configuration list for PBXNativeTarget "Pods-HTPressableButtonTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CEA340087B084D4CBF3F2A2C /* Debug */,
-				3D91C8A100544E3DAF0259E4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 3E84C5B6D5B843FEA86C93B3 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>0185EAE4EFE562CF9DF30BEE</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>CD04B020B64491314379BD3F</string>
+				<string>84D559502D64A389426114CA</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>0304B1E63990E46787A7C231</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D3E15A36D5695A251712DDD2</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>98592F66AEEF4460AEF7EBB6</string>
+			<key>remoteInfo</key>
+			<string>Pods-HTPressableButtonTests-FBSnapshotTestCase</string>
+		</dict>
+		<key>049353EBA5D14FFAD20A94F7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C572940636A4D842102CCAB5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc</string>
+			</dict>
+		</dict>
+		<key>0866215B7223E870906BD569</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>UIImage+Diff.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0BED65C480E0C47AE6FC67CE</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>7DAE57AD913901325B62A7B5</string>
+				<string>85682A8959846EC723CF6665</string>
+				<string>58AB4A000DBD15090E287952</string>
+				<string>7926A45F6E51DA16080A20DF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>0FD4106DC0F1366A84BF6FFB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>83E1216B9A4F18DAD6E7BECC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>16A9B1F4B7388C6FC56EAF63</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F3339DA7B24EF3D82EF7C107</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>27CEDA22E957B0FBFFCC41EE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-HTPressableButtonTests-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>30A638A87F51AEFE7D130B47</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>3C409DDBC8F0C66EC07346A7</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.0</string>
+				<key>OTHER_CFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_CPLUSPLUSFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>314CE8BB83A5519805575631</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EC99E228FFB0998590C0267A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>36F1932C3300A115B1841B14</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>586B415AE303085259C2E2E1</string>
+				<string>E4A6CF10BABF66C17639F7C1</string>
+				<string>83E1216B9A4F18DAD6E7BECC</string>
+				<string>A21476F59566977ECC5EBFF3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/Pods-HTPressableButtonTests-FBSnapshotTestCase</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BA35D33D87D489AB34D6B32</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D7967E4FACF6FC8CCDE6FA10</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3C0D959BF9D1BBB9A9D6E2E7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>UIImage+Compare.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3C409DDBC8F0C66EC07346A7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-HTPressableButtonTests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3DEA4A2FA6CCD45CCDFF5C59</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7D19A91BDD60163F09E80D8B</string>
+				<string>B3B23479A44E162AA9A86968</string>
+				<string>3BA35D33D87D489AB34D6B32</string>
+				<string>BA34A51FDC34C4AEE6FC14B8</string>
+				<string>9DC8E94E8E17ED0DDA146E45</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3EE213B00E3CE83F58E70CAC</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>98592F66AEEF4460AEF7EBB6</string>
+			<key>targetProxy</key>
+			<string>0304B1E63990E46787A7C231</string>
+		</dict>
+		<key>41910D29AAD14730CE2A30E9</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>16A9B1F4B7388C6FC56EAF63</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>475B28B4D641BA9F0C9A5672</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-HTPressableButtonTests.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>49624B1BDBDD27E41B21683A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EC99E228FFB0998590C0267A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4B01DA25B13E205ACAB27132</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-HTPressableButtonTests-environment.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>504D4EF4AC9422B17493A2DA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9C75AB047BA27FAFE3E90CB0</string>
+				<string>27CEDA22E957B0FBFFCC41EE</string>
+				<string>F3339DA7B24EF3D82EF7C107</string>
+				<string>4B01DA25B13E205ACAB27132</string>
+				<string>87B25184983299553CD8F9F0</string>
+				<string>E5A5B54C727EBA77B355F80F</string>
+				<string>3C409DDBC8F0C66EC07346A7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-HTPressableButtonTests</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-HTPressableButtonTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>586B415AE303085259C2E2E1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-HTPressableButtonTests-FBSnapshotTestCase.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>58AB4A000DBD15090E287952</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5F40B1BC98DC049CEE6F11EA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>5A2CD0F6C0C7A98F7A643810</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>8143EE5DB58B22EBFC326A7E</string>
+				<string>973A3C927875BE5017CAF01A</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>5DAC57F7CC70AE7C63569E43</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>ED46813C1151332A3E88708C</string>
+				<string>30A638A87F51AEFE7D130B47</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>5EC2D4001D6AA8AA118AAFDE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FBSnapshotTestController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5F40B1BC98DC049CEE6F11EA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>UIImage+Compare.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>70A4774735AF5EDBFAE3CE22</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FBSnapshotTestCase.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7926A45F6E51DA16080A20DF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EA41097FFE7AA86D424DF42B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7D19A91BDD60163F09E80D8B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>7DAE57AD913901325B62A7B5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C5BCA9680C6811649F11D778</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8143EE5DB58B22EBFC326A7E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>NO</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.0</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>83E1216B9A4F18DAD6E7BECC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-HTPressableButtonTests-FBSnapshotTestCase-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>84D559502D64A389426114CA</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>E4A6CF10BABF66C17639F7C1</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Pods-HTPressableButtonTests-FBSnapshotTestCase/Pods-HTPressableButtonTests-FBSnapshotTestCase-prefix.pch</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.0</string>
+				<key>OTHER_CFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_CPLUSPLUSFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>85682A8959846EC723CF6665</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5EC2D4001D6AA8AA118AAFDE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>87B25184983299553CD8F9F0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-HTPressableButtonTests-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8C0FF8CEF5051CA2435E5F0C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>91D52C51BD58EE63B4FE7055</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3C0D959BF9D1BBB9A9D6E2E7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc</string>
+			</dict>
+		</dict>
+		<key>93BD1618619EE068AD112EC8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0866215B7223E870906BD569</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc</string>
+			</dict>
+		</dict>
+		<key>973A3C927875BE5017CAF01A</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>NO</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>RELEASE=1</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.0</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>98592F66AEEF4460AEF7EBB6</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>0185EAE4EFE562CF9DF30BEE</string>
+			<key>buildPhases</key>
+			<array>
+				<string>FC93348637F925705122FE30</string>
+				<string>C1797EC2C7FFB2C031C76052</string>
+				<string>0BED65C480E0C47AE6FC67CE</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-HTPressableButtonTests-FBSnapshotTestCase</string>
+			<key>productName</key>
+			<string>Pods-HTPressableButtonTests-FBSnapshotTestCase</string>
+			<key>productReference</key>
+			<string>FA8A4CDA47EF6124912ADB42</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>9C75AB047BA27FAFE3E90CB0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-HTPressableButtonTests-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9DC8E94E8E17ED0DDA146E45</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>504D4EF4AC9422B17493A2DA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A1DAABE1B1DE1079EC28D68E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>314CE8BB83A5519805575631</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>A21476F59566977ECC5EBFF3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-HTPressableButtonTests-FBSnapshotTestCase-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B3B23479A44E162AA9A86968</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>ECF464203DCBD6C57A7A76FF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BA34A51FDC34C4AEE6FC14B8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>475B28B4D641BA9F0C9A5672</string>
+				<string>FA8A4CDA47EF6124912ADB42</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C1797EC2C7FFB2C031C76052</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>49624B1BDBDD27E41B21683A</string>
+				<string>D15AF579ACBF64F8FC49E5AF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C572940636A4D842102CCAB5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FBSnapshotTestController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C5BCA9680C6811649F11D778</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FBSnapshotTestCase.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CD04B020B64491314379BD3F</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>E4A6CF10BABF66C17639F7C1</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Pods-HTPressableButtonTests-FBSnapshotTestCase/Pods-HTPressableButtonTests-FBSnapshotTestCase-prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.0</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>D15AF579ACBF64F8FC49E5AF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8C0FF8CEF5051CA2435E5F0C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D3E15A36D5695A251712DDD2</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0510</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>5A2CD0F6C0C7A98F7A643810</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>3DEA4A2FA6CCD45CCDFF5C59</string>
+			<key>productRefGroup</key>
+			<string>BA34A51FDC34C4AEE6FC14B8</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>E698373AC7DA1BF68F9D5799</string>
+				<string>98592F66AEEF4460AEF7EBB6</string>
+			</array>
+		</dict>
+		<key>D7967E4FACF6FC8CCDE6FA10</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C5BCA9680C6811649F11D778</string>
+				<string>70A4774735AF5EDBFAE3CE22</string>
+				<string>5EC2D4001D6AA8AA118AAFDE</string>
+				<string>C572940636A4D842102CCAB5</string>
+				<string>5F40B1BC98DC049CEE6F11EA</string>
+				<string>3C0D959BF9D1BBB9A9D6E2E7</string>
+				<string>EA41097FFE7AA86D424DF42B</string>
+				<string>0866215B7223E870906BD569</string>
+				<string>36F1932C3300A115B1841B14</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>FBSnapshotTestCase</string>
+			<key>path</key>
+			<string>FBSnapshotTestCase</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEABE79F308D97490550013A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>70A4774735AF5EDBFAE3CE22</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc</string>
+			</dict>
+		</dict>
+		<key>E4A6CF10BABF66C17639F7C1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-HTPressableButtonTests-FBSnapshotTestCase-Private.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5A5B54C727EBA77B355F80F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-HTPressableButtonTests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E698373AC7DA1BF68F9D5799</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>5DAC57F7CC70AE7C63569E43</string>
+			<key>buildPhases</key>
+			<array>
+				<string>41910D29AAD14730CE2A30E9</string>
+				<string>A1DAABE1B1DE1079EC28D68E</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>3EE213B00E3CE83F58E70CAC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-HTPressableButtonTests</string>
+			<key>productName</key>
+			<string>Pods-HTPressableButtonTests</string>
+			<key>productReference</key>
+			<string>475B28B4D641BA9F0C9A5672</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>EA41097FFE7AA86D424DF42B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>UIImage+Diff.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC99E228FFB0998590C0267A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>ECF464203DCBD6C57A7A76FF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>EC99E228FFB0998590C0267A</string>
+				<string>8C0FF8CEF5051CA2435E5F0C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ED46813C1151332A3E88708C</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>E5A5B54C727EBA77B355F80F</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.0</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>F3339DA7B24EF3D82EF7C107</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-HTPressableButtonTests-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA8A4CDA47EF6124912ADB42</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-HTPressableButtonTests-FBSnapshotTestCase.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>FC93348637F925705122FE30</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>DEABE79F308D97490550013A</string>
+				<string>049353EBA5D14FFAD20A94F7</string>
+				<string>0FD4106DC0F1366A84BF6FFB</string>
+				<string>91D52C51BD58EE63B4FE7055</string>
+				<string>93BD1618619EE068AD112EC8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>D3E15A36D5695A251712DDD2</string>
+</dict>
+</plist>
