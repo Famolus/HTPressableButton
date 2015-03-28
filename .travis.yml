@@ -4,4 +4,4 @@ before_install:
   - gem install cocoapods --no-rdoc --no-ri --no-document --quiet
   - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
   - cd Example && pod install
-script: "xcodebuild -workspace HTPressableButton.xcworkspace -scheme HTPressableButton -destination 'platform:iOS Simulator, id:DF1BBEDE-90C5-41D9-A11B-8DA659322101, OS:7.1, name:iPhone 4s' clean test | xcpretty -c && exit ${PIPESTATUS[0]}"
+script: "xcodebuild -workspace HTPressableButton.xcworkspace -scheme HTPressableButton -destination 'platform=iOS Simulator, id=DF1BBEDE-90C5-41D9-A11B-8DA659322101, OS=7.1, name=iPhone 4s' clean test | xcpretty -c && exit ${PIPESTATUS[0]}"
