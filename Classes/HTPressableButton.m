@@ -86,6 +86,12 @@
     [self createButton];
 }
 
+- (void) setCornerRadius:(CGFloat)cornerRadius
+{
+    _cornerRadius = cornerRadius;
+    [self createButton];
+}
+
 #pragma mark - Set Button Default Style
 
 - (UIColor *) buttonColorOrDefault

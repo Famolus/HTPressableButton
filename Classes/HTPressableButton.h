@@ -111,6 +111,12 @@ typedef NS_ENUM(NSInteger, HTPressableButtonStyle) {
 - (void) setDisabledShadowColor:(UIColor *)disabledShadowColor;
 
 /**
+ Set the button's corner radius
+ @param cornerRadius The radius of the corner
+ */
+- (void) setCornerRadius:(CGFloat)cornerRadius;
+
+/**
  Set the button style
  
  Can be HTPressableButtonStyleRect, HTPressableButtonStyleRounded or 
