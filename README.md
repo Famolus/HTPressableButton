@@ -7,7 +7,7 @@ HTPressableButton is designed for iOS developers to be able to spend time develo
 
 **Compatible with:**  iOS 6.0 and above
 
-**Current Version:** 1.3.1
+**Current Version:** 1.3.2
 
 You can check out our documentation [here](http://cocoadocs.org/docsets/HTPressableButton/1.3.0/). 
 Installation
@@ -122,10 +122,11 @@ The default *alpha* value is 1.0 for all type of buttons. The value can be chang
 
 | Property                     | Values                                           |
 | ---------------------------- |:------------------------------------------------:|
-| Button Type		       | HTPressableButtonStyleRounded	                  |
+| Button Type		           | HTPressableButtonStyleRounded	                  |
+| Corner Radius                | 10.0                                             |
 | Font                         | Avenir                                           |
 | Font Size                    | 18                                               |
-| Shadow Height                | 17% of the button's height			  |
+| Shadow Height                | 17% of the button's height			              |
 | Button Color                 | ht_jayColor                                      |
 | Button Shadow Color          | ht_jayDarkColor                                  |
 | Disabled Button Color        | ht_mediumColor                                   |
@@ -137,6 +138,13 @@ If you wish to set your own shadow height instead of using our default value, ad
 ```objective-c	
 	//Set shadow height of size 10
 	buttonNameHere.shadowHeight = 10;
+```
+
+The different types of buttons have different default value set for its corner radius, you can modify it by:
+
+```objective-c  
+    //Set corner radius to 20.0
+    buttonNameHere.cornerRadius = 20;
 ```
 
 <br>
