@@ -125,7 +125,7 @@ typedef NS_ENUM(NSInteger, HTPressableButtonStyle) {
  Set the button's title font
  @param titleFont The font for the title
  */
-- (void) setTitleFont:(CGFloat)titleFont;
+- (void) setTitleFont:(UIFont *)titleFont;
 
 /**
  Set the button style
