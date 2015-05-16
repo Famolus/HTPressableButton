@@ -201,7 +201,7 @@
 
 - (void) createButton
 {
-    [self.titleLabel setFont:self.titleFont];
+    [self.titleLabel setFont:[self titleFontOrDefault]];
     
     UIImage *buttonNormal;
     UIImage *buttonHighlighted;
