@@ -122,6 +122,12 @@ typedef NS_ENUM(NSInteger, HTPressableButtonStyle) {
 - (void) setCornerRadius:(CGFloat)cornerRadius;
 
 /**
+ Set the button's title font
+ @param titleFont The font for the title
+ */
+- (void) setTitleFont:(CGFloat)titleFont;
+
+/**
  Set the button style
  
  Can be HTPressableButtonStyleRect, HTPressableButtonStyleRounded or 
