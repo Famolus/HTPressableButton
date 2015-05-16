@@ -54,6 +54,11 @@ typedef NS_ENUM(NSInteger, HTPressableButtonStyle) {
  */
 @property(nonatomic, strong, readwrite) UIColor *disabledShadowColor UI_APPEARANCE_SELECTOR;
 
+/**
+ The font of the button's title
+ */
+@property(nonatomic, strong, readwrite) UIFont *titleFont UI_APPEARANCE_SELECTOR;
+
 
 /**
  Button style
