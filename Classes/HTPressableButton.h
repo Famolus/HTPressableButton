@@ -54,6 +54,11 @@ typedef NS_ENUM(NSInteger, HTPressableButtonStyle) {
  */
 @property(nonatomic, strong, readwrite) UIColor *disabledShadowColor UI_APPEARANCE_SELECTOR;
 
+/**
+ The font of the button's title
+ */
+@property(nonatomic, strong, readwrite) UIFont *titleFont UI_APPEARANCE_SELECTOR;
+
 
 /**
  Button style
@@ -115,6 +120,12 @@ typedef NS_ENUM(NSInteger, HTPressableButtonStyle) {
  @param cornerRadius The radius of the corner
  */
 - (void) setCornerRadius:(CGFloat)cornerRadius;
+
+/**
+ Set the button's title font
+ @param titleFont The font for the title
+ */
+- (void) setTitleFont:(UIFont *)titleFont;
 
 /**
  Set the button style

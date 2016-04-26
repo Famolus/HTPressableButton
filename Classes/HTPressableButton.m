@@ -93,6 +93,12 @@
     [self createButton];
 }
 
+- (void) setTitleFont:(UIFont *)titleFont
+{
+    _titleFont = titleFont;
+    [self createButton];
+}
+
 #pragma mark - Set Button Default Style
 
 - (UIColor *) buttonColorOrDefault
@@ -113,6 +119,11 @@
 - (UIColor *) disabledShadowColorOrDefault
 {
     return _disabledShadowColor ?: [UIColor ht_mediumDarkColor];
+}
+
+- (UIFont *) titleFontOrDefault
+{
+    return _titleFont ?: [UIFont fontWithName:@"Avenir" size:18];
 }
 
 - (void) setDefaultShadowHeightForStyle:(HTPressableButtonStyle)style
@@ -190,7 +201,7 @@
 
 - (void) createButton
 {
-    [self.titleLabel setFont:[UIFont fontWithName:@"Avenir" size:18]];
+    [self.titleLabel setFont:[self titleFontOrDefault]];
     
     UIImage *buttonNormal;
     UIImage *buttonHighlighted;
