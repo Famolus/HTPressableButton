@@ -9,7 +9,7 @@ HTPressableButton is designed for iOS developers to be able to spend time develo
 
 **Current Version:** 1.3.3
 
-You can check out our documentation [here](http://cocoadocs.org/docsets/HTPressableButton/1.3.0/). 
+You can check out our documentation [here](http://cocoadocs.org/docsets/HTPressableButton/1.3.3/). 
 Installation
 -------------------
 HTPressableButton can be installed via [CocoaPods](http://cocoapods.org/)
