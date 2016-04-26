@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "HTPressableButton"
-  s.version      = "1.3.2"
+  s.version      = "1.3.3"
   s.summary      = "Pressable button with ease of use for iOS developers."
   s.homepage     = "http://github.com/herinkc/HTPressableButton"
   s.license      = { :type => "MIT", :file => "LICENSE" }
