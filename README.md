@@ -184,7 +184,7 @@ Welcome contributors! Please don't hesitate to make an issue or pull request :)
 [![Manoj Mahapatra](https://avatars3.githubusercontent.com/u/2066984?s=80)](https://github.com/indideveloper)
 [![Pitiphong Phongpattranont](https://avatars2.githubusercontent.com/u/426153?s=80)](https://github.com/pitiphong-p)
 [![Alexsander Akers](https://avatars3.githubusercontent.com/u/241156?s=80)](https://github.com/a2)
-[![Naji Dmeiri](https://avatars2.githubusercontent.com/u/8139148?v=3&s=96)](https://github.com/ndmeiri)
+[![Naji Dmeiri](https://avatars2.githubusercontent.com/u/8139148?s=80)](https://github.com/ndmeiri)
 
 
 Showcase
