@@ -2,6 +2,8 @@ HTPressableButton
 ==============
 
 [![Build Status](https://travis-ci.org/herinkc/HTPressableButton.svg?branch=master)](https://travis-ci.org/herinkc/HTPressableButton)
+[![CocoaPods](https://img.shields.io/cocoapods/dt/HTPressableButton.svg?maxAge=2592000)](https://cocoapods.org/pods/HTPressableButton)
+[![CocoaPods](https://img.shields.io/cocoapods/dm/HTPressableButton.svg?maxAge=2592000)](https://cocoapods.org/pods/HTPressableButton)
 
 HTPressableButton is designed for iOS developers to be able to spend time developing ideas, not building basic buttons. These stylish and flat-designed buttons can easily be modified and are perfect for almost any project. With no worry over color choice, HTPressableButton also includes beautiful color schemes that perfectly suit with your app.
 
